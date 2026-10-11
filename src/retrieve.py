@@ -1,68 +1,139 @@
+import json
+from pathlib import Path
+
 import faiss
 import numpy as np
 from sentence_transformers import SentenceTransformer
 
-from ingest import extract_text
-from chunk import chunk_text
 
-# Load model
-model = SentenceTransformer("all-MiniLM-L6-v2")
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
-# Build index
-text = extract_text("data/sample.pdf")
-chunks = chunk_text(text, chunk_size=300, overlap=50)
+INDEX_PATH = PROJECT_ROOT / "indexes" / "financial.faiss"
+METADATA_PATH = PROJECT_ROOT / "indexes" / "chunk_metadata.jsonl"
 
-for i, chunk in enumerate(chunks):
-    print(f"\nChunk {i}:")
-    print(repr(chunk))
-
-embeddings = model.encode(chunks)
-embeddings = np.array(embeddings).astype("float32")
-
-dimension = embeddings.shape[1]
-index = faiss.IndexFlatL2(dimension)
-index.add(embeddings)
-
-print("Total chunks:", len(chunks))
-print("Embedding shape:", embeddings.shape)
-print("Index vectors:", index.ntotal)
+MODEL_NAME = "all-MiniLM-L6-v2"
 
 
-def retrieve(query, top_k=5):
-    query_embedding = model.encode([query])
-    query_embedding = np.array(query_embedding).astype("float32")
+def load_metadata():
+    """Load chunk records in FAISS vector order."""
+    if not METADATA_PATH.exists():
+        raise FileNotFoundError(
+            "Chunk metadata not found. Run embed.py first."
+        )
 
-    distances, indices = index.search(query_embedding, top_k)
+    records = []
+
+    with METADATA_PATH.open(
+        "r", encoding="utf-8"
+    ) as file:
+        for line in file:
+            if line.strip():
+                records.append(json.loads(line))
+
+    return records
+
+
+def load_retriever():
+    """Load the persisted index, metadata, and embedding model."""
+    if not INDEX_PATH.exists():
+        raise FileNotFoundError(
+            "FAISS index not found. Run embed.py first."
+        )
+
+    index = faiss.read_index(str(INDEX_PATH))
+    metadata = load_metadata()
+
+    if index.ntotal != len(metadata):
+        raise ValueError(
+            f"Index has {index.ntotal} vectors but "
+            f"{len(metadata)} metadata records."
+        )
+
+    model = SentenceTransformer(MODEL_NAME)
+
+    return model, index, metadata
+
+
+def retrieve(query, model, index, metadata, top_k=5):
+    """Retrieve the most similar financial-document chunks."""
+    if not query.strip():
+        raise ValueError("Query cannot be empty.")
+
+    if index.ntotal == 0:
+        return []
+
+    top_k = min(top_k, index.ntotal)
+
+    query_embedding = model.encode(
+        [query],
+        convert_to_numpy=True,
+        normalize_embeddings=True,
+    )
+
+    query_embedding = np.ascontiguousarray(
+        query_embedding, dtype=np.float32
+    )
+
+    scores, indices = index.search(query_embedding, top_k)
 
     results = []
 
-    print(f"\nQuery: {query}\n")
-
-    for rank in range(len(indices[0])):
-        idx = int(indices[0][rank])
-
-        if idx == -1:
+    for rank, (idx, score) in enumerate(
+        zip(indices[0], scores[0]), start=1
+    ):
+        if idx < 0:
             continue
 
-        distance = float(distances[0][rank])
+        chunk = metadata[int(idx)]
 
         result = {
-            "chunk_id": idx,
-            "text": chunks[idx],
-            "distance": distance
+            "rank": rank,
+            "similarity": float(score),
+            "chunk_id": chunk["chunk_id"],
+            "company": chunk["company"],
+            "period": chunk["period"],
+            "section": chunk.get("section", "Unknown"),
+            "page_number": chunk["page_number"],
+            "document_name": chunk["document_name"],
+            "source_url": chunk["source_url"],
+            "text": chunk["text"],
         }
 
         results.append(result)
 
-        print(f"Result {rank + 1} | Distance: {distance:.4f}")
-        print(chunks[idx])
-        print("-" * 50)
-
     return results
 
 
+if __name__ == "__main__":
+    model, index, metadata = load_retriever()
 
-results = retrieve("What is the work from home policy?")
+    print(f"Loaded vectors: {index.ntotal}")
 
-print("\nReturned results:")
-print(results)
+    query = "What was the company's revenue during the financial year?"
+
+    results = retrieve(
+        query=query,
+        model=model,
+        index=index,
+        metadata=metadata,
+        top_k=5,
+    )
+
+    print(f"\nQuery: {query}\n")
+
+    for result in results:
+        print(
+            f"Rank: {result['rank']} | "
+            f"Similarity: {result['similarity']:.4f}"
+        )
+        print(
+            f"Company: {result['company']} | "
+            f"Period: {result['period']}"
+        )
+        print(
+            f"Section: {result['section']} | "
+            f"Page: {result['page_number']}"
+        )
+        print(f"Chunk ID: {result['chunk_id']}")
+        print(result["text"])
+        print("-" * 70)
