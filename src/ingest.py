@@ -143,13 +143,13 @@ def ingest_corpus() -> None:
                     image_count = len(page.get_images(full=True))
                     has_text = bool(text.strip())
 
+
                     review_reasons = []
 
-                    if char_count < 50:
+                    if not has_text:
+                        review_reasons.append("no_text")
+                    elif char_count < 50:
                         review_reasons.append("low_text")
-
-                    if image_count > 0:
-                        review_reasons.append("contains_images")
 
                     needs_review = bool(review_reasons)
                     review_reason = ";".join(review_reasons)
