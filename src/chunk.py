@@ -37,8 +37,9 @@ FINANCIAL_HEADINGS = [
 ]
 
 
+
 def is_heading(line: str) -> bool:
-    """Heuristically identify likely section headings."""
+    """Conservatively identify likely financial section headings."""
     line = line.strip()
 
     if not line or len(line) > 120:
@@ -46,31 +47,26 @@ def is_heading(line: str) -> bool:
 
     normalized = line.lower().strip(" :.-")
 
+    # 1. Explicit financial section headings
     if any(
         heading in normalized
         for heading in FINANCIAL_HEADINGS
     ):
         return True
 
-    # Numbered headings such as "1. Overview" or "2.1 Revenue"
+    # 2. Numbered headings: "1. Overview", "2.1 Revenue"
     if re.match(
-        r"^\d+(?:\.\d+)*\.?\s+[A-Z]",
-        line
+        r"^\d+(?:\.\d+)*\.?\s+[A-Z][A-Za-z]",
+        line,
     ):
         return True
 
-    # Short, predominantly uppercase headings
-    letters = [char for char in line if char.isalpha()]
-
-    if len(letters) >= 5:
-        uppercase_ratio = sum(
-            char.isupper() for char in letters
-        ) / len(letters)
-
-        if uppercase_ratio >= 0.85:
-            return True
+    # 3. Avoid generic uppercase detection for now.
+    # It can misclassify company names, page headers,
+    # table labels, and short financial metric names.
 
     return False
+
 
 
 def split_lines(
@@ -196,8 +192,6 @@ def chunk_documents() -> None:
 
     PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
 
-    # Remember the latest section for each document
-    document_sections = {}
 
     records_written = 0
     pages_processed = 0
@@ -215,16 +209,10 @@ def chunk_documents() -> None:
 
             document_id = page_record["document_id"]
 
-            initial_section = document_sections.get(
-                document_id, "Unknown"
-            )
-
-            page_chunks, final_section = chunk_page(
+            page_chunks, _ = chunk_page(
                 page_record.get("text", ""),
-                initial_section,
+                "Unknown",
             )
-
-            document_sections[document_id] = final_section
 
             for chunk_index, chunk in enumerate(page_chunks):
                 chunk_text_value = chunk["text"]
