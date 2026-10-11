@@ -46,3 +46,13 @@ temp/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Raw financial documents
+data/raw/*.pdf
+
+# Generated ingestion output
+data/processed/*.jsonl
+
+# Generated indexes
+indexes/
+

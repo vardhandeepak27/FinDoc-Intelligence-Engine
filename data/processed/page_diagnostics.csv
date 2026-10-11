@@ -1,0 +1,952 @@
+document_id,document_name,company,period,page_number,char_count,has_text,image_count,needs_review,review_reason
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,1,29,True,1,True,low_text;contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,2,1128,True,1,True,contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,3,1611,True,1,True,contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,4,4961,True,1,True,contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,5,4605,True,1,True,contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,6,877,True,15,True,contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,7,2245,True,37,True,contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,8,3173,True,6,True,contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,9,3017,True,3,True,contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,10,1076,True,0,False,
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,11,92,True,1,True,contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,12,5529,True,2,True,contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,13,3619,True,0,False,
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,14,3288,True,1,True,contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,15,4734,True,4,True,contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,16,2580,True,2,True,contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,17,4595,True,4,True,contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,18,2378,True,2,True,contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,19,3205,True,4,True,contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,20,4603,True,5,True,contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,21,2270,True,2,True,contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,22,3656,True,3,True,contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,23,2539,True,2,True,contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,24,4255,True,5,True,contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,25,4308,True,4,True,contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,26,2183,True,2,True,contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,27,103,True,1,True,contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,28,4532,True,2,True,contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,29,5478,True,2,True,contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,30,3490,True,7,True,contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,31,96,True,1,True,contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,32,2871,True,1,True,contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,33,2600,True,0,False,
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,34,7837,True,0,False,
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,35,4425,True,1,True,contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,36,5171,True,0,False,
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,37,4923,True,2,True,contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,38,6005,True,0,False,
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,39,4000,True,0,False,
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,40,2519,True,2,True,contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,41,180,True,2,True,contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,42,1738,True,7,True,contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,43,17,True,0,True,low_text
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,1,92,True,15,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,2,200,True,5,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,3,1915,True,34,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,4,4595,True,80,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,5,3612,True,25,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,6,2543,True,17,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,7,1659,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,8,7459,True,159,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,9,8461,True,60,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,10,4489,True,34,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,11,3895,True,27,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,12,4739,True,4,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,13,6025,True,25,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,14,8711,True,65,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,15,4542,True,19,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,16,5006,True,64,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,17,4432,True,24,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,18,4887,True,22,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,19,4752,True,21,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,20,3556,True,20,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,21,4286,True,99,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,22,3114,True,131,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,23,2801,True,81,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,24,4755,True,90,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,25,2939,True,6,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,26,3744,True,28,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,27,5018,True,15,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,28,5087,True,9,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,29,3998,True,6,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,30,6201,True,24,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,31,3828,True,9,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,32,3294,True,28,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,33,5074,True,17,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,34,2253,True,2,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,35,2005,True,9,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,36,3441,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,37,4517,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,38,4614,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,39,4791,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,40,3784,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,41,4252,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,42,3705,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,43,3284,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,44,5494,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,45,4221,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,46,2591,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,47,3177,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,48,2966,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,49,1103,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,50,4061,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,51,3160,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,52,1597,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,53,2616,True,2,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,54,4449,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,55,3890,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,56,4719,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,57,5196,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,58,4722,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,59,2348,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,60,5715,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,61,5543,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,62,3241,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,63,3700,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,64,2728,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,65,3473,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,66,3388,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,67,2749,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,68,3944,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,69,2310,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,70,2068,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,71,2617,True,4,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,72,703,True,38,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,73,3795,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,74,4829,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,75,5090,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,76,3392,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,77,921,True,4,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,78,2229,True,2,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,79,1939,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,80,2591,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,81,2397,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,82,3068,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,83,2564,True,4,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,84,1867,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,85,1935,True,10,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,86,1986,True,17,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,87,1597,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,88,2431,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,89,3733,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,90,3058,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,91,2429,True,2,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,92,1620,True,2,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,93,2403,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,94,2283,True,2,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,95,2900,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,96,2070,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,97,3224,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,98,2263,True,12,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,99,3332,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,100,1127,True,4,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,101,849,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,102,2288,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,103,1854,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,104,2589,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,105,1470,True,2,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,106,2861,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,107,1189,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,108,2315,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,109,2548,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,110,1323,True,10,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,111,3402,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,112,3169,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,113,3688,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,114,2399,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,115,3271,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,116,4298,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,117,2237,True,2,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,118,2594,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,119,2329,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,120,3981,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,121,4293,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,122,2485,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,123,3352,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,124,1801,True,8,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,125,700,True,26,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,126,2594,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,127,2492,True,8,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,128,2011,True,7,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,129,3036,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,130,3305,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,131,3004,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,132,4475,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,133,3609,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,134,2415,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,135,3697,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,136,2242,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,137,3739,True,2,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,138,3648,True,2,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,139,2740,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,140,1056,True,2,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,141,2490,True,6,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,142,2220,True,733,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,143,2872,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,144,3267,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,145,2411,True,2,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,146,2604,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,147,2190,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,148,2269,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,149,3174,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,150,2308,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,151,2680,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,152,3237,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,153,3428,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,154,4163,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,155,3814,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,156,3289,True,64,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,157,2782,True,9597,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,158,3664,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,159,5672,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,160,4861,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,161,4292,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,162,1138,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,163,1404,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,164,4229,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,165,2239,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,166,2651,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,167,3025,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,168,579,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,169,1584,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,170,1719,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,171,2912,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,172,2416,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,173,2457,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,174,4720,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,175,4708,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,176,4548,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,177,4511,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,178,4058,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,179,4457,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,180,4022,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,181,1904,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,182,2420,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,183,1879,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,184,2020,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,185,1954,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,186,1757,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,187,1736,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,188,1888,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,189,2730,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,190,1992,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,191,2486,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,192,2884,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,193,3802,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,194,3201,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,195,2071,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,196,2459,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,197,2083,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,198,4378,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,199,3012,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,200,2049,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,201,3037,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,202,2314,True,2,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,203,2557,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,204,3519,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,205,2008,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,206,1731,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,207,1446,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,208,1366,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,209,5336,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,210,3558,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,211,2175,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,212,3036,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,213,903,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,214,2682,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,215,1887,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,216,2454,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,217,3352,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,218,2472,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,219,2751,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,220,3581,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,221,2596,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,222,2408,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,223,2617,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,224,3915,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,225,2127,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,226,2336,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,227,3172,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,228,2030,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,229,2174,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,230,1997,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,231,2113,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,232,1921,True,2,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,233,3411,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,234,1840,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,235,1445,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,236,2428,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,237,3651,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,238,1498,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,239,2559,True,3256,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,240,3680,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,241,5347,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,242,4750,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,243,3689,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,244,4576,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,245,3307,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,246,3500,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,247,2692,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,248,4311,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,249,2969,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,250,4490,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,251,1700,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,252,2553,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,253,2412,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,254,2148,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,255,2449,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,256,2380,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,257,1718,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,258,4361,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,259,4356,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,260,4466,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,261,4502,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,262,3446,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,263,2451,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,264,3576,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,265,1934,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,266,1639,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,267,1806,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,268,1417,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,269,2026,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,270,2054,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,271,1824,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,272,2131,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,273,2685,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,274,1949,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,275,2691,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,276,3626,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,277,3653,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,278,2283,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,279,2095,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,280,2648,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,281,3851,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,282,3030,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,283,2712,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,284,2360,True,2,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,285,2019,True,4,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,286,2460,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,287,1161,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,288,1734,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,289,1776,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,290,2260,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,291,4664,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,292,2310,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,293,2909,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,294,2648,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,295,2352,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,296,2483,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,297,2271,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,298,2224,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,299,2761,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,300,1866,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,301,2451,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,302,2311,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,303,3722,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,304,2200,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,305,2799,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,306,2325,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,307,3798,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,308,1688,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,309,1643,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,310,1583,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,311,2012,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,312,1416,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,313,2133,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,314,3518,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,315,2705,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,316,2063,True,2,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,317,2448,True,4,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,318,2323,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,319,2574,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,320,2439,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,321,2431,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,322,2363,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,323,1798,True,2,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,324,4681,True,2,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,325,4213,True,2,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,326,4766,True,2,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,327,4351,True,2,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,328,3795,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,329,2530,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,330,3293,True,3,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,331,3022,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,332,3676,True,2,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,333,2455,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,334,3507,True,2,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,335,1928,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,336,3821,True,4,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,337,4740,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,338,1413,True,9520,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,339,4164,True,9518,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,340,4773,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,341,4569,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,342,4517,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,343,4339,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,344,4539,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,345,1774,True,9520,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,346,1902,True,13,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,347,1934,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,348,1574,True,19,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,349,2511,True,2,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,350,2675,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,351,2323,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,352,2243,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,353,3064,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,354,3962,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,355,3315,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,356,2434,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,357,3527,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,358,1275,True,0,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,359,1374,True,8,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,360,1990,True,1,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,1,0,False,1,True,low_text;contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,2,3239,True,3,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,3,2291,True,3,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,4,1913,True,7,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,5,2371,True,4,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,6,4820,True,1,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,7,3900,True,2,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,8,4223,True,2,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,9,3069,True,2,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,10,4313,True,1,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,11,3960,True,7,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,12,3199,True,23,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,13,2672,True,21,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,14,3148,True,6,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,15,3752,True,4,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,16,4948,True,3,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,17,3496,True,2,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,18,5067,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,19,1893,True,1,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,20,6512,True,1,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,21,7064,True,1,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,22,5444,True,2,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,23,7550,True,1,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,24,4852,True,2,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,25,5685,True,1,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,26,6532,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,27,5112,True,1,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,28,7383,True,1,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,29,6387,True,14,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,30,2522,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,31,2277,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,32,1614,True,1,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,33,2816,True,1,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,34,945,True,1,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,35,2950,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,36,3020,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,37,2796,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,38,1801,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,39,3624,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,40,3494,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,41,3695,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,42,2653,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,43,2542,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,44,2064,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,45,3172,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,46,891,True,1,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,47,4039,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,48,1571,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,49,3032,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,50,1932,True,2,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,51,3404,True,1,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,52,3491,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,53,2892,True,1,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,54,2356,True,2,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,55,2493,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,56,2832,True,1,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,57,2461,True,1,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,58,1386,True,2,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,59,1116,True,2,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,60,1241,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,61,2161,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,62,1820,True,2,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,63,2732,True,1,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,64,2483,True,1,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,65,1821,True,2,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,66,2939,True,1,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,67,2441,True,1,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,68,982,True,1,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,69,3608,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,70,4818,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,71,4680,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,72,1147,True,1,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,73,2374,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,74,812,True,1,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,75,3079,True,1,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,76,3339,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,77,3694,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,78,1962,True,80,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,79,3353,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,80,2688,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,81,2911,True,1,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,82,4290,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,83,4179,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,84,2904,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,85,3738,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,86,2432,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,87,2986,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,88,3201,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,89,4101,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,90,4164,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,91,3725,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,92,3739,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,93,3235,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,94,4026,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,95,5273,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,96,2647,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,97,3712,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,98,3877,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,99,4479,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,100,4266,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,101,3167,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,102,3833,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,103,3774,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,104,3601,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,105,4183,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,106,4049,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,107,3963,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,108,3591,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,109,3594,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,110,3796,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,111,3530,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,112,882,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,113,3366,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,114,3836,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,115,2646,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,116,2362,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,117,2546,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,118,2412,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,119,2407,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,120,2381,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,121,2075,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,122,1800,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,123,1899,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,124,3250,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,125,3479,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,126,1238,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,127,1627,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,128,2180,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,129,3641,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,130,2332,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,131,855,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,132,1900,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,133,4464,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,134,3229,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,135,4164,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,136,3369,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,137,4112,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,138,3345,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,139,4165,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,140,3260,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,141,2841,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,142,3753,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,143,3406,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,144,2910,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,145,2857,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,146,4184,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,147,3994,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,148,3381,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,149,4790,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,150,3015,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,151,2873,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,152,526,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,153,3385,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,154,2489,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,155,2211,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,156,2923,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,157,3609,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,158,2856,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,159,1903,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,160,2531,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,161,1294,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,162,2818,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,163,4076,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,164,4503,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,165,4177,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,166,2588,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,167,1515,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,168,2825,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,169,3890,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,170,2445,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,171,3400,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,172,2197,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,173,2147,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,174,3909,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,175,2179,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,176,1371,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,177,1994,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,178,1527,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,179,1674,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,180,1206,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,181,1566,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,182,2599,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,183,2032,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,184,1687,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,185,3156,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,186,4509,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,187,4691,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,188,4188,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,189,3842,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,190,4286,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,191,3974,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,192,3964,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,193,4253,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,194,4592,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,195,4626,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,196,4282,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,197,4423,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,198,4657,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,199,4433,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,200,4463,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,201,4546,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,202,3054,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,203,2085,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,204,1846,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,205,1987,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,206,2334,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,207,1158,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,208,2485,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,209,2883,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,210,2224,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,211,1065,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,212,1511,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,213,2393,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,214,2397,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,215,2495,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,216,2684,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,217,2343,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,218,1417,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,219,1966,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,220,1837,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,221,1708,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,222,3065,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,223,2581,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,224,3012,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,225,2115,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,226,1432,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,227,3597,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,228,3766,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,229,2914,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,230,3192,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,231,1923,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,232,1988,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,233,1869,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,234,3833,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,235,2867,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,236,2638,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,237,1782,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,238,2238,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,239,1988,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,240,2837,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,241,1759,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,242,3675,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,243,3026,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,244,2394,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,245,1907,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,246,1630,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,247,1576,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,248,1606,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,249,1847,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,250,2640,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,251,1474,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,252,1859,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,253,2777,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,254,2992,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,255,1566,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,256,1597,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,257,1982,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,258,1923,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,259,1680,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,260,1785,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,261,1598,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,262,1595,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,263,1514,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,264,1776,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,265,1435,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,266,1597,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,267,1608,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,268,1545,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,269,1185,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,270,2719,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,271,3420,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,272,3211,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,273,1451,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,274,2959,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,275,4435,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,276,4885,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,277,4267,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,278,3822,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,279,2450,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,280,2998,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,281,4093,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,282,1600,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,283,1685,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,284,1797,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,285,2357,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,286,1214,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,287,1881,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,288,1948,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,289,1950,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,290,2321,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,291,1749,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,292,2968,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,293,4491,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,294,4292,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,295,4293,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,296,4322,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,297,3969,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,298,4114,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,299,3920,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,300,3645,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,301,3613,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,302,4020,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,303,4570,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,304,4417,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,305,3733,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,306,4399,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,307,4113,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,308,3852,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,309,4384,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,310,4234,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,311,3307,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,312,2268,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,313,1833,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,314,2185,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,315,2426,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,316,2064,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,317,2492,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,318,3158,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,319,2082,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,320,2266,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,321,2391,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,322,3267,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,323,2657,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,324,3640,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,325,2123,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,326,1594,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,327,1171,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,328,4116,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,329,3633,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,330,2877,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,331,2944,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,332,2579,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,333,2279,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,334,1328,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,335,1868,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,336,1752,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,337,2502,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,338,2639,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,339,2464,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,340,2021,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,341,1754,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,342,1950,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,343,1688,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,344,1772,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,345,2789,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,346,2637,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,347,1926,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,348,1899,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,349,2223,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,350,2389,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,351,1527,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,352,1588,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,353,1940,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,354,2462,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,355,4880,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,356,2958,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,357,3029,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,358,3355,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,359,3805,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,360,4175,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,361,1688,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,362,2470,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,363,1531,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,364,1722,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,365,1639,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,366,1592,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,367,2605,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,368,1730,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,369,1642,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,370,2562,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,371,3010,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,372,2544,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,373,2575,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,374,2047,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,375,1820,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,376,2259,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,377,2753,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,378,2967,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,379,2931,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,380,2890,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,381,2925,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,382,3429,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,383,4636,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,384,4648,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,385,5192,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,386,4858,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,387,4706,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,388,2308,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,389,1675,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,390,2907,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,391,4232,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,392,2574,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,393,1599,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,394,1492,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,395,1775,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,396,1872,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,397,2061,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,398,2486,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,399,1952,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,400,1938,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,401,2007,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,402,2653,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,403,3058,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,404,4412,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,405,4776,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,406,4258,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,407,4352,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,408,3383,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,409,3734,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,410,3862,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,411,3556,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,412,3429,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,413,3948,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,414,4515,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,415,3901,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,416,3687,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,417,4109,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,418,4444,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,419,3943,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,420,4016,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,421,4471,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,422,4093,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,423,3553,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,424,2661,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,425,1870,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,426,1957,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,427,2543,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,428,2211,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,429,2710,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,430,3022,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,431,1907,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,432,1756,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,433,1659,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,434,1733,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,435,1335,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,436,2069,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,437,3034,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,438,1973,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,439,2018,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,440,1753,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,441,1599,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,442,3222,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,443,2795,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,444,3611,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,445,2112,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,446,1592,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,447,2203,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,448,3818,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,449,3748,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,450,3740,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,451,2320,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,452,1913,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,453,2200,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,454,1873,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,455,1199,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,456,2442,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,457,3787,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,458,5305,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,459,2218,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,460,2406,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,461,2296,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,462,1744,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,463,2655,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,464,3451,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,465,3266,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,466,2348,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,467,1744,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,468,2245,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,469,2102,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,470,2323,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,471,1944,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,472,2059,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,473,2062,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,474,2049,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,475,2948,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,476,1832,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,477,2051,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,478,2635,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,479,2306,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,480,1682,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,481,1596,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,482,2756,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,483,4253,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,484,2964,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,485,1749,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,486,2955,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,487,3387,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,488,1175,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,489,2210,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,490,1298,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,491,2263,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,492,1650,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,493,2987,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,494,2778,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,495,3259,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,496,2732,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,497,3154,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,498,2328,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,499,2131,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,500,2019,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,501,2388,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,502,2050,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,503,2663,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,504,2326,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,505,2909,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,506,1733,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,507,2205,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,508,3161,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,509,2297,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,510,3073,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,511,3089,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,512,3772,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,513,2041,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,514,2172,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,515,2588,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,516,1476,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,517,2391,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,518,2340,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,519,2177,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,520,2473,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,521,3005,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,522,2856,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,523,2125,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,524,3843,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,525,3189,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,526,2420,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,527,2376,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,528,1224,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,529,3021,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,530,2226,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,531,2135,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,532,2321,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,533,3197,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,534,3630,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,535,2827,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,536,1014,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,537,2384,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,538,3159,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,539,3861,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,540,2974,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,541,1567,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,542,1490,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,543,3005,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,544,1552,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,545,2370,True,0,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,546,43,True,0,True,low_text
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,547,0,False,0,True,low_text
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,548,280,True,1,True,contains_images
