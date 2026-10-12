@@ -49,20 +49,29 @@ def load_retriever():
             f"{len(metadata)} metadata records."
         )
 
-    model = SentenceTransformer(MODEL_NAME)
+    model = SentenceTransformer(
+    MODEL_NAME,
+    local_files_only=True,
+)
 
     return model, index, metadata
 
 
-def retrieve(query, model, index, metadata, top_k=5):
-    """Retrieve the most similar financial-document chunks."""
+def retrieve(
+    query,
+    model,
+    index,
+    metadata,
+    top_k=5,
+    company=None,
+    period=None,
+):
+    """Retrieve relevant chunks with optional metadata filters."""
     if not query.strip():
         raise ValueError("Query cannot be empty.")
 
     if index.ntotal == 0:
         return []
-
-    top_k = min(top_k, index.ntotal)
 
     query_embedding = model.encode(
         [query],
@@ -74,20 +83,29 @@ def retrieve(query, model, index, metadata, top_k=5):
         query_embedding, dtype=np.float32
     )
 
-    scores, indices = index.search(query_embedding, top_k)
+    # Exact search over the complete index.
+    # Filtering afterwards ensures we don't miss matching
+    # documents just because other companies ranked higher.
+    scores, indices = index.search(
+        query_embedding, index.ntotal
+    )
 
     results = []
 
-    for rank, (idx, score) in enumerate(
-        zip(indices[0], scores[0]), start=1
-    ):
+    for idx, score in zip(indices[0], scores[0]):
         if idx < 0:
             continue
 
         chunk = metadata[int(idx)]
 
-        result = {
-            "rank": rank,
+        if company and chunk["company"].casefold() != company.casefold():
+            continue
+
+        if period and chunk["period"].casefold() != period.casefold():
+            continue
+
+        results.append({
+            "rank": len(results) + 1,
             "similarity": float(score),
             "chunk_id": chunk["chunk_id"],
             "company": chunk["company"],
@@ -97,11 +115,13 @@ def retrieve(query, model, index, metadata, top_k=5):
             "document_name": chunk["document_name"],
             "source_url": chunk["source_url"],
             "text": chunk["text"],
-        }
+        })
 
-        results.append(result)
+        if len(results) >= top_k:
+            break
 
     return results
+
 
 
 if __name__ == "__main__":
@@ -109,15 +129,17 @@ if __name__ == "__main__":
 
     print(f"Loaded vectors: {index.ntotal}")
 
-    query = "What was the company's revenue during the financial year?"
+    query = "What was Wipro's revenue for the year ended March 31, 2026?"
 
     results = retrieve(
-        query=query,
-        model=model,
-        index=index,
-        metadata=metadata,
-        top_k=5,
-    )
+    query=query,
+    model=model,
+    index=index,
+    metadata=metadata,
+    top_k=5,
+    company="Wipro",
+    period="FY2025-26",
+)
 
     print(f"\nQuery: {query}\n")
 
