@@ -129,14 +129,17 @@ if __name__ == "__main__":
 
     print(f"Loaded vectors: {index.ntotal}")
 
-    query = "What was Wipro's revenue for the year ended March 31, 2026?"
+    query = (
+    "Wipro consolidated revenue from operations "
+    "year ended March 31 2026"
+)
 
     results = retrieve(
     query=query,
     model=model,
     index=index,
     metadata=metadata,
-    top_k=5,
+    top_k=10,
     company="Wipro",
     period="FY2025-26",
 )
