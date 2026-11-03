@@ -1,41 +1,43 @@
 import json
-from pathlib import Path
+import logging
+from datetime import datetime, timezone
 
 import faiss
 import numpy as np
 from sentence_transformers import SentenceTransformer
 
+from config import settings
+from logging_setup import setup_logging
 
-# Project paths
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
-
-CHUNKS_PATH = PROJECT_ROOT / "data" / "processed" / "chunks.jsonl"
-INDEX_DIR = PROJECT_ROOT / "indexes"
-INDEX_PATH = INDEX_DIR / "financial.faiss"
-METADATA_PATH = INDEX_DIR / "chunk_metadata.jsonl"
-
-MODEL_NAME = "all-MiniLM-L6-v2"
+logger = logging.getLogger(__name__)
 
 
 def load_chunks():
-    """Load chunk records from JSONL."""
-    if not CHUNKS_PATH.exists():
+    """Load chunk records from JSONL, skipping empty ones."""
+    if not settings.chunks_path.exists():
         raise FileNotFoundError(
-            f"Chunk file not found: {CHUNKS_PATH}. "
+            f"Chunk file not found: {settings.chunks_path}. "
             "Run chunk.py first."
         )
 
     chunks = []
+    skipped = 0
 
-    with CHUNKS_PATH.open("r", encoding="utf-8") as file:
+    with settings.chunks_path.open("r", encoding="utf-8") as file:
         for line in file:
-            if line.strip():
-                record = json.loads(line)
+            if not line.strip():
+                continue
 
-                if not record.get("text", "").strip():
-                    continue
+            record = json.loads(line)
 
-                chunks.append(record)
+            if not record.get("text", "").strip():
+                skipped += 1
+                continue
+
+            chunks.append(record)
+
+    if skipped:
+        logger.warning("Skipped %d empty chunks", skipped)
 
     if not chunks:
         raise ValueError("No valid chunks found.")
@@ -44,53 +46,61 @@ def load_chunks():
 
 
 def build_index():
-    """Embed chunks and persist the FAISS index and metadata."""
-    INDEX_DIR.mkdir(parents=True, exist_ok=True)
+    """Embed chunks and persist the FAISS index, metadata and build info."""
+    settings.index_dir.mkdir(parents=True, exist_ok=True)
 
     chunks = load_chunks()
     texts = [chunk["text"] for chunk in chunks]
 
-    print(f"Chunks loaded: {len(chunks)}")
-    print(f"Loading model: {MODEL_NAME}")
+    logger.info("Chunks loaded: %d", len(chunks))
+    logger.info("Loading embedding model: %s", settings.embedding_model)
 
-    model = SentenceTransformer(MODEL_NAME)
+    model = SentenceTransformer(settings.embedding_model)
 
     embeddings = model.encode(
         texts,
-        batch_size=32,
+        batch_size=settings.embedding_batch_size,
         show_progress_bar=True,
         convert_to_numpy=True,
         normalize_embeddings=True,
     )
 
-    embeddings = np.ascontiguousarray(
-        embeddings, dtype=np.float32
-    )
-
+    embeddings = np.ascontiguousarray(embeddings, dtype=np.float32)
     dimension = embeddings.shape[1]
 
     # Inner product of normalized vectors = cosine similarity
     index = faiss.IndexFlatIP(dimension)
     index.add(embeddings)
 
-    faiss.write_index(index, str(INDEX_PATH))
+    faiss.write_index(index, str(settings.index_path))
 
     # Preserve the exact ordering used by the FAISS vectors
-    with METADATA_PATH.open(
-        "w", encoding="utf-8"
-    ) as file:
+    with settings.metadata_path.open("w", encoding="utf-8") as file:
         for chunk in chunks:
-            file.write(
-                json.dumps(chunk, ensure_ascii=False) + "\n"
-            )
+            file.write(json.dumps(chunk, ensure_ascii=False) + "\n")
 
-    print("\nIndexing complete")
-    print(f"Chunks indexed: {index.ntotal}")
-    print(f"Embedding dimensions: {dimension}")
-    print(f"Embedding shape: {embeddings.shape}")
-    print(f"FAISS index: {INDEX_PATH}")
-    print(f"Chunk metadata: {METADATA_PATH}")
+    # Record HOW this index was built, so retrieval can refuse to use
+    # an index that doesn't match the current configuration.
+    build_info = {
+        "embedding_model": settings.embedding_model,
+        "dimension": dimension,
+        "chunk_size": settings.chunk_size,
+        "chunk_overlap": settings.chunk_overlap,
+        "num_vectors": index.ntotal,
+        "built_at": datetime.now(timezone.utc).isoformat(),
+    }
+    settings.index_info_path.write_text(
+        json.dumps(build_info, indent=2), encoding="utf-8"
+    )
+
+    logger.info(
+        "Indexing complete: %d vectors, %d dimensions",
+        index.ntotal, dimension,
+    )
+    logger.info("FAISS index: %s", settings.index_path)
+    logger.info("Build info: %s", settings.index_info_path)
 
 
 if __name__ == "__main__":
+    setup_logging()
     build_index()

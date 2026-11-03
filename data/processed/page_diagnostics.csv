@@ -1,441 +1,441 @@
 document_id,document_name,company,period,page_number,char_count,has_text,image_count,needs_review,review_reason
-doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,1,29,True,1,True,low_text;contains_images
-doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,2,1128,True,1,True,contains_images
-doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,3,1611,True,1,True,contains_images
-doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,4,4961,True,1,True,contains_images
-doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,5,4605,True,1,True,contains_images
-doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,6,877,True,15,True,contains_images
-doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,7,2245,True,37,True,contains_images
-doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,8,3173,True,6,True,contains_images
-doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,9,3017,True,3,True,contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,1,29,True,1,True,low_text
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,2,1128,True,1,False,
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,3,1611,True,1,False,
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,4,4961,True,1,False,
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,5,4605,True,1,False,
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,6,877,True,15,False,
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,7,2245,True,37,False,
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,8,3173,True,6,False,
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,9,3017,True,3,False,
 doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,10,1076,True,0,False,
-doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,11,92,True,1,True,contains_images
-doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,12,5529,True,2,True,contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,11,92,True,1,False,
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,12,5529,True,2,False,
 doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,13,3619,True,0,False,
-doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,14,3288,True,1,True,contains_images
-doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,15,4734,True,4,True,contains_images
-doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,16,2580,True,2,True,contains_images
-doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,17,4595,True,4,True,contains_images
-doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,18,2378,True,2,True,contains_images
-doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,19,3205,True,4,True,contains_images
-doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,20,4603,True,5,True,contains_images
-doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,21,2270,True,2,True,contains_images
-doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,22,3656,True,3,True,contains_images
-doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,23,2539,True,2,True,contains_images
-doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,24,4255,True,5,True,contains_images
-doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,25,4308,True,4,True,contains_images
-doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,26,2183,True,2,True,contains_images
-doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,27,103,True,1,True,contains_images
-doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,28,4532,True,2,True,contains_images
-doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,29,5478,True,2,True,contains_images
-doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,30,3490,True,7,True,contains_images
-doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,31,96,True,1,True,contains_images
-doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,32,2871,True,1,True,contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,14,3288,True,1,False,
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,15,4734,True,4,False,
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,16,2580,True,2,False,
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,17,4595,True,4,False,
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,18,2378,True,2,False,
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,19,3205,True,4,False,
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,20,4603,True,5,False,
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,21,2270,True,2,False,
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,22,3656,True,3,False,
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,23,2539,True,2,False,
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,24,4255,True,5,False,
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,25,4308,True,4,False,
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,26,2183,True,2,False,
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,27,103,True,1,False,
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,28,4532,True,2,False,
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,29,5478,True,2,False,
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,30,3490,True,7,False,
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,31,96,True,1,False,
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,32,2871,True,1,False,
 doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,33,2600,True,0,False,
 doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,34,7837,True,0,False,
-doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,35,4425,True,1,True,contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,35,4425,True,1,False,
 doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,36,5171,True,0,False,
-doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,37,4923,True,2,True,contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,37,4923,True,2,False,
 doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,38,6005,True,0,False,
 doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,39,4000,True,0,False,
-doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,40,2519,True,2,True,contains_images
-doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,41,180,True,2,True,contains_images
-doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,42,1738,True,7,True,contains_images
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,40,2519,True,2,False,
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,41,180,True,2,False,
+doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,42,1738,True,7,False,
 doc_6a39f5669c59,Capgemini-annual-report-2025-2026.pdf,Capgemini,FY2025-26,43,17,True,0,True,low_text
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,1,92,True,15,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,2,200,True,5,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,3,1915,True,34,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,4,4595,True,80,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,5,3612,True,25,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,6,2543,True,17,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,7,1659,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,8,7459,True,159,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,9,8461,True,60,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,10,4489,True,34,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,11,3895,True,27,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,12,4739,True,4,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,13,6025,True,25,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,14,8711,True,65,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,15,4542,True,19,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,16,5006,True,64,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,17,4432,True,24,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,18,4887,True,22,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,19,4752,True,21,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,20,3556,True,20,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,21,4286,True,99,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,22,3114,True,131,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,23,2801,True,81,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,24,4755,True,90,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,25,2939,True,6,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,26,3744,True,28,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,27,5018,True,15,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,28,5087,True,9,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,29,3998,True,6,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,30,6201,True,24,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,31,3828,True,9,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,32,3294,True,28,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,33,5074,True,17,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,34,2253,True,2,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,35,2005,True,9,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,36,3441,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,37,4517,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,38,4614,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,39,4791,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,40,3784,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,41,4252,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,42,3705,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,43,3284,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,44,5494,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,45,4221,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,46,2591,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,47,3177,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,48,2966,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,49,1103,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,50,4061,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,51,3160,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,52,1597,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,53,2616,True,2,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,54,4449,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,1,92,True,15,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,2,200,True,5,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,3,1915,True,34,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,4,4595,True,80,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,5,3612,True,25,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,6,2543,True,17,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,7,1659,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,8,7459,True,159,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,9,8461,True,60,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,10,4489,True,34,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,11,3895,True,27,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,12,4739,True,4,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,13,6025,True,25,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,14,8711,True,65,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,15,4542,True,19,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,16,5006,True,64,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,17,4432,True,24,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,18,4887,True,22,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,19,4752,True,21,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,20,3556,True,20,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,21,4286,True,99,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,22,3114,True,131,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,23,2801,True,81,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,24,4755,True,90,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,25,2939,True,6,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,26,3744,True,28,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,27,5018,True,15,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,28,5087,True,9,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,29,3998,True,6,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,30,6201,True,24,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,31,3828,True,9,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,32,3294,True,28,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,33,5074,True,17,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,34,2253,True,2,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,35,2005,True,9,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,36,3441,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,37,4517,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,38,4614,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,39,4791,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,40,3784,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,41,4252,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,42,3705,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,43,3284,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,44,5494,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,45,4221,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,46,2591,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,47,3177,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,48,2966,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,49,1103,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,50,4061,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,51,3160,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,52,1597,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,53,2616,True,2,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,54,4449,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,55,3890,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,56,4719,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,56,4719,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,57,5196,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,58,4722,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,58,4722,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,59,2348,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,60,5715,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,60,5715,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,61,5543,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,62,3241,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,62,3241,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,63,3700,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,64,2728,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,64,2728,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,65,3473,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,66,3388,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,66,3388,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,67,2749,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,68,3944,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,68,3944,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,69,2310,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,70,2068,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,71,2617,True,4,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,72,703,True,38,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,70,2068,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,71,2617,True,4,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,72,703,True,38,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,73,3795,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,74,4829,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,75,5090,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,76,3392,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,77,921,True,4,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,78,2229,True,2,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,79,1939,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,80,2591,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,81,2397,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,82,3068,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,83,2564,True,4,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,84,1867,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,85,1935,True,10,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,86,1986,True,17,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,87,1597,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,88,2431,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,89,3733,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,90,3058,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,91,2429,True,2,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,92,1620,True,2,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,93,2403,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,94,2283,True,2,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,95,2900,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,96,2070,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,97,3224,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,98,2263,True,12,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,99,3332,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,100,1127,True,4,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,101,849,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,102,2288,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,103,1854,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,104,2589,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,105,1470,True,2,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,106,2861,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,107,1189,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,108,2315,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,109,2548,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,110,1323,True,10,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,111,3402,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,112,3169,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,113,3688,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,114,2399,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,115,3271,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,116,4298,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,117,2237,True,2,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,118,2594,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,119,2329,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,120,3981,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,121,4293,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,122,2485,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,123,3352,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,124,1801,True,8,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,125,700,True,26,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,126,2594,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,127,2492,True,8,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,128,2011,True,7,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,129,3036,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,130,3305,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,131,3004,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,132,4475,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,133,3609,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,134,2415,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,135,3697,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,136,2242,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,137,3739,True,2,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,138,3648,True,2,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,139,2740,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,140,1056,True,2,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,141,2490,True,6,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,142,2220,True,733,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,143,2872,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,144,3267,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,145,2411,True,2,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,146,2604,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,147,2190,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,148,2269,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,149,3174,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,150,2308,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,151,2680,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,152,3237,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,153,3428,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,154,4163,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,155,3814,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,156,3289,True,64,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,157,2782,True,9597,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,158,3664,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,74,4829,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,75,5090,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,76,3392,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,77,921,True,4,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,78,2229,True,2,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,79,1939,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,80,2591,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,81,2397,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,82,3068,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,83,2564,True,4,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,84,1867,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,85,1935,True,10,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,86,1986,True,17,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,87,1597,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,88,2431,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,89,3733,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,90,3058,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,91,2429,True,2,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,92,1620,True,2,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,93,2403,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,94,2283,True,2,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,95,2900,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,96,2070,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,97,3224,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,98,2263,True,12,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,99,3332,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,100,1127,True,4,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,101,849,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,102,2288,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,103,1854,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,104,2589,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,105,1470,True,2,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,106,2861,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,107,1189,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,108,2315,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,109,2548,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,110,1323,True,10,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,111,3402,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,112,3169,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,113,3688,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,114,2399,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,115,3271,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,116,4298,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,117,2237,True,2,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,118,2594,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,119,2329,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,120,3981,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,121,4293,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,122,2485,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,123,3352,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,124,1801,True,8,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,125,700,True,26,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,126,2594,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,127,2492,True,8,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,128,2011,True,7,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,129,3036,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,130,3305,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,131,3004,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,132,4475,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,133,3609,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,134,2415,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,135,3697,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,136,2242,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,137,3739,True,2,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,138,3648,True,2,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,139,2740,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,140,1056,True,2,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,141,2490,True,6,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,142,2220,True,733,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,143,2872,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,144,3267,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,145,2411,True,2,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,146,2604,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,147,2190,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,148,2269,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,149,3174,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,150,2308,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,151,2680,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,152,3237,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,153,3428,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,154,4163,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,155,3814,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,156,3289,True,64,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,157,2782,True,9597,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,158,3664,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,159,5672,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,160,4861,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,160,4861,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,161,4292,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,162,1138,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,162,1138,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,163,1404,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,164,4229,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,164,4229,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,165,2239,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,166,2651,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,166,2651,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,167,3025,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,168,579,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,168,579,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,169,1584,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,170,1719,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,170,1719,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,171,2912,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,172,2416,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,172,2416,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,173,2457,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,174,4720,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,174,4720,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,175,4708,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,176,4548,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,176,4548,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,177,4511,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,178,4058,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,178,4058,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,179,4457,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,180,4022,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,180,4022,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,181,1904,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,182,2420,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,182,2420,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,183,1879,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,184,2020,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,184,2020,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,185,1954,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,186,1757,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,186,1757,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,187,1736,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,188,1888,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,188,1888,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,189,2730,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,190,1992,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,190,1992,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,191,2486,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,192,2884,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,192,2884,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,193,3802,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,194,3201,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,194,3201,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,195,2071,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,196,2459,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,196,2459,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,197,2083,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,198,4378,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,198,4378,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,199,3012,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,200,2049,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,200,2049,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,201,3037,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,202,2314,True,2,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,203,2557,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,204,3519,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,202,2314,True,2,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,203,2557,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,204,3519,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,205,2008,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,206,1731,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,206,1731,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,207,1446,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,208,1366,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,208,1366,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,209,5336,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,210,3558,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,210,3558,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,211,2175,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,212,3036,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,212,3036,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,213,903,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,214,2682,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,214,2682,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,215,1887,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,216,2454,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,216,2454,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,217,3352,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,218,2472,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,218,2472,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,219,2751,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,220,3581,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,220,3581,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,221,2596,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,222,2408,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,222,2408,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,223,2617,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,224,3915,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,224,3915,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,225,2127,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,226,2336,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,226,2336,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,227,3172,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,228,2030,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,228,2030,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,229,2174,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,230,1997,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,230,1997,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,231,2113,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,232,1921,True,2,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,233,3411,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,234,1840,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,232,1921,True,2,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,233,3411,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,234,1840,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,235,1445,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,236,2428,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,236,2428,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,237,3651,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,238,1498,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,239,2559,True,3256,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,240,3680,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,241,5347,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,242,4750,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,243,3689,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,244,4576,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,245,3307,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,246,3500,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,247,2692,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,248,4311,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,249,2969,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,250,4490,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,251,1700,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,252,2553,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,253,2412,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,254,2148,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,255,2449,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,256,2380,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,257,1718,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,258,4361,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,259,4356,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,260,4466,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,261,4502,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,262,3446,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,263,2451,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,264,3576,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,265,1934,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,266,1639,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,267,1806,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,268,1417,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,269,2026,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,270,2054,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,271,1824,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,272,2131,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,273,2685,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,274,1949,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,275,2691,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,276,3626,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,277,3653,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,278,2283,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,279,2095,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,280,2648,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,281,3851,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,282,3030,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,283,2712,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,284,2360,True,2,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,285,2019,True,4,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,286,2460,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,287,1161,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,288,1734,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,289,1776,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,290,2260,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,291,4664,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,292,2310,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,293,2909,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,294,2648,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,295,2352,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,296,2483,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,297,2271,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,298,2224,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,299,2761,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,300,1866,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,301,2451,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,302,2311,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,303,3722,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,304,2200,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,305,2799,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,306,2325,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,307,3798,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,308,1688,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,309,1643,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,310,1583,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,311,2012,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,312,1416,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,313,2133,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,314,3518,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,315,2705,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,316,2063,True,2,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,317,2448,True,4,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,318,2323,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,319,2574,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,320,2439,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,321,2431,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,322,2363,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,323,1798,True,2,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,324,4681,True,2,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,325,4213,True,2,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,326,4766,True,2,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,327,4351,True,2,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,328,3795,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,329,2530,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,330,3293,True,3,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,331,3022,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,332,3676,True,2,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,333,2455,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,334,3507,True,2,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,335,1928,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,336,3821,True,4,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,337,4740,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,338,1413,True,9520,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,339,4164,True,9518,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,340,4773,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,238,1498,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,239,2559,True,3256,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,240,3680,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,241,5347,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,242,4750,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,243,3689,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,244,4576,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,245,3307,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,246,3500,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,247,2692,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,248,4311,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,249,2969,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,250,4490,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,251,1700,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,252,2553,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,253,2412,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,254,2148,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,255,2449,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,256,2380,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,257,1718,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,258,4361,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,259,4356,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,260,4466,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,261,4502,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,262,3446,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,263,2451,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,264,3576,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,265,1934,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,266,1639,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,267,1806,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,268,1417,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,269,2026,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,270,2054,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,271,1824,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,272,2131,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,273,2685,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,274,1949,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,275,2691,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,276,3626,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,277,3653,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,278,2283,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,279,2095,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,280,2648,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,281,3851,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,282,3030,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,283,2712,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,284,2360,True,2,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,285,2019,True,4,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,286,2460,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,287,1161,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,288,1734,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,289,1776,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,290,2260,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,291,4664,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,292,2310,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,293,2909,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,294,2648,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,295,2352,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,296,2483,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,297,2271,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,298,2224,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,299,2761,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,300,1866,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,301,2451,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,302,2311,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,303,3722,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,304,2200,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,305,2799,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,306,2325,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,307,3798,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,308,1688,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,309,1643,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,310,1583,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,311,2012,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,312,1416,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,313,2133,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,314,3518,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,315,2705,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,316,2063,True,2,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,317,2448,True,4,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,318,2323,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,319,2574,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,320,2439,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,321,2431,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,322,2363,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,323,1798,True,2,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,324,4681,True,2,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,325,4213,True,2,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,326,4766,True,2,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,327,4351,True,2,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,328,3795,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,329,2530,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,330,3293,True,3,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,331,3022,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,332,3676,True,2,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,333,2455,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,334,3507,True,2,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,335,1928,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,336,3821,True,4,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,337,4740,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,338,1413,True,9520,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,339,4164,True,9518,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,340,4773,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,341,4569,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,342,4517,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,342,4517,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,343,4339,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,344,4539,True,1,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,345,1774,True,9520,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,346,1902,True,13,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,344,4539,True,1,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,345,1774,True,9520,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,346,1902,True,13,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,347,1934,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,348,1574,True,19,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,349,2511,True,2,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,350,2675,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,348,1574,True,19,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,349,2511,True,2,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,350,2675,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,351,2323,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,352,2243,True,1,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,352,2243,True,1,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,353,3064,True,0,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,354,3962,True,0,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,355,3315,True,0,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,356,2434,True,0,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,357,3527,True,0,False,
 doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,358,1275,True,0,False,
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,359,1374,True,8,True,contains_images
-doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,360,1990,True,1,True,contains_images
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,1,0,False,1,True,low_text;contains_images
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,2,3239,True,3,True,contains_images
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,3,2291,True,3,True,contains_images
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,4,1913,True,7,True,contains_images
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,5,2371,True,4,True,contains_images
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,6,4820,True,1,True,contains_images
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,7,3900,True,2,True,contains_images
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,8,4223,True,2,True,contains_images
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,9,3069,True,2,True,contains_images
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,10,4313,True,1,True,contains_images
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,11,3960,True,7,True,contains_images
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,12,3199,True,23,True,contains_images
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,13,2672,True,21,True,contains_images
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,14,3148,True,6,True,contains_images
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,15,3752,True,4,True,contains_images
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,16,4948,True,3,True,contains_images
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,17,3496,True,2,True,contains_images
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,359,1374,True,8,False,
+doc_a19bddbe9cfd,TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,FY2025-26,360,1990,True,1,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,1,0,False,1,True,no_text
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,2,3239,True,3,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,3,2291,True,3,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,4,1913,True,7,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,5,2371,True,4,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,6,4820,True,1,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,7,3900,True,2,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,8,4223,True,2,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,9,3069,True,2,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,10,4313,True,1,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,11,3960,True,7,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,12,3199,True,23,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,13,2672,True,21,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,14,3148,True,6,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,15,3752,True,4,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,16,4948,True,3,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,17,3496,True,2,False,
 doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,18,5067,True,0,False,
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,19,1893,True,1,True,contains_images
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,20,6512,True,1,True,contains_images
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,21,7064,True,1,True,contains_images
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,22,5444,True,2,True,contains_images
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,23,7550,True,1,True,contains_images
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,24,4852,True,2,True,contains_images
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,25,5685,True,1,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,19,1893,True,1,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,20,6512,True,1,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,21,7064,True,1,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,22,5444,True,2,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,23,7550,True,1,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,24,4852,True,2,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,25,5685,True,1,False,
 doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,26,6532,True,0,False,
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,27,5112,True,1,True,contains_images
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,28,7383,True,1,True,contains_images
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,29,6387,True,14,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,27,5112,True,1,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,28,7383,True,1,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,29,6387,True,14,False,
 doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,30,2522,True,0,False,
 doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,31,2277,True,0,False,
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,32,1614,True,1,True,contains_images
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,33,2816,True,1,True,contains_images
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,34,945,True,1,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,32,1614,True,1,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,33,2816,True,1,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,34,945,True,1,False,
 doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,35,2950,True,0,False,
 doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,36,3020,True,0,False,
 doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,37,2796,True,0,False,
@@ -447,42 +447,42 @@ doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,42,2653,True,
 doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,43,2542,True,0,False,
 doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,44,2064,True,0,False,
 doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,45,3172,True,0,False,
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,46,891,True,1,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,46,891,True,1,False,
 doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,47,4039,True,0,False,
 doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,48,1571,True,0,False,
 doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,49,3032,True,0,False,
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,50,1932,True,2,True,contains_images
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,51,3404,True,1,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,50,1932,True,2,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,51,3404,True,1,False,
 doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,52,3491,True,0,False,
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,53,2892,True,1,True,contains_images
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,54,2356,True,2,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,53,2892,True,1,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,54,2356,True,2,False,
 doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,55,2493,True,0,False,
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,56,2832,True,1,True,contains_images
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,57,2461,True,1,True,contains_images
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,58,1386,True,2,True,contains_images
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,59,1116,True,2,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,56,2832,True,1,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,57,2461,True,1,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,58,1386,True,2,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,59,1116,True,2,False,
 doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,60,1241,True,0,False,
 doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,61,2161,True,0,False,
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,62,1820,True,2,True,contains_images
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,63,2732,True,1,True,contains_images
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,64,2483,True,1,True,contains_images
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,65,1821,True,2,True,contains_images
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,66,2939,True,1,True,contains_images
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,67,2441,True,1,True,contains_images
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,68,982,True,1,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,62,1820,True,2,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,63,2732,True,1,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,64,2483,True,1,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,65,1821,True,2,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,66,2939,True,1,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,67,2441,True,1,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,68,982,True,1,False,
 doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,69,3608,True,0,False,
 doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,70,4818,True,0,False,
 doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,71,4680,True,0,False,
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,72,1147,True,1,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,72,1147,True,1,False,
 doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,73,2374,True,0,False,
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,74,812,True,1,True,contains_images
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,75,3079,True,1,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,74,812,True,1,False,
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,75,3079,True,1,False,
 doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,76,3339,True,0,False,
 doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,77,3694,True,0,False,
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,78,1962,True,80,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,78,1962,True,80,False,
 doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,79,3353,True,0,False,
 doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,80,2688,True,0,False,
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,81,2911,True,1,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,81,2911,True,1,False,
 doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,82,4290,True,0,False,
 doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,83,4179,True,0,False,
 doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,84,2904,True,0,False,
@@ -948,5 +948,5 @@ doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,543,3005,True
 doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,544,1552,True,0,False,
 doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,545,2370,True,0,False,
 doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,546,43,True,0,True,low_text
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,547,0,False,0,True,low_text
-doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,548,280,True,1,True,contains_images
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,547,0,False,0,True,no_text
+doc_9de8ad0fcdf0,Wipro-annual-report-2025-2026.pdf,Wipro,FY2025-26,548,280,True,1,False,

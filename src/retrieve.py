@@ -1,31 +1,26 @@
 import json
-from pathlib import Path
+import logging
 
 import faiss
 import numpy as np
 from sentence_transformers import SentenceTransformer
 
+from config import settings
+from logging_setup import setup_logging
 
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
-
-INDEX_PATH = PROJECT_ROOT / "indexes" / "financial.faiss"
-METADATA_PATH = PROJECT_ROOT / "indexes" / "chunk_metadata.jsonl"
-
-MODEL_NAME = "all-MiniLM-L6-v2"
+logger = logging.getLogger(__name__)
 
 
 def load_metadata():
     """Load chunk records in FAISS vector order."""
-    if not METADATA_PATH.exists():
+    if not settings.metadata_path.exists():
         raise FileNotFoundError(
             "Chunk metadata not found. Run embed.py first."
         )
 
     records = []
 
-    with METADATA_PATH.open(
-        "r", encoding="utf-8"
-    ) as file:
+    with settings.metadata_path.open("r", encoding="utf-8") as file:
         for line in file:
             if line.strip():
                 records.append(json.loads(line))
@@ -33,14 +28,46 @@ def load_metadata():
     return records
 
 
+def check_index_matches_config():
+    """Fail fast if the index was built with a different embedding model."""
+    if not settings.index_info_path.exists():
+        logger.warning(
+            "No %s found; can't verify which model built this index. "
+            "Re-run embed.py to create it.",
+            settings.index_info_path.name,
+        )
+        return
+
+    info = json.loads(settings.index_info_path.read_text(encoding="utf-8"))
+
+    if info["embedding_model"] != settings.embedding_model:
+        raise ValueError(
+            f"Index was built with '{info['embedding_model']}' but config "
+            f"says '{settings.embedding_model}'. Re-run embed.py."
+        )
+
+    if (
+        info["chunk_size"] != settings.chunk_size
+        or info["chunk_overlap"] != settings.chunk_overlap
+    ):
+        logger.warning(
+            "Index was built with chunk_size=%s/overlap=%s but config says "
+            "%s/%s. Re-run chunk.py and embed.py to apply the new values.",
+            info["chunk_size"], info["chunk_overlap"],
+            settings.chunk_size, settings.chunk_overlap,
+        )
+
+
 def load_retriever():
     """Load the persisted index, metadata, and embedding model."""
-    if not INDEX_PATH.exists():
+    if not settings.index_path.exists():
         raise FileNotFoundError(
             "FAISS index not found. Run embed.py first."
         )
 
-    index = faiss.read_index(str(INDEX_PATH))
+    check_index_matches_config()
+
+    index = faiss.read_index(str(settings.index_path))
     metadata = load_metadata()
 
     if index.ntotal != len(metadata):
@@ -50,9 +77,11 @@ def load_retriever():
         )
 
     model = SentenceTransformer(
-    MODEL_NAME,
-    local_files_only=True,
-)
+        settings.embedding_model,
+        local_files_only=True,
+    )
+
+    logger.info("Retriever loaded: %d vectors", index.ntotal)
 
     return model, index, metadata
 
@@ -62,11 +91,13 @@ def retrieve(
     model,
     index,
     metadata,
-    top_k=5,
+    top_k=None,
     company=None,
     period=None,
 ):
     """Retrieve relevant chunks with optional metadata filters."""
+    top_k = top_k or settings.top_k
+
     if not query.strip():
         raise ValueError("Query cannot be empty.")
 
@@ -79,16 +110,12 @@ def retrieve(
         normalize_embeddings=True,
     )
 
-    query_embedding = np.ascontiguousarray(
-        query_embedding, dtype=np.float32
-    )
+    query_embedding = np.ascontiguousarray(query_embedding, dtype=np.float32)
 
     # Exact search over the complete index.
     # Filtering afterwards ensures we don't miss matching
     # documents just because other companies ranked higher.
-    scores, indices = index.search(
-        query_embedding, index.ntotal
-    )
+    scores, indices = index.search(query_embedding, index.ntotal)
 
     results = []
 
@@ -123,27 +150,27 @@ def retrieve(
     return results
 
 
-
 if __name__ == "__main__":
+    setup_logging()
+
     model, index, metadata = load_retriever()
 
-    print(f"Loaded vectors: {index.ntotal}")
-
     query = (
-    "Wipro consolidated revenue from operations "
-    "year ended March 31 2026"
-)
+        "Wipro consolidated revenue from operations "
+        "year ended March 31 2026"
+    )
 
     results = retrieve(
-    query=query,
-    model=model,
-    index=index,
-    metadata=metadata,
-    top_k=10,
-    company="Wipro",
-    period="FY2025-26",
-)
+        query=query,
+        model=model,
+        index=index,
+        metadata=metadata,
+        company="Wipro",
+        period="FY2025-26",
+    )
 
+    # print() is right here: this is the program's OUTPUT for a human,
+    # not a diagnostic message.
     print(f"\nQuery: {query}\n")
 
     for result in results:

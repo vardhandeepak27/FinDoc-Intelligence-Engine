@@ -87,6 +87,10 @@ class Settings(BaseSettings):
     def metadata_path(self) -> Path:
         return self.index_dir / "chunk_metadata.jsonl"
 
+    @property
+    def index_info_path(self) -> Path:
+        return self.index_dir / "index_info.json"
+
 
 @lru_cache
 def get_settings() -> Settings:

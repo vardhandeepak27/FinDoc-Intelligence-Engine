@@ -1,0 +1,8 @@
+{
+  "embedding_model": "all-MiniLM-L6-v2",
+  "dimension": 384,
+  "chunk_size": 1200,
+  "chunk_overlap": 150,
+  "num_vectors": 4044,
+  "built_at": "2026-11-03T06:27:30.678122+00:00"
+}

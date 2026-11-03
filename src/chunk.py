@@ -1,18 +1,11 @@
-
 import json
+import logging
 import re
-from pathlib import Path
 
+from config import settings
+from logging_setup import setup_logging
 
-# Resolve paths relative to the project root
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
-
-PROCESSED_DIR = PROJECT_ROOT / "data" / "processed"
-INPUT_PATH = PROCESSED_DIR / "documents.jsonl"
-OUTPUT_PATH = PROCESSED_DIR / "chunks.jsonl"
-
-CHUNK_SIZE = 1200
-CHUNK_OVERLAP = 150
+logger = logging.getLogger(__name__)
 
 
 FINANCIAL_HEADINGS = [
@@ -71,10 +64,13 @@ def is_heading(line: str) -> bool:
 
 def split_lines(
     lines: list[str],
-    chunk_size: int = CHUNK_SIZE,
-    overlap: int = CHUNK_OVERLAP,
+    chunk_size: int | None = None,
+    overlap: int | None = None,
 ) -> list[str]:
     """Create chunks from lines, preserving a small overlap."""
+    chunk_size = chunk_size or settings.chunk_size
+    overlap = settings.chunk_overlap if overlap is None else overlap
+
     if chunk_size <= overlap:
         raise ValueError(
             "chunk_size must be greater than overlap"
@@ -132,8 +128,8 @@ def split_lines(
 
 def chunk_text(
     text: str,
-    chunk_size: int = CHUNK_SIZE,
-    overlap: int = CHUNK_OVERLAP,
+    chunk_size: int | None = None,
+    overlap: int | None = None,
 ) -> list[str]:
     """Keep a simple chunk_text interface for existing callers."""
     lines = text.splitlines()
@@ -184,21 +180,21 @@ def chunk_page(
 
 def chunk_documents() -> None:
     """Convert page-level JSONL records into chunk-level records."""
-    if not INPUT_PATH.exists():
+    if not settings.documents_path.exists():
         raise FileNotFoundError(
-            f"Input file not found: {INPUT_PATH}. "
+            f"Input file not found: {settings.documents_path}. "
             "Run ingest.py first."
         )
 
-    PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
+    settings.processed_dir.mkdir(parents=True, exist_ok=True)
 
 
     records_written = 0
     pages_processed = 0
 
     with (
-        INPUT_PATH.open("r", encoding="utf-8") as source,
-        OUTPUT_PATH.open("w", encoding="utf-8") as output,
+        settings.documents_path.open("r", encoding="utf-8") as source,
+        settings.chunks_path.open("w", encoding="utf-8") as output,
     ):
         for line in source:
             if not line.strip():
@@ -246,11 +242,15 @@ def chunk_documents() -> None:
 
                 records_written += 1
 
-    print("\nChunking complete")
-    print(f"Pages processed: {pages_processed}")
-    print(f"Chunks written: {records_written}")
-    print(f"Output: {OUTPUT_PATH}")
+    logger.info(
+        "Chunking complete: %d pages -> %d chunks "
+        "(chunk_size=%d, overlap=%d)",
+        pages_processed, records_written,
+        settings.chunk_size, settings.chunk_overlap,
+    )
+    logger.info("Output: %s", settings.chunks_path)
 
 
 if __name__ == "__main__":
+    setup_logging()
     chunk_documents()

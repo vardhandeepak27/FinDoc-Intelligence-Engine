@@ -1,8 +1,7 @@
-
+"""Debug helper: print Wipro chunks that mention key P&L terms."""
 import json
-from pathlib import Path
 
-chunks_path = Path("data/processed/chunks.jsonl")
+from config import settings
 
 keywords = [
     "revenue from operations",
@@ -10,7 +9,8 @@ keywords = [
     "consolidated statement of profit and loss",
 ]
 
-with chunks_path.open("r", encoding="utf-8") as f:
+# settings.chunks_path is absolute, so this works from any folder.
+with settings.chunks_path.open("r", encoding="utf-8") as f:
     for line in f:
         chunk = json.loads(line)
         text = chunk.get("text", "")

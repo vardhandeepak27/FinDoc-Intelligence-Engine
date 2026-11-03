@@ -1,18 +1,13 @@
-
-import json
+import logging
 import re
-from pathlib import Path
 
-import faiss
 from rank_bm25 import BM25Okapi
-from sentence_transformers import SentenceTransformer
 
-ROOT = Path(__file__).resolve().parent.parent
+from config import settings
+from logging_setup import setup_logging
+from retrieve import load_retriever
 
-CHUNKS_PATH = ROOT / "data" / "processed" / "chunks.jsonl"
-INDEX_PATH = ROOT / "indexes" / "financial.faiss"
-METADATA_PATH = ROOT / "indexes" / "chunk_metadata.jsonl"
-MODEL_NAME = "all-MiniLM-L6-v2"
+logger = logging.getLogger(__name__)
 
 
 def tokenize(text):
@@ -20,45 +15,40 @@ def tokenize(text):
 
 
 def load_data():
-    with CHUNKS_PATH.open("r", encoding="utf-8") as f:
-        chunks = [json.loads(line) for line in f]
+    """Load the dense retriever and build a BM25 index over the same chunks.
 
-    with METADATA_PATH.open("r", encoding="utf-8") as f:
-        metadata = [json.loads(line) for line in f]
-
-    index = faiss.read_index(str(INDEX_PATH))
-
-    if len(chunks) != len(metadata) or index.ntotal != len(metadata):
-        raise ValueError(
-            "Chunks, metadata, and FAISS index are misaligned."
-        )
-
-    model = SentenceTransformer(
-        MODEL_NAME,
-        local_files_only=True,
-    )
+    BM25 is built from the FAISS metadata (not chunks.jsonl), so position i
+    always refers to the same chunk in both indexes. Reading two separate
+    files risks them drifting apart, e.g. when embed.py skips empty chunks.
+    """
+    model, index, metadata = load_retriever()
 
     bm25 = BM25Okapi([
         tokenize(chunk.get("text", ""))
-        for chunk in chunks
+        for chunk in metadata
     ])
 
-    return chunks, metadata, index, model, bm25
+    logger.info("BM25 index built over %d chunks", len(metadata))
+
+    return metadata, index, model, bm25
 
 
 def hybrid_retrieve(
     query,
-    chunks,
     metadata,
     index,
     model,
     bm25,
-    top_k=10,
+    top_k=None,
     company=None,
     period=None,
-    candidate_k=50,
-    rrf_k=60,
+    candidate_k=None,
+    rrf_k=None,
 ):
+    top_k = top_k or settings.top_k
+    candidate_k = candidate_k or settings.candidate_k
+    rrf_k = rrf_k or settings.rrf_k
+
     query_tokens = tokenize(query)
 
     # 1. Keyword retrieval
@@ -81,9 +71,7 @@ def hybrid_retrieve(
         min(candidate_k, index.ntotal),
     )
 
-    dense_ranking = [
-        int(i) for i in dense_indices[0] if i >= 0
-    ]
+    dense_ranking = [int(i) for i in dense_indices[0] if i >= 0]
 
     # 3. Reciprocal Rank Fusion
     fused_scores = {}
@@ -120,7 +108,7 @@ def hybrid_retrieve(
             "section": meta.get("section"),
             "page_number": meta.get("page_number"),
             "document_name": meta.get("document_name"),
-            "text": chunks[idx].get("text", ""),
+            "text": meta.get("text", ""),
         })
 
         if len(results) >= top_k:
@@ -130,7 +118,9 @@ def hybrid_retrieve(
 
 
 if __name__ == "__main__":
-    chunks, metadata, index, model, bm25 = load_data()
+    setup_logging()
+
+    metadata, index, model, bm25 = load_data()
 
     query = (
         "Wipro consolidated revenue from operations "
@@ -139,12 +129,10 @@ if __name__ == "__main__":
 
     results = hybrid_retrieve(
         query=query,
-        chunks=chunks,
         metadata=metadata,
         index=index,
         model=model,
         bm25=bm25,
-        top_k=10,
         company="Wipro",
         period="FY2025-26",
     )
@@ -152,10 +140,7 @@ if __name__ == "__main__":
     print(f"\nQuery: {query}\n")
 
     for rank, result in enumerate(results, start=1):
-        print(
-            f"Rank: {rank} | "
-            f"RRF score: {result['rrf_score']:.5f}"
-        )
+        print(f"Rank: {rank} | RRF score: {result['rrf_score']:.5f}")
         print("Page:", result["page_number"])
         print("Section:", result["section"])
         print("Chunk ID:", result["chunk_id"])

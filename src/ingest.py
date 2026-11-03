@@ -1,20 +1,16 @@
 import csv
 import hashlib
 import json
+import logging
 import re
 from pathlib import Path
 
-import fitz  # PyMuPDF
+import pymupdf
 
+from config import settings
+from logging_setup import setup_logging
 
-# Resolve paths relative to the project root
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
-
-RAW_DIR = PROJECT_ROOT / "data" / "raw"
-PROCESSED_DIR = PROJECT_ROOT / "data" / "processed"
-MANIFEST_PATH = PROJECT_ROOT / "data" / "manifest.csv"
-OUTPUT_PATH = PROCESSED_DIR / "documents.jsonl"
-DIAGNOSTICS_PATH = PROCESSED_DIR / "page_diagnostics.csv"
+logger = logging.getLogger(__name__)
 
 
 def clean_text(text: str) -> str:
@@ -31,7 +27,7 @@ def extract_text(pdf_path: str | Path) -> str:
 
     pages = []
 
-    with fitz.open(pdf_path) as document:
+    with pymupdf.open(pdf_path) as document:
         for page in document:
             text = clean_text(page.get_text("text", sort=True))
             pages.append(text)
@@ -47,12 +43,12 @@ def get_document_id(pdf_path: Path) -> str:
 
 def load_manifest() -> dict:
     """Load metadata indexed by PDF filename."""
-    if not MANIFEST_PATH.exists():
+    if not settings.manifest_path.exists():
         raise FileNotFoundError(
-            f"Manifest not found: {MANIFEST_PATH}"
+            f"Manifest not found: {settings.manifest_path}"
         )
 
-    with MANIFEST_PATH.open(
+    with settings.manifest_path.open(
         "r", encoding="utf-8-sig", newline=""
     ) as file:
         reader = csv.DictReader(file)
@@ -99,21 +95,21 @@ def load_manifest() -> dict:
 
 def ingest_corpus() -> None:
     """Extract each PDF page and generate page-level diagnostics."""
-    PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
+    settings.processed_dir.mkdir(parents=True, exist_ok=True)
 
-    pdf_files = sorted(RAW_DIR.glob("*.pdf"))
+    pdf_files = sorted(settings.raw_dir.glob("*.pdf"))
     page_diagnostics = []
 
     if not pdf_files:
         raise FileNotFoundError(
-            f"No PDF files found in {RAW_DIR}"
+            f"No PDF files found in {settings.raw_dir}"
         )
 
     manifest = load_manifest()
     records_written = 0
     empty_pages = 0
 
-    with OUTPUT_PATH.open("w", encoding="utf-8") as output:
+    with settings.documents_path.open("w", encoding="utf-8") as output:
         for pdf_path in pdf_files:
             filename = pdf_path.name
 
@@ -126,11 +122,11 @@ def ingest_corpus() -> None:
             metadata = manifest[filename]
             document_id = get_document_id(pdf_path)
 
-            with fitz.open(pdf_path) as document:
-                print(
-                    f"Processing {filename} "
-                    f"({len(document)} pages)"
+            with pymupdf.open(pdf_path) as document:
+                logger.info(
+                    "Processing %s (%d pages)", filename, len(document)
                 )
+                doc_flagged = 0
 
                 for page_index, page in enumerate(document):
                     # 1. Extract this page's text
@@ -156,6 +152,13 @@ def ingest_corpus() -> None:
 
                     if not has_text:
                         empty_pages += 1
+
+                    if needs_review:
+                        doc_flagged += 1
+                        logger.debug(
+                            "%s page %d flagged: %s",
+                            filename, page_index + 1, review_reason,
+                        )
 
                     # 3. Create the page record
                     record = {
@@ -196,6 +199,12 @@ def ingest_corpus() -> None:
                         "review_reason": review_reason,
                     })
 
+            if doc_flagged:
+                logger.warning(
+                    "%s: %d pages flagged for review (see %s)",
+                    filename, doc_flagged, settings.diagnostics_path.name,
+                )
+
     # Write diagnostics once, after all PDFs are processed
     diagnostic_fields = [
         "document_id",
@@ -210,7 +219,7 @@ def ingest_corpus() -> None:
         "review_reason",
     ]
 
-    with DIAGNOSTICS_PATH.open(
+    with settings.diagnostics_path.open(
         "w", encoding="utf-8", newline=""
     ) as file:
         writer = csv.DictWriter(
@@ -223,13 +232,14 @@ def ingest_corpus() -> None:
         row["needs_review"] for row in page_diagnostics
     )
 
-    print("\nIngestion complete")
-    print(f"PDFs processed: {len(pdf_files)}")
-    print(f"Page records written: {records_written}")
-    print(f"Empty pages to inspect: {empty_pages}")
-    print(f"Pages flagged for review: {flagged_pages}")
-    print(f"JSONL output: {OUTPUT_PATH}")
-    print(f"Diagnostics CSV: {DIAGNOSTICS_PATH}")
+    logger.info(
+        "Ingestion complete: %d PDFs, %d pages, %d empty, %d flagged",
+        len(pdf_files), records_written, empty_pages, flagged_pages,
+    )
+    logger.info("Pages: %s", settings.documents_path)
+    logger.info("Diagnostics: %s", settings.diagnostics_path)
+
 
 if __name__ == "__main__":
+    setup_logging()
     ingest_corpus()
