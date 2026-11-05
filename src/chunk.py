@@ -20,7 +20,7 @@ from logging_setup import setup_logging
 
 logger = logging.getLogger(__name__)
 
-CHUNKER_VERSION = "structure-v1"
+CHUNKER_VERSION = "structure-v2"
 
 UNIT_LABELS = {
     ("INR", "crore"): "₹ crore",
@@ -280,10 +280,28 @@ def chunk_page(page: dict, section: str, area: str) -> tuple[list[dict], str]:
         )
         parts = splitter(block.text, *args)
 
-        for part in parts:
+        for i, part in enumerate(parts):
             if buffer and buffer_len() + len(part) > max_chars:
-                flush()
+                # A lead-in like "Information on X is as follows:" (and a
+                # heading right before it) belongs with the table it
+                # introduces, not stranded at the end of the previous chunk.
+                lead_in = []
+                if block.kind == "table" and i == 0:
+                    while (
+                        buffer
+                        and (buffer[-1].rstrip().endswith(":")
+                             or buffer[-1].startswith("## "))
+                        and sum(map(len, lead_in)) + len(buffer[-1]) <= 600
+                    ):
+                        lead_in.insert(0, buffer.pop())
+                if buffer:
+                    flush()
+                else:
+                    buffer_kinds = set()
                 buffer_section = section
+                if lead_in:
+                    buffer.extend(lead_in)
+                    buffer_kinds.add("text")
             buffer.append(part)
             buffer_kinds.add(block.kind)
 
