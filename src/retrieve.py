@@ -138,7 +138,13 @@ def retrieve(
             "company": chunk["company"],
             "period": chunk["period"],
             "section": chunk.get("section", "Unknown"),
+            "context": chunk.get("context", ""),
+            "basis": chunk.get("basis"),
+            "unit": chunk.get("unit"),
+            "currency": chunk.get("currency"),
+            "chunk_type": chunk.get("chunk_type"),
             "page_number": chunk["page_number"],
+            "printed_page": chunk.get("printed_page"),
             "document_name": chunk["document_name"],
             "source_url": chunk["source_url"],
             "text": chunk["text"],
@@ -182,9 +188,10 @@ if __name__ == "__main__":
             f"Company: {result['company']} | "
             f"Period: {result['period']}"
         )
+        print(f"Context: {result['context']}")
         print(
-            f"Section: {result['section']} | "
-            f"Page: {result['page_number']}"
+            f"PDF page: {result['page_number']} | "
+            f"Printed page: {result['printed_page']}"
         )
         print(f"Chunk ID: {result['chunk_id']}")
         print(result["text"])

@@ -23,8 +23,10 @@ def load_data():
     """
     model, index, metadata = load_retriever()
 
+    # Keyword index over the same text we embed (context line included),
+    # so "standalone" or "crore" in a query can match the context too.
     bm25 = BM25Okapi([
-        tokenize(chunk.get("text", ""))
+        tokenize(chunk.get("embed_text") or chunk.get("text", ""))
         for chunk in metadata
     ])
 
@@ -106,7 +108,13 @@ def hybrid_retrieve(
             "company": meta.get("company"),
             "period": meta.get("period"),
             "section": meta.get("section"),
+            "context": meta.get("context", ""),
+            "basis": meta.get("basis"),
+            "unit": meta.get("unit"),
+            "currency": meta.get("currency"),
+            "chunk_type": meta.get("chunk_type"),
             "page_number": meta.get("page_number"),
+            "printed_page": meta.get("printed_page"),
             "document_name": meta.get("document_name"),
             "text": meta.get("text", ""),
         })
@@ -141,8 +149,8 @@ if __name__ == "__main__":
 
     for rank, result in enumerate(results, start=1):
         print(f"Rank: {rank} | RRF score: {result['rrf_score']:.5f}")
-        print("Page:", result["page_number"])
-        print("Section:", result["section"])
+        print("Context:", result["context"])
+        print("PDF page:", result["page_number"], "| Printed page:", result["printed_page"])
         print("Chunk ID:", result["chunk_id"])
         print(result["text"])
         print("-" * 70)

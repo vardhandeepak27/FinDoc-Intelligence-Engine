@@ -4,5 +4,8 @@
   "chunk_size": 1200,
   "chunk_overlap": 150,
   "num_vectors": 5423,
-  "built_at": "2026-11-05T03:31:30.907445+00:00"
+  "chunker_version": null,
+  "max_seq_length": 256,
+  "truncated_chunks": 1835,
+  "built_at": "2026-11-05T04:49:40.476898+00:00"
 }

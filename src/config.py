@@ -29,6 +29,8 @@ class Settings(BaseSettings):
     # --- Chunking ---
     chunk_size: int = Field(default=1200, gt=0)
     chunk_overlap: int = Field(default=150, ge=0)
+    min_chunk_chars: int = Field(default=200, ge=0)
+    boilerplate_header_ratio: float = Field(default=0.3, gt=0, le=1)
 
     # --- Embeddings ---
     embedding_model: str = "all-MiniLM-L6-v2"

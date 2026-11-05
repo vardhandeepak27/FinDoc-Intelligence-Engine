@@ -1,252 +1,403 @@
+"""Stage 2 of the pipeline: page records -> retrieval chunks.
+
+Structure-aware chunking:
+  1. Parse each page's Markdown into blocks: headings, tables, paragraphs.
+  2. Track the current section (carried across pages).
+  3. Pack blocks into chunks up to `chunk_size` characters, never cutting a
+     table in the middle of a row. Long tables are split by rows, and every
+     piece repeats the table's header rows.
+  4. Prefix every chunk with a short context line (company, period, basis,
+     section, unit) so each chunk makes sense on its own.
+"""
 import json
 import logging
 import re
+from collections import Counter, defaultdict
+from dataclasses import dataclass
 
 from config import settings
 from logging_setup import setup_logging
 
 logger = logging.getLogger(__name__)
 
+CHUNKER_VERSION = "structure-v1"
 
-FINANCIAL_HEADINGS = [
-    "consolidated balance sheet",
-    "standalone balance sheet",
-    "statement of profit and loss",
-    "statement of cash flows",
-    "cash flow statement",
-    "statement of changes in equity",
-    "notes to financial statements",
-    "notes to the financial statements",
-    "revenue from operations",
-    "total comprehensive income",
-    "auditor's report",
-    "independent auditor",
-    "management discussion and analysis",
-    "management discussion & analysis",
-    "directors' report",
-    "corporate governance",
-    "risk management",
-    "segment reporting",
-]
+UNIT_LABELS = {
+    ("INR", "crore"): "₹ crore",
+    ("INR", "lakh"): "₹ lakh",
+    ("INR", "million"): "₹ million",
+    ("EUR", "million"): "€ million",
+    ("USD", "million"): "US$ million",
+}
+
+HEADING_LINE = re.compile(r"^#{1,6}\s+")
+TABLE_LINE = re.compile(r"^\s*\|")
+TABLE_SEPARATOR = re.compile(r"^\s*\|?\s*:?-{3,}")
+SENTENCE_END = re.compile(r"(?<=[.!?])\s+(?=[A-Z(₹€\d])")
 
 
-
-def is_heading(line: str) -> bool:
-    """Conservatively identify likely financial section headings."""
-    line = line.strip()
-
-    if not line or len(line) > 120:
-        return False
-
-    normalized = line.lower().strip(" :.-")
-
-    # 1. Explicit financial section headings
-    if any(
-        heading in normalized
-        for heading in FINANCIAL_HEADINGS
-    ):
-        return True
-
-    # 2. Numbered headings: "1. Overview", "2.1 Revenue"
-    if re.match(
-        r"^\d+(?:\.\d+)*\.?\s+[A-Z][A-Za-z]",
-        line,
-    ):
-        return True
-
-    # 3. Avoid generic uppercase detection for now.
-    # It can misclassify company names, page headers,
-    # table labels, and short financial metric names.
-
-    return False
+@dataclass
+class Block:
+    kind: str  # "heading" | "table" | "text"
+    text: str
 
 
+# ------------------------------------------------------------------ parsing
 
-def split_lines(
-    lines: list[str],
-    chunk_size: int | None = None,
-    overlap: int | None = None,
-) -> list[str]:
-    """Create chunks from lines, preserving a small overlap."""
-    chunk_size = chunk_size or settings.chunk_size
-    overlap = settings.chunk_overlap if overlap is None else overlap
+def clean_heading(line: str) -> str | None:
+    """'### **5.2.4 Consolidated Statement**' -> '5.2.4 Consolidated Statement'.
 
-    if chunk_size <= overlap:
-        raise ValueError(
-            "chunk_size must be greater than overlap"
-        )
+    Returns None for headings that are really numbers or decoration, e.g.
+    '### ₹ **4,499 mn**' (big KPI figures are often styled as headings).
+    """
+    text = re.sub(r"[#*_`]", "", line)
+    text = re.sub(r"<[^>]+>", " ", text)
+    text = re.sub(r"\s+", " ", text).strip(" :|-")
+    if len(re.findall(r"[A-Za-z]", text)) < 4 or len(text) > 150:
+        return None
+    return text
 
-    chunks = []
-    current_lines = []
-    current_length = 0
 
-    for line in lines:
-        line = line.strip()
+def parse_blocks(markdown: str) -> list[Block]:
+    """Split page Markdown into heading / table / text blocks."""
+    blocks: list[Block] = []
+    buffer: list[str] = []
+    buffer_kind = None
 
-        if not line:
+    def flush():
+        nonlocal buffer, buffer_kind
+        if buffer:
+            text = "\n".join(buffer).strip()
+            if text:
+                blocks.append(Block(buffer_kind, text))
+        buffer, buffer_kind = [], None
+
+    for line in markdown.splitlines():
+        stripped = line.strip()
+
+        if not stripped:
+            if buffer_kind == "text":
+                flush()  # blank line ends a paragraph (tables continue)
             continue
 
-        extra_length = len(line) + (
-            1 if current_lines else 0
-        )
+        if HEADING_LINE.match(stripped):
+            flush()
+            heading = clean_heading(stripped)
+            if heading:
+                blocks.append(Block("heading", heading))
+            continue
 
-        if (
-            current_lines
-            and current_length + extra_length > chunk_size
-        ):
-            chunks.append("\n".join(current_lines))
+        kind = "table" if TABLE_LINE.match(stripped) else "text"
+        if kind != buffer_kind:
+            flush()
+            buffer_kind = kind
+        buffer.append(stripped)
 
-            # Preserve whole trailing lines for context
-            overlap_lines = []
-            overlap_length = 0
+    flush()
+    return blocks
 
-            for previous_line in reversed(current_lines):
-                added_length = len(previous_line) + (
-                    1 if overlap_lines else 0
-                )
 
-                if overlap_length + added_length > overlap:
+# ------------------------------------------------------------ splitting
+
+def split_table(table: str, max_chars: int) -> list[str]:
+    """Split a long Markdown table by rows, repeating the header rows."""
+    if len(table) <= max_chars:
+        return [table]
+
+    lines = table.splitlines()
+    sep_index = next(
+        (i for i, l in enumerate(lines[:4]) if TABLE_SEPARATOR.match(l)), None
+    )
+    header = lines[: sep_index + 1] if sep_index is not None else []
+    rows = lines[len(header):]
+    header_text = "\n".join(header)
+
+    pieces, current = [], []
+    current_len = len(header_text)
+
+    for row in rows:
+        if current and current_len + len(row) + 1 > max_chars:
+            pieces.append("\n".join(header + current))
+            current, current_len = [], len(header_text)
+        current.append(row)
+        current_len += len(row) + 1
+
+    if current:
+        pieces.append("\n".join(header + current))
+    return pieces
+
+
+def split_text(text: str, max_chars: int, overlap: int) -> list[str]:
+    """Split prose at sentence boundaries, with a small sentence overlap."""
+    if len(text) <= max_chars:
+        return [text]
+
+    sentences = SENTENCE_END.split(text)
+    pieces, current = [], []
+
+    for sentence in sentences:
+        # A single sentence longer than the limit: hard-wrap on words
+        while len(sentence) > max_chars:
+            cut = sentence.rfind(" ", 0, max_chars)
+            cut = cut if cut > 0 else max_chars
+            sentences_left = sentence[cut:].strip()
+            if current:
+                pieces.append(" ".join(current))
+                current = []
+            pieces.append(sentence[:cut].strip())
+            sentence = sentences_left
+
+        if current and len(" ".join(current + [sentence])) > max_chars:
+            pieces.append(" ".join(current))
+            # carry the last sentence(s) forward, up to `overlap` chars
+            carried = []
+            for previous in reversed(current):
+                if len(" ".join([previous] + carried)) > overlap:
                     break
+                carried.insert(0, previous)
+            current = carried
+        current.append(sentence)
 
-                overlap_lines.insert(0, previous_line)
-                overlap_length += added_length
-
-            current_lines = overlap_lines
-            current_length = overlap_length
-
-        if current_lines:
-            current_length += 1
-
-        current_lines.append(line)
-        current_length += len(line)
-
-    if current_lines:
-        chunks.append("\n".join(current_lines))
-
-    return chunks
+    if current:
+        pieces.append(" ".join(current))
+    return [p for p in pieces if p.strip()]
 
 
-def chunk_text(
-    text: str,
-    chunk_size: int | None = None,
-    overlap: int | None = None,
-) -> list[str]:
-    """Keep a simple chunk_text interface for existing callers."""
-    lines = text.splitlines()
-    return split_lines(lines, chunk_size, overlap)
+# ------------------------------------------------------------- context
+
+def find_boilerplate_headers(pages: list[dict]) -> dict[str, set[str]]:
+    """Header parts that appear on many pages of a document carry no
+    information (e.g. 'WIPRO INTEGRATED ANNUAL REPORT 2025-26')."""
+    counts: dict[str, Counter] = defaultdict(Counter)
+    totals: Counter = Counter()
+
+    for page in pages:
+        doc = page["document_id"]
+        totals[doc] += 1
+        for part in set(filter(None, page.get("page_header", "").split(" | "))):
+            counts[doc][part.lower()] += 1
+
+    return {
+        doc: {
+            part for part, n in counter.items()
+            if n / totals[doc] > settings.boilerplate_header_ratio
+        }
+        for doc, counter in counts.items()
+    }
 
 
-def chunk_page(
-    text: str,
-    initial_section: str = "Unknown",
-) -> tuple[list[dict], str]:
-    """Chunk a page while tracking likely section headings."""
-    lines = text.splitlines()
+def looks_garbled(text: str) -> bool:
+    """'S tand al one Fi nanci al' - letter-spaced text from a broken PDF."""
+    words = text.split()
+    return len(words) >= 3 and sum(len(w) <= 2 for w in words) / len(words) > 0.3
 
-    chunks = []
-    current_lines = []
-    current_section = initial_section
 
-    def save_current():
-        if not current_lines:
-            return
+def page_area(page: dict, boilerplate: set[str]) -> str:
+    """The informative part of the running header, e.g.
+    'Notes to the Consolidated Financial Statements'."""
+    parts = [
+        p for p in page.get("page_header", "").split(" | ")
+        if p
+        and p.lower() not in boilerplate
+        and len(re.findall(r"[A-Za-z]", p)) > 3   # drop page numbers like "2 87"
+        and not looks_garbled(p)
+    ]
+    return " > ".join(parts[:2])
 
-        for chunk in split_lines(current_lines):
-            if chunk.strip():
-                chunks.append({
-                    "text": chunk,
-                    "section": current_section,
-                })
 
-    for line in lines:
-        line = line.strip()
+STATEMENT_TITLE = re.compile(
+    r"(statements? of [a-z ,&]+|balance sheets?)", re.IGNORECASE
+)
 
-        if not line:
+
+def statement_title(page: dict) -> str | None:
+    """Financial statement titles are often printed vertically in the margin
+    (e.g. Wipro), so they never appear as a Markdown heading."""
+    for part in page.get("rotated_text", "").split(" | "):
+        part = part.strip()
+        if len(part) <= 60 and STATEMENT_TITLE.fullmatch(part.rstrip(". ")):
+            return part
+    return None
+
+
+def build_context(page: dict, area: str, section: str) -> str:
+    """One line that makes a chunk self-explanatory."""
+    unit_label = UNIT_LABELS.get(
+        (page.get("detected_currency") or page["currency"],
+         page.get("detected_unit") or page["unit"])
+    )
+    parts = [
+        page["company"],
+        f"{page['period']} (year ended {page['fiscal_year_end']})",
+        page["basis"].capitalize() if page.get("basis") else None,
+        area or None,
+        section if section and section.lower() not in area.lower() else None,
+        f"Amounts in {unit_label}" if unit_label else None,
+    ]
+    return " | ".join(p for p in parts if p)
+
+
+# ---------------------------------------------------------------- packing
+
+def chunk_page(page: dict, section: str, area: str) -> tuple[list[dict], str]:
+    """Turn one page into chunks. Returns (chunks, section_at_page_end)."""
+    max_chars = settings.chunk_size
+    pieces: list[dict] = []          # {"kind", "text", "section"}
+    buffer: list[str] = []
+    buffer_kinds: set[str] = set()
+    buffer_section = section
+
+    def flush():
+        nonlocal buffer, buffer_kinds
+        if buffer:
+            kind = buffer_kinds.pop() if len(buffer_kinds) == 1 else "mixed"
+            pieces.append({
+                "kind": kind,
+                "text": "\n\n".join(buffer),
+                "section": buffer_section,
+            })
+        buffer, buffer_kinds = [], set()
+
+    def buffer_len():
+        return sum(len(b) + 2 for b in buffer)
+
+    for block in parse_blocks(page["text"]):
+        if block.kind == "heading":
+            # A heading starts a new chunk and travels with its content.
+            # (Unless the buffer is still tiny: then keep them together,
+            # otherwise KPI pages full of headings make 50-char chunks.)
+            if buffer_len() >= settings.min_chunk_chars:
+                flush()
+            section = block.text
+            buffer_section = section
+            buffer.append(f"## {block.text}")
+            buffer_kinds.add("text")
             continue
 
-        if is_heading(line):
-            if current_lines:
-                save_current()
-                current_lines = []
+        splitter = split_table if block.kind == "table" else split_text
+        args = (max_chars,) if block.kind == "table" else (
+            max_chars, settings.chunk_overlap
+        )
+        parts = splitter(block.text, *args)
 
-            current_section = line
+        for part in parts:
+            if buffer and buffer_len() + len(part) > max_chars:
+                flush()
+                buffer_section = section
+            buffer.append(part)
+            buffer_kinds.add(block.kind)
 
-        current_lines.append(line)
+    flush()
 
-    save_current()
+    # Merge a tiny trailing piece into the previous one (same page)
+    if (
+        len(pieces) >= 2
+        and len(pieces[-1]["text"]) < settings.min_chunk_chars
+        and len(pieces[-2]["text"]) + len(pieces[-1]["text"]) <= max_chars * 1.25
+    ):
+        last = pieces.pop()
+        pieces[-1]["text"] += "\n\n" + last["text"]
+        if pieces[-1]["kind"] != last["kind"]:
+            pieces[-1]["kind"] = "mixed"
 
-    return chunks, current_section
+    chunks = []
+    for i, piece in enumerate(pieces):
+        context = build_context(page, area, piece["section"])
+        chunks.append({
+            "chunk_id": f"{page['document_id']}_p{page['page_number']}_c{i}",
+            "document_id": page["document_id"],
+            "document_name": page["document_name"],
+            "company": page["company"],
+            "report_type": page["report_type"],
+            "period": page["period"],
+            "fiscal_year_start": page["fiscal_year_start"],
+            "fiscal_year_end": page["fiscal_year_end"],
+            "currency": page.get("detected_currency") or page["currency"],
+            "unit": page.get("detected_unit") or page["unit"],
+            "basis": page.get("basis"),
+            "source_url": page["source_url"],
+            "page_number": page["page_number"],
+            "printed_page": page.get("printed_page"),
+            "page_area": area,
+            "section": piece["section"] or "Unknown",
+            "chunk_type": piece["kind"],
+            "context": context,
+            "text": piece["text"],
+            # What we embed and keyword-index: context + content
+            "embed_text": f"{context}\n\n{piece['text']}",
+            "char_count": len(piece["text"]),
+            "extraction_method": page.get("extraction_method"),
+            "needs_review": page.get("needs_review", False),
+            "chunker_version": CHUNKER_VERSION,
+        })
+
+    return chunks, section
+
+
+# -------------------------------------------------------------------- main
+
+def load_pages() -> list[dict]:
+    if not settings.documents_path.exists():
+        raise FileNotFoundError(
+            f"{settings.documents_path} not found. Run ingest.py first."
+        )
+    with settings.documents_path.open("r", encoding="utf-8") as file:
+        pages = [json.loads(line) for line in file if line.strip()]
+
+    if pages and "extractor_version" not in pages[0]:
+        raise ValueError(
+            "documents.jsonl was made by the old extractor. Re-run ingest.py."
+        )
+    return pages
 
 
 def chunk_documents() -> None:
-    """Convert page-level JSONL records into chunk-level records."""
-    if not settings.documents_path.exists():
-        raise FileNotFoundError(
-            f"Input file not found: {settings.documents_path}. "
-            "Run ingest.py first."
-        )
+    pages = load_pages()
+    boilerplate = find_boilerplate_headers(pages)
 
-    settings.processed_dir.mkdir(parents=True, exist_ok=True)
+    stats = Counter()
+    current_doc, section, previous_area, previous_basis = None, "", "", None
 
+    with settings.chunks_path.open("w", encoding="utf-8") as output:
+        for page in pages:
+            if page["document_id"] != current_doc:  # reset per document
+                current_doc, section, previous_area = page["document_id"], "", ""
+                previous_basis = None
 
-    records_written = 0
-    pages_processed = 0
+            area = page_area(page, boilerplate.get(page["document_id"], set()))
 
-    with (
-        settings.documents_path.open("r", encoding="utf-8") as source,
-        settings.chunks_path.open("w", encoding="utf-8") as output,
-    ):
-        for line in source:
-            if not line.strip():
-                continue
+            # Section carry-over: a section continues onto the next page,
+            # unless the page tells us we are somewhere new.
+            title = statement_title(page)
+            if title:
+                section = title
+            elif area and area != previous_area:
+                section = ""  # new part of the report; don't carry stale section
+            # Basis carry-over: statement pages often state "Standalone" or
+            # "Consolidated" only on the first page of the statement.
+            if page.get("basis"):
+                previous_basis = page["basis"]
+            elif not area or area == previous_area:
+                page["basis"] = previous_basis
+            else:
+                previous_basis = None
 
-            page_record = json.loads(line)
-            pages_processed += 1
+            previous_area = area or previous_area
 
-            document_id = page_record["document_id"]
+            chunks, section = chunk_page(page, section, area)
 
-            page_chunks, _ = chunk_page(
-                page_record.get("text", ""),
-                "Unknown",
-            )
+            for chunk in chunks:
+                output.write(json.dumps(chunk, ensure_ascii=False) + "\n")
+                stats[chunk["chunk_type"]] += 1
+                stats["unknown_section"] += chunk["section"] == "Unknown"
+            stats["pages"] += 1
 
-            for chunk_index, chunk in enumerate(page_chunks):
-                chunk_text_value = chunk["text"]
-
-                chunk_record = {
-                    "chunk_id": (
-                        f"{document_id}"
-                        f"_p{page_record['page_number']}"
-                        f"_c{chunk_index}"
-                    ),
-                    "document_id": document_id,
-                    "document_name": page_record["document_name"],
-                    "company": page_record["company"],
-                    "report_type": page_record["report_type"],
-                    "period": page_record["period"],
-                    "source_url": page_record["source_url"],
-                    "page_number": page_record["page_number"],
-                    "page_index": page_record["page_index"],
-                    "section": chunk["section"],
-                    "text": chunk_text_value,
-                    "char_count": len(chunk_text_value),
-                }
-
-                output.write(
-                    json.dumps(
-                        chunk_record,
-                        ensure_ascii=False,
-                    )
-                    + "\n"
-                )
-
-                records_written += 1
-
+    total = stats["table"] + stats["text"] + stats["mixed"]
     logger.info(
         "Chunking complete: %d pages -> %d chunks "
-        "(chunk_size=%d, overlap=%d)",
-        pages_processed, records_written,
-        settings.chunk_size, settings.chunk_overlap,
+        "(table %d, text %d, mixed %d) | unknown section: %d",
+        stats["pages"], total, stats["table"], stats["text"], stats["mixed"],
+        stats["unknown_section"],
     )
     logger.info("Output: %s", settings.chunks_path)
 
