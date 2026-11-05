@@ -8,6 +8,8 @@ sentence-transformers==6.2.0    # embedding model runtime (pulls in torch)
 faiss-cpu==1.15.1               # vector similarity index
 rank-bm25==0.2.2                # keyword (BM25) retrieval
 numpy==2.5.4                    # float32 arrays for FAISS
+pymupdf4llm==2.1                # PDF -> Markdown with tables
+pymupdf-layout==2.1             # layout model: finds tables, headers, footers
 
 # --- Configuration ---
 pydantic-settings==2.16.2       # typed settings from .env / env vars

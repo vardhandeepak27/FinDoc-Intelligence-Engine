@@ -21,6 +21,11 @@ class Settings(BaseSettings):
     data_dir: Path = PROJECT_ROOT / "data"
     index_dir: Path = PROJECT_ROOT / "indexes"
 
+    # --- Extraction ---
+    use_ocr_fallback: bool = True          # OCR pages whose text layer is broken
+    tessdata_dir: Path | None = None       # Tesseract language data folder
+    broken_text_threshold: float = Field(default=0.08, gt=0, lt=1)
+
     # --- Chunking ---
     chunk_size: int = Field(default=1200, gt=0)
     chunk_overlap: int = Field(default=150, ge=0)

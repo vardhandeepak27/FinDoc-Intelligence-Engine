@@ -1,240 +1,191 @@
+"""Stage 1 of the pipeline: PDFs -> page records (documents.jsonl).
+
+Reads every PDF listed in data/manifest.csv, extracts each page with the
+layout-aware extractor, attaches document metadata, and writes a
+diagnostics CSV so extraction quality can be reviewed page by page.
+"""
 import csv
 import hashlib
 import json
 import logging
-import re
+import time
 from pathlib import Path
 
-import pymupdf
-
 from config import settings
+from extract import EXTRACTOR_VERSION, extract_pdf
 from logging_setup import setup_logging
 
 logger = logging.getLogger(__name__)
 
+MANIFEST_COLUMNS = [
+    "filename",
+    "company",
+    "report_type",
+    "period",
+    "fiscal_year_start",
+    "fiscal_year_end",
+    "currency",
+    "unit",
+    "source_url",
+]
 
-def clean_text(text: str) -> str:
-    """Normalize whitespace without removing meaningful line breaks."""
-    text = text.replace("\u00a0", " ")
-    text = re.sub(r"[ \t]+", " ", text)
-    text = re.sub(r"\n{3,}", "\n\n", text)
-    return text.strip()
-
-
-def extract_text(pdf_path: str | Path) -> str:
-    """Extract text from a PDF, preserving page order."""
-    pdf_path = Path(pdf_path)
-
-    pages = []
-
-    with pymupdf.open(pdf_path) as document:
-        for page in document:
-            text = clean_text(page.get_text("text", sort=True))
-            pages.append(text)
-
-    return "\n\n".join(pages)
+DIAGNOSTIC_FIELDS = [
+    "document_name", "company", "page_number", "printed_page",
+    "extraction_method", "char_count", "table_count", "merged_word_count",
+    "fragmentation", "broken_text_layer", "numeric_cells_repaired",
+    "rupee_glyphs_found", "rupee_glyphs_fixed", "rupee_leftovers",
+    "detected_currency",
+    "detected_unit", "basis", "image_count", "needs_review", "review_reason",
+]
 
 
 def get_document_id(pdf_path: Path) -> str:
-    """Generate a stable ID from the PDF content."""
+    """Stable ID from the PDF's content: same bytes -> same ID."""
     digest = hashlib.sha256(pdf_path.read_bytes()).hexdigest()
     return f"doc_{digest[:12]}"
 
 
 def load_manifest() -> dict:
-    """Load metadata indexed by PDF filename."""
+    """Load document metadata, keyed by PDF filename."""
     if not settings.manifest_path.exists():
-        raise FileNotFoundError(
-            f"Manifest not found: {settings.manifest_path}"
-        )
+        raise FileNotFoundError(f"Manifest not found: {settings.manifest_path}")
 
-    with settings.manifest_path.open(
-        "r", encoding="utf-8-sig", newline=""
-    ) as file:
+    with settings.manifest_path.open("r", encoding="utf-8-sig", newline="") as file:
         reader = csv.DictReader(file)
 
-        required_columns = {
-            "filename",
-            "company",
-            "report_type",
-            "period",
-            "source_url",
-        }
-
-        if not reader.fieldnames or not required_columns.issubset(
-            set(reader.fieldnames)
-        ):
-            raise ValueError(
-                "Manifest must contain: filename, company, "
-                "report_type, period, source_url"
-            )
+        missing = set(MANIFEST_COLUMNS) - set(reader.fieldnames or [])
+        if missing:
+            raise ValueError(f"Manifest is missing columns: {sorted(missing)}")
 
         metadata = {}
-
         for row in reader:
             filename = row["filename"].strip()
-
             if not filename:
                 continue
-
             if filename in metadata:
-                raise ValueError(
-                    f"Duplicate filename in manifest: {filename}"
-                )
-
+                raise ValueError(f"Duplicate filename in manifest: {filename}")
             metadata[filename] = {
-                "company": row["company"].strip(),
-                "report_type": row["report_type"].strip(),
-                "period": row["period"].strip(),
-                "source_url": row["source_url"].strip(),
+                column: row[column].strip()
+                for column in MANIFEST_COLUMNS
+                if column != "filename"
             }
 
     return metadata
 
 
+def review_reasons(page: dict, doc_meta: dict) -> list[str]:
+    """Rules that decide whether a human should look at this page."""
+    quality = page["quality"]
+    reasons = []
+
+    if quality["char_count"] == 0:
+        reasons.append("no_text")
+    elif quality["char_count"] < 50:
+        reasons.append("low_text")
+
+    if quality["broken_text_layer"] and page["extraction_method"] != "ocr":
+        reasons.append("broken_text_layer")
+
+    if quality["rupee_leftovers"] > 0:
+        reasons.append("rupee_unfixed")
+
+    if quality["merged_word_count"] >= 3:
+        reasons.append("merged_words")
+
+    # The page states its own unit: does it agree with the manifest?
+    if page["detected_unit"] and (
+        page["detected_unit"] != doc_meta["unit"]
+        or page["detected_currency"] != doc_meta["currency"]
+    ):
+        reasons.append("unit_mismatch")
+
+    return reasons
+
 
 def ingest_corpus() -> None:
-    """Extract each PDF page and generate page-level diagnostics."""
     settings.processed_dir.mkdir(parents=True, exist_ok=True)
 
     pdf_files = sorted(settings.raw_dir.glob("*.pdf"))
-    page_diagnostics = []
-
     if not pdf_files:
-        raise FileNotFoundError(
-            f"No PDF files found in {settings.raw_dir}"
-        )
+        raise FileNotFoundError(f"No PDF files found in {settings.raw_dir}")
 
     manifest = load_manifest()
-    records_written = 0
-    empty_pages = 0
+
+    unlisted = [p.name for p in pdf_files if p.name not in manifest]
+    if unlisted:
+        raise ValueError(f"PDFs missing from manifest.csv: {unlisted}")
+
+    diagnostics = []
+    total_pages = 0
+    started = time.perf_counter()
 
     with settings.documents_path.open("w", encoding="utf-8") as output:
         for pdf_path in pdf_files:
-            filename = pdf_path.name
-
-            if filename not in manifest:
-                raise ValueError(
-                    f"Missing metadata for {filename} "
-                    "in data/manifest.csv"
-                )
-
-            metadata = manifest[filename]
+            doc_meta = manifest[pdf_path.name]
             document_id = get_document_id(pdf_path)
+            doc_started = time.perf_counter()
+            flagged = 0
+            ocr_pages = 0
 
-            with pymupdf.open(pdf_path) as document:
-                logger.info(
-                    "Processing %s (%d pages)", filename, len(document)
-                )
-                doc_flagged = 0
+            logger.info("Extracting %s", pdf_path.name)
 
-                for page_index, page in enumerate(document):
-                    # 1. Extract this page's text
-                    text = clean_text(
-                        page.get_text("text", sort=True)
+            for page in extract_pdf(
+                pdf_path,
+                use_ocr_fallback=settings.use_ocr_fallback,
+                tessdata=str(settings.tessdata_dir) if settings.tessdata_dir else None,
+                broken_text_threshold=settings.broken_text_threshold,
+            ):
+                reasons = review_reasons(page, doc_meta)
+                flagged += bool(reasons)
+                ocr_pages += page["extraction_method"] == "ocr"
+
+                record = {
+                    "document_id": document_id,
+                    "document_name": pdf_path.name,
+                    **doc_meta,
+                    **page,
+                    "needs_review": bool(reasons),
+                    "review_reason": ";".join(reasons),
+                    "extractor_version": EXTRACTOR_VERSION,
+                }
+                output.write(json.dumps(record, ensure_ascii=False) + "\n")
+
+                diagnostics.append({
+                    "document_name": pdf_path.name,
+                    "company": doc_meta["company"],
+                    **{k: page[k] for k in (
+                        "page_number", "printed_page", "extraction_method",
+                        "detected_currency", "detected_unit", "basis",
+                        "image_count",
+                    )},
+                    **page["quality"],
+                    "needs_review": bool(reasons),
+                    "review_reason": ";".join(reasons),
+                })
+                total_pages += 1
+
+                if reasons:
+                    logger.debug(
+                        "%s p%d flagged: %s",
+                        pdf_path.name, page["page_number"], ";".join(reasons),
                     )
 
-                    # 2. Calculate diagnostics for this page
-                    char_count = len(text)
-                    image_count = len(page.get_images(full=True))
-                    has_text = bool(text.strip())
+            logger.info(
+                "%s: done in %.0fs | OCR pages: %d | flagged: %d",
+                pdf_path.name, time.perf_counter() - doc_started,
+                ocr_pages, flagged,
+            )
 
-
-                    review_reasons = []
-
-                    if not has_text:
-                        review_reasons.append("no_text")
-                    elif char_count < 50:
-                        review_reasons.append("low_text")
-
-                    needs_review = bool(review_reasons)
-                    review_reason = ";".join(review_reasons)
-
-                    if not has_text:
-                        empty_pages += 1
-
-                    if needs_review:
-                        doc_flagged += 1
-                        logger.debug(
-                            "%s page %d flagged: %s",
-                            filename, page_index + 1, review_reason,
-                        )
-
-                    # 3. Create the page record
-                    record = {
-                        "document_id": document_id,
-                        "document_name": filename,
-                        "company": metadata["company"],
-                        "report_type": metadata["report_type"],
-                        "period": metadata["period"],
-                        "source_url": metadata["source_url"],
-                        "page_number": page_index + 1,
-                        "page_index": page_index,
-                        "text": text,
-                        "char_count": char_count,
-                        "has_text": has_text,
-                        "image_count": image_count,
-                        "needs_review": needs_review,
-                        "review_reason": review_reason,
-                    }
-
-                    # 4. Write the full record to JSONL
-                    output.write(
-                        json.dumps(record, ensure_ascii=False)
-                        + "\n"
-                    )
-                    records_written += 1
-
-                    # 5. Collect a separate CSV diagnostic row
-                    page_diagnostics.append({
-                        "document_id": document_id,
-                        "document_name": filename,
-                        "company": metadata["company"],
-                        "period": metadata["period"],
-                        "page_number": page_index + 1,
-                        "char_count": char_count,
-                        "has_text": has_text,
-                        "image_count": image_count,
-                        "needs_review": needs_review,
-                        "review_reason": review_reason,
-                    })
-
-            if doc_flagged:
-                logger.warning(
-                    "%s: %d pages flagged for review (see %s)",
-                    filename, doc_flagged, settings.diagnostics_path.name,
-                )
-
-    # Write diagnostics once, after all PDFs are processed
-    diagnostic_fields = [
-        "document_id",
-        "document_name",
-        "company",
-        "period",
-        "page_number",
-        "char_count",
-        "has_text",
-        "image_count",
-        "needs_review",
-        "review_reason",
-    ]
-
-    with settings.diagnostics_path.open(
-        "w", encoding="utf-8", newline=""
-    ) as file:
-        writer = csv.DictWriter(
-            file, fieldnames=diagnostic_fields
-        )
+    with settings.diagnostics_path.open("w", encoding="utf-8", newline="") as file:
+        writer = csv.DictWriter(file, fieldnames=DIAGNOSTIC_FIELDS, extrasaction="ignore")
         writer.writeheader()
-        writer.writerows(page_diagnostics)
-
-    flagged_pages = sum(
-        row["needs_review"] for row in page_diagnostics
-    )
+        writer.writerows(diagnostics)
 
     logger.info(
-        "Ingestion complete: %d PDFs, %d pages, %d empty, %d flagged",
-        len(pdf_files), records_written, empty_pages, flagged_pages,
+        "Ingestion complete: %d PDFs, %d pages, %d flagged, %.0fs total",
+        len(pdf_files), total_pages,
+        sum(row["needs_review"] for row in diagnostics),
+        time.perf_counter() - started,
     )
     logger.info("Pages: %s", settings.documents_path)
     logger.info("Diagnostics: %s", settings.diagnostics_path)
