@@ -98,6 +98,14 @@ class Settings(BaseSettings):
     def index_info_path(self) -> Path:
         return self.index_dir / "index_info.json"
 
+    @property
+    def eval_path(self) -> Path:
+        return self.data_dir / "eval" / "retrieval_eval.jsonl"
+
+    @property
+    def eval_results_dir(self) -> Path:
+        return self.data_dir / "eval" / "results"
+
 
 @lru_cache
 def get_settings() -> Settings:

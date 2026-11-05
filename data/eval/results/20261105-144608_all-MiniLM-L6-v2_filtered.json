@@ -1,0 +1,604 @@
+{
+  "run_at": "2026-11-05T14:46:08",
+  "company_filter": true,
+  "index_info": {
+    "embedding_model": "all-MiniLM-L6-v2",
+    "dimension": 384,
+    "chunk_size": 1200,
+    "chunk_overlap": 150,
+    "num_vectors": 6264,
+    "chunker_version": "structure-v2",
+    "max_seq_length": 256,
+    "truncated_chunks": 2121,
+    "built_at": "2026-11-05T05:26:40.300636+00:00"
+  },
+  "overall": {
+    "bm25": {
+      "hit@1": 0.2903225806451613,
+      "hit@3": 0.41935483870967744,
+      "hit@5": 0.6774193548387096,
+      "hit@10": 0.7419354838709677,
+      "mrr@10": 0.42235023041474656
+    },
+    "dense": {
+      "hit@1": 0.16129032258064516,
+      "hit@3": 0.22580645161290322,
+      "hit@5": 0.25806451612903225,
+      "hit@10": 0.3870967741935484,
+      "mrr@10": 0.20448028673835125
+    },
+    "hybrid": {
+      "hit@1": 0.1935483870967742,
+      "hit@3": 0.3225806451612903,
+      "hit@5": 0.5483870967741935,
+      "hit@10": 0.6774193548387096,
+      "mrr@10": 0.3145929339477727
+    }
+  },
+  "per_question": {
+    "bm25": [
+      {
+        "id": "w01",
+        "type": "table",
+        "rank": null,
+        "top_result": "Wipro p27"
+      },
+      {
+        "id": "w02",
+        "type": "table",
+        "rank": null,
+        "top_result": "Wipro p27"
+      },
+      {
+        "id": "w03",
+        "type": "table",
+        "rank": 1,
+        "top_result": "Wipro p282"
+      },
+      {
+        "id": "w04",
+        "type": "narrative",
+        "rank": 2,
+        "top_result": "Wipro p355"
+      },
+      {
+        "id": "w05",
+        "type": "narrative",
+        "rank": 1,
+        "top_result": "Wipro p126"
+      },
+      {
+        "id": "w06",
+        "type": "table",
+        "rank": 1,
+        "top_result": "Wipro p356"
+      },
+      {
+        "id": "w07",
+        "type": "table",
+        "rank": null,
+        "top_result": "Wipro p417"
+      },
+      {
+        "id": "w08",
+        "type": "table",
+        "rank": 4,
+        "top_result": "Wipro p44"
+      },
+      {
+        "id": "w09",
+        "type": "table",
+        "rank": null,
+        "top_result": "Wipro p25"
+      },
+      {
+        "id": "w10",
+        "type": "table",
+        "rank": 4,
+        "top_result": "Wipro p235"
+      },
+      {
+        "id": "w11",
+        "type": "table",
+        "rank": 1,
+        "top_result": "Wipro p184"
+      },
+      {
+        "id": "t01",
+        "type": "table",
+        "rank": 1,
+        "top_result": "Tata Consultancy Services p58"
+      },
+      {
+        "id": "t02",
+        "type": "table",
+        "rank": 4,
+        "top_result": "Tata Consultancy Services p56"
+      },
+      {
+        "id": "t03",
+        "type": "narrative",
+        "rank": 1,
+        "top_result": "Tata Consultancy Services p24"
+      },
+      {
+        "id": "t04",
+        "type": "narrative",
+        "rank": 1,
+        "top_result": "Tata Consultancy Services p325"
+      },
+      {
+        "id": "t05",
+        "type": "narrative",
+        "rank": 1,
+        "top_result": "Tata Consultancy Services p55"
+      },
+      {
+        "id": "t06",
+        "type": "table",
+        "rank": 7,
+        "top_result": "Tata Consultancy Services p118"
+      },
+      {
+        "id": "t07",
+        "type": "table",
+        "rank": 2,
+        "top_result": "Tata Consultancy Services p174"
+      },
+      {
+        "id": "t08",
+        "type": "narrative",
+        "rank": 4,
+        "top_result": "Tata Consultancy Services p68"
+      },
+      {
+        "id": "t09",
+        "type": "narrative",
+        "rank": 4,
+        "top_result": "Tata Consultancy Services p3"
+      },
+      {
+        "id": "t10",
+        "type": "table",
+        "rank": 4,
+        "top_result": "Tata Consultancy Services p36"
+      },
+      {
+        "id": "c01",
+        "type": "table",
+        "rank": null,
+        "top_result": "Capgemini p337"
+      },
+      {
+        "id": "c02",
+        "type": "table",
+        "rank": null,
+        "top_result": "Capgemini p35"
+      },
+      {
+        "id": "c03",
+        "type": "narrative",
+        "rank": 2,
+        "top_result": "Capgemini p386"
+      },
+      {
+        "id": "c04",
+        "type": "narrative",
+        "rank": 5,
+        "top_result": "Capgemini p448"
+      },
+      {
+        "id": "c05",
+        "type": "narrative",
+        "rank": 3,
+        "top_result": "Capgemini p28"
+      },
+      {
+        "id": "c06",
+        "type": "narrative",
+        "rank": 1,
+        "top_result": "Capgemini p411"
+      },
+      {
+        "id": "c07",
+        "type": "narrative",
+        "rank": null,
+        "top_result": "Capgemini p37"
+      },
+      {
+        "id": "c08",
+        "type": "narrative",
+        "rank": 4,
+        "top_result": "Capgemini p337"
+      },
+      {
+        "id": "c09",
+        "type": "table",
+        "rank": null,
+        "top_result": "Capgemini p486"
+      },
+      {
+        "id": "c10",
+        "type": "table",
+        "rank": 6,
+        "top_result": "Capgemini p351"
+      }
+    ],
+    "dense": [
+      {
+        "id": "w01",
+        "type": "table",
+        "rank": null,
+        "top_result": "Wipro p306"
+      },
+      {
+        "id": "w02",
+        "type": "table",
+        "rank": null,
+        "top_result": "Wipro p139"
+      },
+      {
+        "id": "w03",
+        "type": "table",
+        "rank": null,
+        "top_result": "Wipro p433"
+      },
+      {
+        "id": "w04",
+        "type": "narrative",
+        "rank": null,
+        "top_result": "Wipro p421"
+      },
+      {
+        "id": "w05",
+        "type": "narrative",
+        "rank": 1,
+        "top_result": "Wipro p101"
+      },
+      {
+        "id": "w06",
+        "type": "table",
+        "rank": null,
+        "top_result": "Wipro p338"
+      },
+      {
+        "id": "w07",
+        "type": "table",
+        "rank": null,
+        "top_result": "Wipro p305"
+      },
+      {
+        "id": "w08",
+        "type": "table",
+        "rank": null,
+        "top_result": "Wipro p300"
+      },
+      {
+        "id": "w09",
+        "type": "table",
+        "rank": null,
+        "top_result": "Wipro p418"
+      },
+      {
+        "id": "w10",
+        "type": "table",
+        "rank": null,
+        "top_result": "Wipro p419"
+      },
+      {
+        "id": "w11",
+        "type": "table",
+        "rank": null,
+        "top_result": "Wipro p197"
+      },
+      {
+        "id": "t01",
+        "type": "table",
+        "rank": 8,
+        "top_result": "Tata Consultancy Services p179"
+      },
+      {
+        "id": "t02",
+        "type": "table",
+        "rank": 9,
+        "top_result": "Tata Consultancy Services p24"
+      },
+      {
+        "id": "t03",
+        "type": "narrative",
+        "rank": 5,
+        "top_result": "Tata Consultancy Services p4"
+      },
+      {
+        "id": "t04",
+        "type": "narrative",
+        "rank": 1,
+        "top_result": "Tata Consultancy Services p325"
+      },
+      {
+        "id": "t05",
+        "type": "narrative",
+        "rank": 3,
+        "top_result": "Tata Consultancy Services p29"
+      },
+      {
+        "id": "t06",
+        "type": "table",
+        "rank": null,
+        "top_result": "Tata Consultancy Services p55"
+      },
+      {
+        "id": "t07",
+        "type": "table",
+        "rank": null,
+        "top_result": "Tata Consultancy Services p177"
+      },
+      {
+        "id": "t08",
+        "type": "narrative",
+        "rank": 9,
+        "top_result": "Tata Consultancy Services p81"
+      },
+      {
+        "id": "t09",
+        "type": "narrative",
+        "rank": 1,
+        "top_result": "Tata Consultancy Services p8"
+      },
+      {
+        "id": "t10",
+        "type": "table",
+        "rank": 8,
+        "top_result": "Tata Consultancy Services p24"
+      },
+      {
+        "id": "c01",
+        "type": "table",
+        "rank": null,
+        "top_result": "Capgemini p337"
+      },
+      {
+        "id": "c02",
+        "type": "table",
+        "rank": null,
+        "top_result": "Capgemini p317"
+      },
+      {
+        "id": "c03",
+        "type": "narrative",
+        "rank": 1,
+        "top_result": "Capgemini p5"
+      },
+      {
+        "id": "c04",
+        "type": "narrative",
+        "rank": null,
+        "top_result": "Capgemini p448"
+      },
+      {
+        "id": "c05",
+        "type": "narrative",
+        "rank": 3,
+        "top_result": "Capgemini p337"
+      },
+      {
+        "id": "c06",
+        "type": "narrative",
+        "rank": 1,
+        "top_result": "Capgemini p411"
+      },
+      {
+        "id": "c07",
+        "type": "narrative",
+        "rank": null,
+        "top_result": "Capgemini p33"
+      },
+      {
+        "id": "c08",
+        "type": "narrative",
+        "rank": null,
+        "top_result": "Capgemini p336"
+      },
+      {
+        "id": "c09",
+        "type": "table",
+        "rank": null,
+        "top_result": "Capgemini p446"
+      },
+      {
+        "id": "c10",
+        "type": "table",
+        "rank": null,
+        "top_result": "Capgemini p456"
+      }
+    ],
+    "hybrid": [
+      {
+        "id": "w01",
+        "type": "table",
+        "rank": null,
+        "top_result": "Wipro p306"
+      },
+      {
+        "id": "w02",
+        "type": "table",
+        "rank": null,
+        "top_result": "Wipro p27"
+      },
+      {
+        "id": "w03",
+        "type": "table",
+        "rank": 7,
+        "top_result": "Wipro p320"
+      },
+      {
+        "id": "w04",
+        "type": "narrative",
+        "rank": 5,
+        "top_result": "Wipro p355"
+      },
+      {
+        "id": "w05",
+        "type": "narrative",
+        "rank": 1,
+        "top_result": "Wipro p126"
+      },
+      {
+        "id": "w06",
+        "type": "table",
+        "rank": 3,
+        "top_result": "Wipro p310"
+      },
+      {
+        "id": "w07",
+        "type": "table",
+        "rank": null,
+        "top_result": "Wipro p417"
+      },
+      {
+        "id": "w08",
+        "type": "table",
+        "rank": 4,
+        "top_result": "Wipro p358"
+      },
+      {
+        "id": "w09",
+        "type": "table",
+        "rank": null,
+        "top_result": "Wipro p25"
+      },
+      {
+        "id": "w10",
+        "type": "table",
+        "rank": 8,
+        "top_result": "Wipro p197"
+      },
+      {
+        "id": "w11",
+        "type": "table",
+        "rank": 5,
+        "top_result": "Wipro p197"
+      },
+      {
+        "id": "t01",
+        "type": "table",
+        "rank": 2,
+        "top_result": "Tata Consultancy Services p24"
+      },
+      {
+        "id": "t02",
+        "type": "table",
+        "rank": 8,
+        "top_result": "Tata Consultancy Services p24"
+      },
+      {
+        "id": "t03",
+        "type": "narrative",
+        "rank": 5,
+        "top_result": "Tata Consultancy Services p35"
+      },
+      {
+        "id": "t04",
+        "type": "narrative",
+        "rank": 1,
+        "top_result": "Tata Consultancy Services p325"
+      },
+      {
+        "id": "t05",
+        "type": "narrative",
+        "rank": 1,
+        "top_result": "Tata Consultancy Services p55"
+      },
+      {
+        "id": "t06",
+        "type": "table",
+        "rank": null,
+        "top_result": "Tata Consultancy Services p106"
+      },
+      {
+        "id": "t07",
+        "type": "table",
+        "rank": 4,
+        "top_result": "Tata Consultancy Services p204"
+      },
+      {
+        "id": "t08",
+        "type": "narrative",
+        "rank": 5,
+        "top_result": "Tata Consultancy Services p68"
+      },
+      {
+        "id": "t09",
+        "type": "narrative",
+        "rank": 1,
+        "top_result": "Tata Consultancy Services p8"
+      },
+      {
+        "id": "t10",
+        "type": "table",
+        "rank": 7,
+        "top_result": "Tata Consultancy Services p36"
+      },
+      {
+        "id": "c01",
+        "type": "table",
+        "rank": null,
+        "top_result": "Capgemini p336"
+      },
+      {
+        "id": "c02",
+        "type": "table",
+        "rank": null,
+        "top_result": "Capgemini p456"
+      },
+      {
+        "id": "c03",
+        "type": "narrative",
+        "rank": 1,
+        "top_result": "Capgemini p5"
+      },
+      {
+        "id": "c04",
+        "type": "narrative",
+        "rank": null,
+        "top_result": "Capgemini p448"
+      },
+      {
+        "id": "c05",
+        "type": "narrative",
+        "rank": 3,
+        "top_result": "Capgemini p337"
+      },
+      {
+        "id": "c06",
+        "type": "narrative",
+        "rank": 1,
+        "top_result": "Capgemini p411"
+      },
+      {
+        "id": "c07",
+        "type": "narrative",
+        "rank": 2,
+        "top_result": "Capgemini p167"
+      },
+      {
+        "id": "c08",
+        "type": "narrative",
+        "rank": 4,
+        "top_result": "Capgemini p336"
+      },
+      {
+        "id": "c09",
+        "type": "table",
+        "rank": null,
+        "top_result": "Capgemini p403"
+      },
+      {
+        "id": "c10",
+        "type": "table",
+        "rank": null,
+        "top_result": "Capgemini p351"
+      }
+    ]
+  }
+}
