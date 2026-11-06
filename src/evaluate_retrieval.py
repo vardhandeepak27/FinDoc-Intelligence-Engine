@@ -23,6 +23,7 @@ from datetime import datetime
 import numpy as np
 
 from config import settings
+from embeddings import embed_query
 from hybrid_retrieve import hybrid_retrieve, load_data, tokenize
 from logging_setup import setup_logging
 
@@ -47,9 +48,7 @@ def rank_bm25(question, metadata, index, model, bm25, company):
 
 
 def rank_dense(question, metadata, index, model, bm25, company):
-    vector = model.encode(
-        [question], normalize_embeddings=True, convert_to_numpy=True
-    ).astype("float32")
+    vector = embed_query(model, question)
     # Search everything, then filter, so filtering never hides a match
     _, indices = index.search(vector, index.ntotal)
     return [int(i) for i in indices[0] if i >= 0 and _keep(metadata[i], company)][:TOP_K]

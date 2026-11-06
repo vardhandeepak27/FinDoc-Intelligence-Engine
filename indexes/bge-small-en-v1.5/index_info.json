@@ -1,0 +1,13 @@
+{
+  "embedding_model": "BAAI/bge-small-en-v1.5",
+  "query_prefix": "Represent this sentence for searching relevant passages: ",
+  "doc_prefix": "",
+  "dimension": 384,
+  "chunk_size": 1200,
+  "chunk_overlap": 150,
+  "num_vectors": 6264,
+  "chunker_version": "structure-v2",
+  "max_seq_length": 512,
+  "truncated_chunks": 422,
+  "built_at": "2026-11-06T04:02:32.868813+00:00"
+}

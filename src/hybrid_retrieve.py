@@ -4,6 +4,7 @@ import re
 from rank_bm25 import BM25Okapi
 
 from config import settings
+from embeddings import embed_query
 from logging_setup import setup_logging
 from retrieve import load_retriever
 
@@ -62,11 +63,7 @@ def hybrid_retrieve(
     )[:candidate_k]
 
     # 2. Semantic retrieval
-    query_vector = model.encode(
-        [query],
-        normalize_embeddings=True,
-        convert_to_numpy=True,
-    ).astype("float32")
+    query_vector = embed_query(model, query)
 
     _, dense_indices = index.search(
         query_vector,

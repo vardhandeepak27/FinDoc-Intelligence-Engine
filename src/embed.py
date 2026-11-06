@@ -3,10 +3,9 @@ import logging
 from datetime import datetime, timezone
 
 import faiss
-import numpy as np
-from sentence_transformers import SentenceTransformer
 
 from config import settings
+from embeddings import count_tokens, embed_documents, load_model
 from logging_setup import setup_logging
 
 logger = logging.getLogger(__name__)
@@ -47,7 +46,7 @@ def load_chunks():
 
 def build_index():
     """Embed chunks and persist the FAISS index, metadata and build info."""
-    settings.index_dir.mkdir(parents=True, exist_ok=True)
+    settings.model_index_dir.mkdir(parents=True, exist_ok=True)
 
     chunks = load_chunks()
     # Embed the chunk WITH its context line, so a table of numbers carries
@@ -57,14 +56,12 @@ def build_index():
     logger.info("Chunks loaded: %d", len(chunks))
     logger.info("Loading embedding model: %s", settings.embedding_model)
 
-    model = SentenceTransformer(settings.embedding_model)
+    model = load_model()
 
     # The model silently truncates anything longer than max_seq_length
     # tokens: the end of the chunk is never embedded. Measure it.
     max_tokens = model.max_seq_length
-    token_counts = [
-        len(ids) for ids in model.tokenizer(texts, add_special_tokens=True)["input_ids"]
-    ]
+    token_counts = count_tokens(model, texts)
     truncated = sum(n > max_tokens for n in token_counts)
     sorted_counts = sorted(token_counts)
     logger.info(
@@ -80,15 +77,8 @@ def build_index():
             truncated, len(texts), 100 * truncated / len(texts), max_tokens,
         )
 
-    embeddings = model.encode(
-        texts,
-        batch_size=settings.embedding_batch_size,
-        show_progress_bar=True,
-        convert_to_numpy=True,
-        normalize_embeddings=True,
-    )
+    embeddings = embed_documents(model, texts)
 
-    embeddings = np.ascontiguousarray(embeddings, dtype=np.float32)
     dimension = embeddings.shape[1]
 
     # Inner product of normalized vectors = cosine similarity
@@ -106,6 +96,8 @@ def build_index():
     # an index that doesn't match the current configuration.
     build_info = {
         "embedding_model": settings.embedding_model,
+        "query_prefix": settings.embedding_query_prefix,
+        "doc_prefix": settings.embedding_doc_prefix,
         "dimension": dimension,
         "chunk_size": settings.chunk_size,
         "chunk_overlap": settings.chunk_overlap,

@@ -2,10 +2,9 @@ import json
 import logging
 
 import faiss
-import numpy as np
-from sentence_transformers import SentenceTransformer
 
 from config import settings
+from embeddings import embed_query, load_model
 from logging_setup import setup_logging
 
 logger = logging.getLogger(__name__)
@@ -46,6 +45,16 @@ def check_index_matches_config():
             f"says '{settings.embedding_model}'. Re-run embed.py."
         )
 
+    for key, current in (
+        ("query_prefix", settings.embedding_query_prefix),
+        ("doc_prefix", settings.embedding_doc_prefix),
+    ):
+        if info.get(key, "") != current:
+            raise ValueError(
+                f"Index was built with {key}={info.get(key, '')!r} but config "
+                f"says {current!r}. Re-run embed.py or fix the config."
+            )
+
     if (
         info["chunk_size"] != settings.chunk_size
         or info["chunk_overlap"] != settings.chunk_overlap
@@ -76,10 +85,7 @@ def load_retriever():
             f"{len(metadata)} metadata records."
         )
 
-    model = SentenceTransformer(
-        settings.embedding_model,
-        local_files_only=True,
-    )
+    model = load_model(local_files_only=True)
 
     logger.info("Retriever loaded: %d vectors", index.ntotal)
 
@@ -104,13 +110,7 @@ def retrieve(
     if index.ntotal == 0:
         return []
 
-    query_embedding = model.encode(
-        [query],
-        convert_to_numpy=True,
-        normalize_embeddings=True,
-    )
-
-    query_embedding = np.ascontiguousarray(query_embedding, dtype=np.float32)
+    query_embedding = embed_query(model, query)
 
     # Exact search over the complete index.
     # Filtering afterwards ensures we don't miss matching

@@ -1,5 +1,6 @@
 """Central configuration for FinDoc Intelligence Engine."""
 from functools import lru_cache
+import re
 from pathlib import Path
 from typing import Literal
 
@@ -35,6 +36,13 @@ class Settings(BaseSettings):
     # --- Embeddings ---
     embedding_model: str = "all-MiniLM-L6-v2"
     embedding_batch_size: int = Field(default=32, gt=0)
+    # Asymmetric models want different prefixes for queries and documents.
+    # Wrong or missing prefixes don't error - they silently lower quality.
+    embedding_query_prefix: str = ""
+    embedding_doc_prefix: str = ""
+    # Cap on tokens per chunk (None = the model's own limit). Long-context
+    # models get slow on CPU, so we cap them just above our longest chunks.
+    embedding_max_tokens: int | None = Field(default=None, gt=0)
 
     # --- Retrieval ---
     top_k: int = Field(default=10, gt=0)
@@ -87,16 +95,26 @@ class Settings(BaseSettings):
         return self.processed_dir / "page_diagnostics.csv"
 
     @property
+    def model_index_dir(self) -> Path:
+        """One index folder per embedding model, e.g. indexes/bge-small-en-v1.5.
+
+        Vectors from different models can't be mixed, so each model gets
+        its own index; switching models never overwrites another's index.
+        """
+        slug = re.sub(r"[^A-Za-z0-9._-]+", "_", self.embedding_model.split("/")[-1])
+        return self.index_dir / slug
+
+    @property
     def index_path(self) -> Path:
-        return self.index_dir / "financial.faiss"
+        return self.model_index_dir / "financial.faiss"
 
     @property
     def metadata_path(self) -> Path:
-        return self.index_dir / "chunk_metadata.jsonl"
+        return self.model_index_dir / "chunk_metadata.jsonl"
 
     @property
     def index_info_path(self) -> Path:
-        return self.index_dir / "index_info.json"
+        return self.model_index_dir / "index_info.json"
 
     @property
     def eval_path(self) -> Path:
