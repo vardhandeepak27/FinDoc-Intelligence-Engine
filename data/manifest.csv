@@ -1,4 +1,4 @@
-filename,company,report_type,period,fiscal_year_start,fiscal_year_end,currency,unit,source_url
-TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,annual_report,FY2025-26,2025-04-01,2026-03-31,INR,crore,https://www.tcs.com/content/dam/tcs/investor-relations/financial-statements/2025-26/ar/annual-report-2025-2026.pdf
-Wipro-annual-report-2025-2026.pdf,Wipro,annual_report,FY2025-26,2025-04-01,2026-03-31,INR,million,https://www.wipro.com/content/dam/nexus/en/investor/annual-reports/2025-2026/Integrated-annual-report-2025-26.pdf
-Capgemini-URD-2025.pdf,Capgemini,universal_registration_document,FY2025,2025-01-01,2025-12-31,EUR,million,https://investors.capgemini.com/en/annual-reports/?fiscal-year=2025
+filename,company,report_type,period,fiscal_year_start,fiscal_year_end,currency,unit,aliases,standalone_markers,source_url
+TCS-annual-report-2025-2026.pdf,Tata Consultancy Services,annual_report,FY2025-26,2025-04-01,2026-03-31,INR,crore,TCS;Tata Consultancy,,https://www.tcs.com/content/dam/tcs/investor-relations/financial-statements/2025-26/ar/annual-report-2025-2026.pdf
+Wipro-annual-report-2025-2026.pdf,Wipro,annual_report,FY2025-26,2025-04-01,2026-03-31,INR,million,Wipro Limited,,https://www.wipro.com/content/dam/nexus/en/investor/annual-reports/2025-2026/Integrated-annual-report-2025-26.pdf
+Capgemini-URD-2025.pdf,Capgemini,universal_registration_document,FY2025,2025-01-01,2025-12-31,EUR,million,Capgemini SE;Capgemini Group,Capgemini SE financial statements,https://investors.capgemini.com/en/file/30242?download=1

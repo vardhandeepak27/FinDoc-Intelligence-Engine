@@ -70,7 +70,7 @@ def index_is_current(candidate: dict) -> bool:
 
 def latest_result(model_name: str) -> dict | None:
     slug = model_name.split("/")[-1]
-    runs = sorted(settings.eval_results_dir.glob(f"*_{slug}_filtered.json"))
+    runs = sorted(settings.eval_results_dir.glob(f"*_{slug}_auto.json"))
     return json.loads(runs[-1].read_text(encoding="utf-8")) if runs else None
 
 
@@ -91,9 +91,9 @@ def main(name_filter: str | None) -> None:
             run("embed.py", candidate)
             print(f"Embedding took {(time.perf_counter() - started) / 60:.1f} min")
 
-        run("evaluate_retrieval.py", candidate, "--filter")
+        run("evaluate_retrieval.py", candidate, "--filters", "auto")
 
-    # ---- comparison table (hybrid retriever, with company filter)
+    # ---- comparison table (hybrid retriever, filters worked out from the question)
     print(f"\n{'model':<34}{'trunc%':>7}{'dense@10':>10}{'hyb@1':>7}"
           f"{'hyb@10':>8}{'tbl@10':>8}{'MRR':>6}")
     print("-" * 80)

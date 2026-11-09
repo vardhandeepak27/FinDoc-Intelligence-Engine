@@ -11,9 +11,16 @@ Metrics:
 Each run is saved with the index's build info, so runs made with
 different models or chunkers can be compared later.
 
+Filter modes:
+  none    no filters at all
+  oracle  the question's labelled company (an upper bound: perfect
+          query understanding, which real users don't give us)
+  auto    company + basis worked out from the question text
+          (what the real system does)
+
 Usage:
-  python src\\evaluate_retrieval.py              # no company filter
-  python src\\evaluate_retrieval.py --filter     # filter by the question's company
+  python src\\evaluate_retrieval.py --filters auto
+  python src\\evaluate_retrieval.py --filters oracle
 """
 import argparse
 import json
@@ -24,8 +31,9 @@ import numpy as np
 
 from config import settings
 from embeddings import embed_query
-from hybrid_retrieve import hybrid_retrieve, load_data, tokenize
+from hybrid_retrieve import allowed_mask, hybrid_retrieve, load_data, tokenize
 from logging_setup import setup_logging
+from query_understanding import understand
 
 logger = logging.getLogger(__name__)
 
@@ -39,31 +47,40 @@ def load_questions() -> list[dict]:
 
 
 # --------------------------------------------------------------- rankers
-# Each ranker returns chunk indices, best first, after the company filter.
+# Each ranker returns chunk indices, best first, after filtering.
 
-def rank_bm25(question, metadata, index, model, bm25, company):
-    scores = bm25.get_scores(tokenize(question))
-    order = np.argsort(-scores)
-    return [int(i) for i in order if _keep(metadata[i], company)][:TOP_K]
-
-
-def rank_dense(question, metadata, index, model, bm25, company):
-    vector = embed_query(model, question)
-    # Search everything, then filter, so filtering never hides a match
-    _, indices = index.search(vector, index.ntotal)
-    return [int(i) for i in indices[0] if i >= 0 and _keep(metadata[i], company)][:TOP_K]
+def rank_bm25(f, metadata, index, model, bm25):
+    keep = allowed_mask(metadata, f["company"], f["basis"])
+    scores = bm25.get_scores(tokenize(f["keyword_query"]))
+    return [int(i) for i in np.argsort(-scores) if keep[i]][:TOP_K]
 
 
-def rank_hybrid(question, metadata, index, model, bm25, company):
-    chunk_position = {m["chunk_id"]: i for i, m in enumerate(metadata)}
+def rank_dense(f, metadata, index, model, bm25):
+    keep = allowed_mask(metadata, f["company"], f["basis"])
+    _, indices = index.search(embed_query(model, f["query"]), index.ntotal)
+    return [int(i) for i in indices[0] if i >= 0 and keep[i]][:TOP_K]
+
+
+def rank_hybrid(f, metadata, index, model, bm25):
     results = hybrid_retrieve(
-        question, metadata, index, model, bm25, top_k=TOP_K, company=company
+        f["query"], metadata, index, model, bm25, top_k=TOP_K,
+        company=f["company"], basis=f["basis"], keyword_query=f["keyword_query"],
     )
-    return [chunk_position[r["chunk_id"]] for r in results]
+    return [r["chunk_index"] for r in results]
 
 
-def _keep(meta: dict, company: str | None) -> bool:
-    return company is None or meta["company"].lower() == company.lower()
+def build_filters(question: dict, mode: str) -> dict:
+    query = question["question"]
+    if mode == "auto":
+        intent = understand(query)
+        return {"query": query, "company": intent.company,
+                "basis": intent.basis, "keyword_query": intent.keyword_query}
+    return {
+        "query": query,
+        "company": question["company"] if mode == "oracle" else None,
+        "basis": None,
+        "keyword_query": query,
+    }
 
 
 RANKERS = {"bm25": rank_bm25, "dense": rank_dense, "hybrid": rank_hybrid}
@@ -105,16 +122,19 @@ def print_table(title: str, rows: dict[str, dict]) -> None:
 
 # ------------------------------------------------------------------ main
 
-def evaluate(use_filter: bool) -> None:
+def evaluate(mode: str) -> None:
     questions = load_questions()
     metadata, index, model, bm25 = load_data()
 
     per_question = {name: [] for name in RANKERS}
 
+    intent_errors = []
     for question in questions:
-        company = question["company"] if use_filter else None
+        filters = build_filters(question, mode)
+        if mode == "auto" and filters["company"] != question["company"]:
+            intent_errors.append((question["id"], filters["company"]))
         for name, ranker in RANKERS.items():
-            ranked = ranker(question["question"], metadata, index, model, bm25, company)
+            ranked = ranker(filters, metadata, index, model, bm25)
             rank = first_hit_rank(ranked, metadata, question)
             top = metadata[ranked[0]] if ranked else {}
             per_question[name].append({
@@ -131,7 +151,8 @@ def evaluate(use_filter: bool) -> None:
     }
     print_table(
         f"Retrieval quality on {len(questions)} questions "
-        f"({'with' if use_filter else 'without'} company filter)",
+        f"(filters: {mode}, fusion weights bm25={settings.bm25_weight} "
+        f"dense={settings.dense_weight})",
         overall,
     )
     for qtype in sorted({q["type"] for q in questions}):
@@ -142,6 +163,12 @@ def evaluate(use_filter: bool) -> None:
                 for name, rows in per_question.items()
             },
         )
+
+    if mode == "auto":
+        print(f"\nCompany detected correctly for "
+              f"{len(questions) - len(intent_errors)}/{len(questions)} questions")
+        for qid, got in intent_errors:
+            print(f"  {qid}: detected {got}")
 
     # ---- what hybrid got wrong: these are the cases to study
     print("\nHybrid misses (correct page not in top 10):")
@@ -162,7 +189,8 @@ def evaluate(use_filter: bool) -> None:
     )
     run = {
         "run_at": datetime.now().isoformat(timespec="seconds"),
-        "company_filter": use_filter,
+        "filter_mode": mode,
+        "fusion_weights": {"bm25": settings.bm25_weight, "dense": settings.dense_weight},
         "index_info": index_info,
         "overall": overall,
         "per_question": per_question,
@@ -170,7 +198,7 @@ def evaluate(use_filter: bool) -> None:
     model_tag = index_info.get("embedding_model", "unknown").split("/")[-1]
     out_path = settings.eval_results_dir / (
         f"{datetime.now():%Y%m%d-%H%M%S}_{model_tag}"
-        f"{'_filtered' if use_filter else ''}.json"
+        f"_{mode}.json"
     )
     out_path.write_text(json.dumps(run, indent=2), encoding="utf-8")
     logger.info("Saved run: %s", out_path)
@@ -180,7 +208,7 @@ if __name__ == "__main__":
     setup_logging()
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "--filter", action="store_true",
-        help="restrict results to the question's company",
+        "--filters", choices=["none", "oracle", "auto"], default="auto",
+        help="none | oracle (labelled company) | auto (from the question)",
     )
-    evaluate(use_filter=parser.parse_args().filter)
+    evaluate(mode=parser.parse_args().filters)

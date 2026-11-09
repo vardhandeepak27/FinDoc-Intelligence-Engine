@@ -48,6 +48,9 @@ class Settings(BaseSettings):
     top_k: int = Field(default=10, gt=0)
     candidate_k: int = Field(default=50, gt=0)
     rrf_k: int = Field(default=60, gt=0)
+    # Weights for Reciprocal Rank Fusion (1.0 / 1.0 = classic RRF)
+    bm25_weight: float = Field(default=1.0, ge=0)
+    dense_weight: float = Field(default=1.0, ge=0)
 
     # --- LLM ---
     llm_provider: Literal["groq", "gemini", "ollama"] = "groq"
@@ -115,6 +118,10 @@ class Settings(BaseSettings):
     @property
     def index_info_path(self) -> Path:
         return self.model_index_dir / "index_info.json"
+
+    @property
+    def embedding_cache_path(self) -> Path:
+        return self.model_index_dir / "embedding_cache.npz"
 
     @property
     def eval_path(self) -> Path:

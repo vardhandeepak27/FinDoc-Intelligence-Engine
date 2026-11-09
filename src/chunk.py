@@ -17,10 +17,11 @@ from dataclasses import dataclass
 
 from config import settings
 from logging_setup import setup_logging
+from manifest import standalone_markers
 
 logger = logging.getLogger(__name__)
 
-CHUNKER_VERSION = "structure-v2"
+CHUNKER_VERSION = "structure-v3"
 
 UNIT_LABELS = {
     ("INR", "crore"): "₹ crore",
@@ -391,6 +392,12 @@ def chunk_documents() -> None:
                 section = title
             elif area and area != previous_area:
                 section = ""  # new part of the report; don't carry stale section
+            # Report-specific wording for standalone accounts, from the
+            # manifest (e.g. Capgemini: "Capgemini SE financial statements").
+            header = page.get("page_header", "").lower()
+            if any(m.lower() in header for m in standalone_markers(page["document_name"])):
+                page["basis"] = "standalone"
+
             # Basis carry-over: statement pages often state "Standalone" or
             # "Consolidated" only on the first page of the statement.
             if page.get("basis"):

@@ -6,8 +6,8 @@
   "chunk_size": 1200,
   "chunk_overlap": 150,
   "num_vectors": 6264,
-  "chunker_version": "structure-v2",
+  "chunker_version": "structure-v3",
   "max_seq_length": 1536,
   "truncated_chunks": 0,
-  "built_at": "2026-11-06T05:20:28.376954+00:00"
+  "built_at": "2026-11-09T02:32:06.701755+00:00"
 }
