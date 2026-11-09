@@ -88,7 +88,19 @@ def build_filters(question: dict, mode: str) -> dict:
     }
 
 
+def rank_reranked(f, metadata, index, model, bm25):
+    from rerank import rerank
+    candidates = hybrid_retrieve(
+        f["query"], metadata, index, model, bm25,
+        top_k=settings.rerank_candidates,
+        company=f["company"], basis=f["basis"], keyword_query=f["keyword_query"],
+    )
+    return [r["chunk_index"] for r in rerank(f["query"], candidates, top_k=TOP_K)]
+
+
 RANKERS = {"bm25": rank_bm25, "dense": rank_dense, "hybrid": rank_hybrid}
+if settings.reranker_model:
+    RANKERS["reranked"] = rank_reranked
 
 
 # --------------------------------------------------------------- scoring
@@ -193,8 +205,9 @@ def evaluate(mode: str) -> None:
     }
     print_table(
         f"Retrieval quality on {len(questions)} questions "
-        f"(filters: {mode}, fusion weights bm25={settings.bm25_weight} "
-        f"dense={settings.dense_weight})",
+        f"(filters: {mode}, default basis: {settings.default_basis}, "
+        f"fusion bm25={settings.bm25_weight}/dense={settings.dense_weight}, "
+        f"reranker: {settings.reranker_model})",
         overall,
     )
     for qtype in sorted({q["type"] for q in questions}):
@@ -239,6 +252,8 @@ def evaluate(mode: str) -> None:
         "run_at": datetime.now().isoformat(timespec="seconds"),
         "filter_mode": mode,
         "fusion_weights": {"bm25": settings.bm25_weight, "dense": settings.dense_weight},
+        "default_basis": settings.default_basis,
+        "reranker": settings.reranker_model,
         "index_info": index_info,
         "overall": overall,
         "hybrid_page_level": lenient,

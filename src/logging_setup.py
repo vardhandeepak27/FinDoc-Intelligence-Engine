@@ -1,5 +1,6 @@
 """Logging configuration shared by every entry point."""
 import logging
+import os
 import sys
 
 from config import settings
@@ -24,5 +25,12 @@ def setup_logging(level: str | None = None) -> None:
     )
 
     # Third-party libraries can be very chatty at INFO level
-    for noisy in ("sentence_transformers", "httpx", "urllib3", "filelock"):
+    for noisy in (
+        "sentence_transformers", "httpx", "httpx2", "urllib3", "filelock",
+        "huggingface_hub",
+    ):
         logging.getLogger(noisy).setLevel(logging.WARNING)
+
+    # Windows without Developer Mode can't create symlinks; the Hugging Face
+    # cache still works (it copies instead), so the warning is just noise.
+    os.environ.setdefault("HF_HUB_DISABLE_SYMLINKS_WARNING", "1")

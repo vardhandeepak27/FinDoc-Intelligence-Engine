@@ -13,6 +13,7 @@ cheap first pass.
 import re
 from dataclasses import dataclass, field
 
+from config import settings
 from manifest import company_aliases
 
 BASIS_PATTERNS = {
@@ -26,6 +27,7 @@ class QueryIntent:
     query: str
     companies: list[str] = field(default_factory=list)
     basis: str | None = None
+    basis_source: str = "none"      # "question" | "default" | "none"
     keyword_query: str = ""
 
     @property
@@ -47,7 +49,11 @@ def understand(query: str) -> QueryIntent:
 
     # ---- basis: only if the question names exactly one
     matches = [b for b, pattern in BASIS_PATTERNS.items() if pattern.search(query)]
-    intent.basis = matches[0] if len(matches) == 1 else None
+    if len(matches) == 1:
+        intent.basis, intent.basis_source = matches[0], "question"
+    elif not matches and settings.default_basis != "none":
+        # Not mentioned: apply the financial-reporting convention
+        intent.basis, intent.basis_source = settings.default_basis, "default"
 
     # ---- keyword query: add canonical names that the question didn't spell
     # out ("TCS" -> "Tata Consultancy Services"). Only useful when we can't

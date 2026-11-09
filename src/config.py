@@ -52,6 +52,18 @@ class Settings(BaseSettings):
     bm25_weight: float = Field(default=1.0, ge=0)
     dense_weight: float = Field(default=1.0, ge=0)
 
+    # --- Reranking (cross-encoder second stage). None = no reranking.
+    reranker_model: str | None = None
+    rerank_candidates: int = Field(default=30, gt=0)   # how many to rerank
+    rerank_max_tokens: int = Field(default=512, gt=0)
+
+    # --- Query understanding
+    # A company-level figure with no qualifier conventionally means the
+    # consolidated (group) figure. Measured: it HURT (hit@10 0.87 -> 0.84),
+    # because dividends and share capital are parent-company (standalone)
+    # facts. Off until we have a smarter rule; "consolidated" turns it on.
+    default_basis: Literal["consolidated", "standalone", "none"] = "none"
+
     # --- LLM ---
     llm_provider: Literal["groq", "gemini", "ollama"] = "groq"
     groq_api_key: SecretStr | None = None

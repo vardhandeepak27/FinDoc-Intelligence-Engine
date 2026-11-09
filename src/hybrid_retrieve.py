@@ -130,18 +130,27 @@ def hybrid_retrieve(
 
 
 def search(query, metadata, index, model, bm25, top_k=None):
-    """Full retrieval for a raw user question: understand, filter, retrieve."""
+    """Full retrieval for a raw user question:
+    understand -> filter -> hybrid retrieve -> (optional) rerank."""
+    top_k = top_k or settings.top_k
     intent = understand(query)
     logger.info(
-        "Query intent: company=%s basis=%s", intent.company, intent.basis
+        "Query intent: company=%s basis=%s (%s)",
+        intent.company, intent.basis, intent.basis_source,
     )
-    return intent, hybrid_retrieve(
+
+    use_reranker = bool(settings.reranker_model)
+    results = hybrid_retrieve(
         query, metadata, index, model, bm25,
-        top_k=top_k,
+        top_k=settings.rerank_candidates if use_reranker else top_k,
         company=intent.company,
         basis=intent.basis,
         keyword_query=intent.keyword_query,
     )
+    if use_reranker:
+        from rerank import rerank  # only import torch-heavy code when used
+        results = rerank(query, results, top_k=top_k)
+    return intent, results
 
 
 if __name__ == "__main__":
@@ -156,10 +165,17 @@ if __name__ == "__main__":
     intent, results = search(query, metadata, index, model, bm25)
 
     print(f"\nQuery: {query}")
-    print(f"Understood: company={intent.company} basis={intent.basis}\n")
+    print(
+        f"Understood: company={intent.company} basis={intent.basis} "
+        f"({intent.basis_source}) | reranker={settings.reranker_model}\n"
+    )
 
     for rank, result in enumerate(results, start=1):
-        print(f"Rank: {rank} | RRF score: {result['rrf_score']:.5f}")
+        score = (
+            f"rerank {result['rerank_score']:.3f}" if "rerank_score" in result
+            else f"RRF {result['rrf_score']:.5f}"
+        )
+        print(f"Rank: {rank} | {score}")
         print("Context:", result["context"])
         print("PDF page:", result["page_number"], "| Printed page:", result["printed_page"])
         print(result["text"][:600])
