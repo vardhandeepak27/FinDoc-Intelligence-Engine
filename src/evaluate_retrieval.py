@@ -4,8 +4,12 @@ For each question in data/eval/retrieval_eval.jsonl we know which PDF
 page(s) contain the answer. We run three retrievers (keyword only,
 semantic only, hybrid) and record where the first correct page appears.
 
+A result is correct when it comes from a labelled page AND its text
+contains one of the labelled answer strings (e.g. "926,240"). Questions
+without answer strings fall back to page-level matching.
+
 Metrics:
-  Hit@k  - share of questions with a correct page in the top k results
+  Hit@k  - share of questions with a correct result in the top k
   MRR@10 - mean of 1/rank of the first correct result (0 if not in top 10)
 
 Each run is saved with the index's build info, so runs made with
@@ -25,6 +29,7 @@ Usage:
 import argparse
 import json
 import logging
+import re
 from datetime import datetime
 
 import numpy as np
@@ -88,17 +93,51 @@ RANKERS = {"bm25": rank_bm25, "dense": rank_dense, "hybrid": rank_hybrid}
 
 # --------------------------------------------------------------- scoring
 
-def first_hit_rank(ranked: list[int], metadata: list[dict], question: dict) -> int | None:
-    """1-based rank of the first chunk from a correct page, else None."""
-    expected = set(question["expected_pages"])
+def normalize(text: str) -> str:
+    """Make answer matching robust to formatting: '**41, 527**' == '41,527'."""
+    text = text.lower().replace("\u00a0", " ")
+    return re.sub(r"[\s*_`|]+", "", text)
+
+
+def is_hit(meta: dict, question: dict, strict: bool) -> bool:
+    """A result counts if it comes from a correct page AND, in strict mode,
+    the chunk itself contains the answer.
+
+    Page-only matching over-counts: a page can hold several chunks, and
+    retrieving the footnote chunk of the right page doesn't give the LLM
+    the number it needs.
+    """
+    if (
+        meta["document_name"] != question["document_name"]
+        or meta["page_number"] not in question["expected_pages"]
+    ):
+        return False
+    answers = question.get("answer_contains") or []
+    if not strict or not answers:
+        return True  # no answer string labelled: fall back to page level
+    text = normalize(meta.get("text", ""))
+    return any(normalize(a) in text for a in answers)
+
+
+def first_hit_rank(ranked, metadata, question, strict=True) -> int | None:
+    """1-based rank of the first correct result, else None."""
     for rank, i in enumerate(ranked, start=1):
-        meta = metadata[i]
-        if (
-            meta["document_name"] == question["document_name"]
-            and meta["page_number"] in expected
-        ):
+        if is_hit(metadata[i], question, strict):
             return rank
     return None
+
+
+def check_labels(questions: list[dict], metadata: list[dict]) -> None:
+    """Warn about questions that can never score: no chunk on a labelled
+    page contains the labelled answer. That's a label bug (or a chunker
+    change that split the answer), not a retrieval failure."""
+    for question in questions:
+        if not any(is_hit(meta, question, strict=True) for meta in metadata):
+            logger.warning(
+                "Label check: no chunk on pages %s contains %s (question %s)",
+                question["expected_pages"], question.get("answer_contains"),
+                question["id"],
+            )
 
 
 def summarize(ranks: list[int | None]) -> dict:
@@ -125,6 +164,7 @@ def print_table(title: str, rows: dict[str, dict]) -> None:
 def evaluate(mode: str) -> None:
     questions = load_questions()
     metadata, index, model, bm25 = load_data()
+    check_labels(questions, metadata)
 
     per_question = {name: [] for name in RANKERS}
 
@@ -135,12 +175,14 @@ def evaluate(mode: str) -> None:
             intent_errors.append((question["id"], filters["company"]))
         for name, ranker in RANKERS.items():
             ranked = ranker(filters, metadata, index, model, bm25)
-            rank = first_hit_rank(ranked, metadata, question)
+            rank = first_hit_rank(ranked, metadata, question, strict=True)
+            page_rank = first_hit_rank(ranked, metadata, question, strict=False)
             top = metadata[ranked[0]] if ranked else {}
             per_question[name].append({
                 "id": question["id"],
                 "type": question["type"],
                 "rank": rank,
+                "page_rank": page_rank,
                 "top_result": f"{top.get('company', '')} p{top.get('page_number', '')}",
             })
 
@@ -164,6 +206,12 @@ def evaluate(mode: str) -> None:
             },
         )
 
+    lenient = summarize([r["page_rank"] for r in per_question["hybrid"]])
+    print(
+        f"\nFor comparison, page-level (lenient) hybrid: "
+        f"hit@10 {lenient['hit@10']:.2f}, mrr@10 {lenient['mrr@10']:.2f}"
+    )
+
     if mode == "auto":
         print(f"\nCompany detected correctly for "
               f"{len(questions) - len(intent_errors)}/{len(questions)} questions")
@@ -171,7 +219,7 @@ def evaluate(mode: str) -> None:
             print(f"  {qid}: detected {got}")
 
     # ---- what hybrid got wrong: these are the cases to study
-    print("\nHybrid misses (correct page not in top 10):")
+    print("\nHybrid misses (no chunk containing the answer in the top 10):")
     by_id = {q["id"]: q for q in questions}
     for row in per_question["hybrid"]:
         if row["rank"] is None:
@@ -193,6 +241,7 @@ def evaluate(mode: str) -> None:
         "fusion_weights": {"bm25": settings.bm25_weight, "dense": settings.dense_weight},
         "index_info": index_info,
         "overall": overall,
+        "hybrid_page_level": lenient,
         "per_question": per_question,
     }
     model_tag = index_info.get("embedding_model", "unknown").split("/")[-1]
