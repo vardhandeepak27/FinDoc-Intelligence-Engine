@@ -45,6 +45,22 @@ class AnswerResult:
 
 # ------------------------------------------------------------------ checks
 
+def normalize_citations(text: str) -> str:
+    """Bring citation variants to one format, [S1].
+
+    Models don't always follow the requested format exactly. gpt-oss, for
+    example, tends to write 【S1】 (from its training), and others write
+    [S1, S3]. We normalise rather than fight it in the prompt: code that
+    reads LLM output should accept reasonable variations.
+    """
+    text = re.sub(r"【\s*S(\d+)[^】]*】", r"[S\1]", text)          # 【S1】, 【S1†L4】
+    text = re.sub(
+        r"\[\s*(S\d+(?:\s*[,;]\s*S\d+)+)\s*\]",                   # [S1, S3]
+        lambda m: "".join(f"[{s.strip()}]" for s in re.split(r"[,;]", m.group(1))),
+        text,
+    )
+    return text
+
 def normalize_number(raw: str) -> str:
     """'(41,527)' -> '41527', '2,67,021' -> '267021', '23.51%' -> '23.51'."""
     return re.sub(r"[(),%\s]", "", raw).lstrip("-")
@@ -118,6 +134,7 @@ class RAGEngine:
 
         response = chat(build_messages(question, sources))
         t2 = time.perf_counter()
+        response.text = normalize_citations(response.text)
 
         found = NOT_FOUND.lower()[:30] not in response.text.lower()
         grounding = check_answer(response.text, question, sources)
