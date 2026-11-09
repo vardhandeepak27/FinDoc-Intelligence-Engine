@@ -64,10 +64,21 @@ class Settings(BaseSettings):
     # facts. Off until we have a smarter rule; "consolidated" turns it on.
     default_basis: Literal["consolidated", "standalone", "none"] = "none"
 
-    # --- LLM ---
+      # --- LLM ---
     llm_provider: Literal["groq", "gemini", "ollama"] = "groq"
+    llm_model: str | None = None            # None = the provider's default
     groq_api_key: SecretStr | None = None
     gemini_api_key: SecretStr | None = None
+    ollama_base_url: str = "http://localhost:11434/v1"
+    llm_temperature: float = Field(default=0.0, ge=0, le=2)
+    llm_max_tokens: int = Field(default=2048, gt=0)   # reasoning + answer
+    llm_reasoning_effort: Literal["low", "medium", "high"] = "low"
+    llm_timeout_seconds: float = Field(default=60, gt=0)
+    llm_max_retries: int = Field(default=5, ge=0)
+
+    # --- Answer generation
+    answer_context_chunks: int = Field(default=6, gt=0)    # chunks sent to the LLM
+    answer_context_tokens: int = Field(default=4000, gt=0)  # budget for those chunks
 
     # --- Logging ---
     log_level: Literal["DEBUG", "INFO", "WARNING", "ERROR"] = "INFO"

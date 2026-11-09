@@ -13,3 +13,6 @@ pymupdf-layout==2.1             # layout model: finds tables, headers, footers
 
 # --- Configuration ---
 pydantic-settings==2.16.2       # typed settings from .env / env vars
+
+# --- LLMs ---
+openai==3.46.0
