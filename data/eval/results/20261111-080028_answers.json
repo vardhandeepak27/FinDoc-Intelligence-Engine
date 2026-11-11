@@ -1,0 +1,1124 @@
+{
+  "run_at": "2026-11-11T08:00:28",
+  "llm_model": "openai/gpt-oss-120b",
+  "judge_model": null,
+  "reranker": "Alibaba-NLP/gte-reranker-modernbert-base",
+  "summary": {
+    "answered": 1.0,
+    "correct": "0.80  (4/5)",
+    "failures": {
+      "ok": 4,
+      "generation_error": 1
+    },
+    "refusal_rate_unanswerable": 1.0
+  },
+  "answerable": [
+    {
+      "question": "What was Wipro's consolidated revenue from operations for FY2025-26?",
+      "answer": "Wipro’s consolidated revenue from operations for FY 2025‑26 (year ended 31 March 2026) was **₹ 926,240 million**[S1].",
+      "found": true,
+      "sources": [
+        {
+          "id": "S1",
+          "cited": true,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 284,
+          "printed_page": "310",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | Consolidated | CONSOLIDATED FINANCIAL STATEMENT UNDER IND AS > Consolidated Statements of Profit and Loss | Amounts in ₹ million",
+          "text": "||Notes|**Year ended**<br>**March 31, 2026**|Year ended<br>March 31, 2025|\n|---|---|---|---|\n|**INCOME**||||\n|Revenue from operations|22|926,240|890,884|\n|Other income|23|38,737|38,840|\n|**Total income(A)**||**964,977**|**929,724**|\n|**EXPENSES**<br>||||\n|Purchases of stock-in-trade<br>||5,755|2,967|\n|Changes in inventories of stock-<br>in-trade|24|171|195|\n|Employee benefits expense|25|555,855|533,477|\n|Finance costs|26|14,577|14,770|\n|Depreciation, amortisation and<br>impairment expense||29,107|29,579|\n|Sub-contracting and technical<br>fees||107,668|100,148|\n|Facilityexpenses||15,886|16,067|\n|Software license expense for<br>internal use||21,720|19,338|\n|Travel||13,882|14,095|\n|Communication||3,414|3,842|\n|Legal andprofessional charges||10,199|11,270|\n|Marketingand brand building||3,480|3,591|\n|Lifetime expected credit loss||2,838|324|\n|Other expenses|27|7,260|5,358|\n|**Total expenses(B)**<br>**i i**||**791,812**|**755,021**|\n|**Profit before share of net profit/(loss)**<br>**of associate andjoint venture**<br>i||**173,165**|**174,703**|\n|Share of net profit/(loss) of associate<br>and joint venture accounted for using<br>the equitymethod(C)|9|257|254|"
+        },
+        {
+          "id": "S2",
+          "cited": false,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 306,
+          "printed_page": "332",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | Consolidated | CONSOLIDATED FINANCIAL STATEMENT UNDER IND AS | (xiv) Revenue | Amounts in ₹ million",
+          "text": "## (xiv) Revenue\n\nThe Company derives revenue primarily from software development, maintenance of software/ hardware and related services, consulting services, business process services and sale of IT products."
+        },
+        {
+          "id": "S3",
+          "cited": false,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 418,
+          "printed_page": "444",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | Consolidated | CONSOLIDATED FINANCIAL STATEMENTS UNDER IFRS | (xiv) Revenue | Amounts in ₹ million",
+          "text": "## (xiv) Revenue\n\nThe Company derives revenue primarily from software development, maintenance of software/hardware and related services, consulting services, business process services and sale of IT products."
+        },
+        {
+          "id": "S4",
+          "cited": false,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 379,
+          "printed_page": "405",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | Consolidated | Notes to the Consolidated Financial Statements | Amounts in ₹ million",
+          "text": "|Name of the entity|Net A|sset|Shar<br>Profit o|e in<br>i r Loss|Share in<br>compreh<br>inco|Other<br>ensive<br>me|Share i<br>compre<br>inco|n total<br>hensive<br>me|\n|---|---|---|---|---|---|---|---|---|\n|Wipro IT Services, LLC<sup>(8)</sup>|0.6%|5,648|(16.7)%|(22,098)|(8.9)%|(3,154)|(15.1)%|(25,252)|\n|Wipro Japan KK|0.1%|507|(0.1)%|(81)|0.1%|28|(0.0)%|(53)|\n|Wipro Networks Pte Limited|0.4%|3,099|1.3%|1,723|0.5%|164|1.1%|1,887|\n|Wipro OutsourcingServices (Ireland) Limited|0.0%|20|(0.0)%|(5)|0.0%|4|(0.0)%|(1)|\n|Wipro Philippines, Inc.|2.7%|23,976|3.8%|5,068|2.8%|975|3.6%|6,043|\n|Wipro Portugal S.A.|0.8%|7,447|0.0%|60|0.2%|63|0.1%|123|\n|Wipro Shanghai Limited|0.0%|261|0.0%|56|0.1%|34|0.1%|90|\n|Wipro Solutions Canada Limited|0.3%|2,804|0.6%|796|0.8%|295|0.7%|1,091|\n|Wipro Technologies Australia PtyLtd|0.3%|2,570|0.0%|27|(0.9)%|(312)|(0.2)%|(285)|\n|Wipro Technologies GmbH|0.9%|7,553|1.1%|1,444|0.8%|284|1.0%|1,728|\n|Wipro Technologies Limited|0.0%|27|0.0%|7|0.0%|3|0.0%|10|\n|Wipro Technologies Nigeria Limited|(0.0)%|(162)|0.0%|6|(0.1)%|(31)|(0.0)%|(25)|\n|Wipro Technologies Peru SAC|0.0%|93|(0.0)%|(14)|0.0%|14|-|-|\n|Wipro Business Solutions GmbH|0.7%|5,765|0.2%|310|2.6%|927|0.7%|1,237|"
+        },
+        {
+          "id": "S5",
+          "cited": false,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 396,
+          "printed_page": "422",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | Consolidated | CONSOLIDATED FINANCIAL STATEMENTS UNDER IFRS | Amounts in ₹ million",
+          "text": "||Notes|Year ended<br>March 31, 2024|Year ended<br>March 31, 2025|**Year ended**<br>**March 31, 2026**|**Year ended**<br>**March 31, 2026**<br>**Convenience**<br>**translation**<br>**into U.S. Dollar**<br>**in millions**<br>**ditd**|\n|---|---|---|---|---|---|\n||||||**(unaue)**<br>**Refer to Note**<br>**2(iii)**|\n|Revenues|24|897,603|890,884|926,240|9,871|\n|Cost of revenues|25|(631,497)|(617,802)|(656,192)|(6,993)|\n|**Gross profit**||**266,106**|**273,082**|**270,048**|**2,878**|\n|Selling and<br>marketing<br>expenses|25|(69,972)|(64,378)|(59,216)|(631)|\n|General and<br>administrative<br>expenses|25|(60,375)|(57,465)|(61,434)|(655)|\n|Foreign exchange<br>gains/(losses), net|27|340|32|1,853|20|\n|**Results from operating**<br>**activities**||**136,099**|**151,271**|**151,251**|**1,612**|\n|Finance expenses|26|(12,552)|(14,770)|(14,577)|(156)|\n|Finance and other<br>income|27|23,896|38,202|36,491|389|\n|Share of net<br>profit/ (loss) of<br>associate and<br>joint venture<br>accounted for<br>using the equity<br>method|8|(233)|254|257|3|\n|**Profit before tax**||**147,210**|**174,957**|**173,422**|**1,848**|\n|Income tax<br>expense|21|(36,089)|(42,777)|(40,767)|(434)|"
+        },
+        {
+          "id": "S6",
+          "cited": false,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 25,
+          "printed_page": "46",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | LEADERSHIP INSIGHTS AND OUTLOOK | Financial Performance | Amounts in ₹ million",
+          "text": "## Financial Performance\n\n||||(₹ in million)|\n|---|---|---|---|\n|**Particulars**|**FY26**|**FY25**|**YoY Change**|\n|Revenue|928,093|890,916|4.17%|\n|Cost of Revenue<br>i|-656,192|-617,802|6.21%|\n|Gross Profit|271,901|273,114|-0.44%|\n|Selling and Marketing Expenses|-59,216|-64,378|-8.02%|\n|General and Administrative Expenses|-61,434|-57,465|6.91%|\n|Operating Income<br>i|151,251|151,271|-0.01%|\n|Profit Attributable to Equity Holders|131,974|131,354|0.47%|\n|Selling & Marketing (% of Revenue)|6.38%|7.23%|-85bps|\n|G&A (% of Revenue)|6.62%|6.45%|17bps|\n|Gross Margin|29.30%|30.66%|-136bps|\n|Operating Margin|16.30%|16.98%|-68bps|\n|EPS Basic|12.60|12.56|0.32%|\n|EPS Diluted|12.56|12.52|0.32%|\n\nFor segment reporting, we have included the impact of exchange rate fluctuations on revenue. Excluding the impact of exchange rate fluctuations, revenue, as reported in our statement of income, is ₹890,884 million and ₹926,240 million for the years ended March 31, 2025 and 2026, respectively. Please see Note 33 of the Notes to the Consolidated Financial Statements under IFRS for additional details.\n\n**Revenue:** Our revenue increased by 4.17% for fiscal year 2026 compared to fiscal year 2025."
+        }
+      ],
+      "grounding": {
+        "cited_sources": [
+          1
+        ],
+        "invalid_citations": [],
+        "numbers_grounded": [
+          "2025",
+          "31",
+          "2026)",
+          "926,240"
+        ],
+        "numbers_in_uncited_source": [],
+        "numbers_not_in_sources": [],
+        "has_citations": true
+      },
+      "intent": {
+        "company": "Wipro",
+        "basis": "consolidated"
+      },
+      "model": "openai/gpt-oss-120b",
+      "timings": {
+        "retrieval_s": 11.09,
+        "llm_s": 0.74,
+        "total_s": 11.83
+      },
+      "usage": {
+        "completion_tokens": 95,
+        "prompt_tokens": 2748,
+        "total_tokens": 2843,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 46,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_tokens_details": null,
+        "queue_time": 0.162400985,
+        "prompt_time": 0.131663242,
+        "completion_time": 0.196912885,
+        "total_time": 0.328576127
+      },
+      "id": "w01",
+      "grade": {
+        "answered": true,
+        "correct": true,
+        "supported": true,
+        "right_page": true,
+        "answer_in_context": true,
+        "unverified_numbers": [],
+        "failure": "ok"
+      }
+    },
+    {
+      "question": "What was Wipro's standalone profit for the year ended March 31, 2026?",
+      "answer": "Wipro’s standalone profit for the year ended 31 March 2026 was **₹ 121,296 million**[S3].",
+      "found": true,
+      "sources": [
+        {
+          "id": "S1",
+          "cited": false,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 229,
+          "printed_page": "255",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | Standalone | Notes to the Standalone Financial Statements | Amounts in ₹ million",
+          "text": "As at March 31, 2026 and 2025, respectively, every 1% increase/decrease in the respective foreign currencies compared to functional currency of the Company would increase/decrease the Company’s profit before taxes by approximately ₹ 958 and ₹ 679, respectively."
+        },
+        {
+          "id": "S2",
+          "cited": false,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 242,
+          "printed_page": "268",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | Standalone | STANDALONE FINANCIAL STATEMENT UNDER IND AS | 28. EARNINGS PER EQUITY SHARE | Amounts in ₹ million",
+          "text": "## Notes to the Standalone Financial Statements\n\n( ₹ in millions, except share and per share data, unless otherwise stated)\n\n## 28. EARNINGS PER EQUITY SHARE\n\nA reconciliation of profit for the year and equity shares used in the computation of basic and diluted earnings per equity share is set out below:\n\n**Basic:** Basic earnings per equity share is calculated by dividing the profit attributable to equity shareholders of the Company by the weighted average number of equity shares outstanding during the year, excluding equity shares purchased by the Company and held as treasury shares.\n\n||**Year ended**<br>**March 31, 2026**|Year ended<br>March 31, 2025|\n|---|---|---|\n|Profit attributable to equity holders of the Company|₹121,296|₹109,131|\n|Weighted average number of equity shares outstanding|10,476,247,846|10,456,741,552|\n|**Basic earnings per equity share**|₹**11.59**|₹**10.44**|\n\n**Diluted:** Diluted earnings per equity share is calculated by adjusting the weighted average number of equity shares outstanding during the year for assumed conversion of all dilutive potential equity shares. Employee share options are dilutive potential equity shares for the Company."
+        },
+        {
+          "id": "S3",
+          "cited": true,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 178,
+          "printed_page": "204",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | Standalone | STANDALONE FINANCIAL STATEMENT UNDER IND AS | Statements of Profit and Loss | Amounts in ₹ million",
+          "text": "||Notes|**Year ended**<br>**March 31, 2026**|Year ended<br>March 31, 2025|\n|---|---|---|---|\n|**INCOME**||||\n|Revenue from operations|22|713,451|685,750|\n|Other income|23|47,491|39,477|\n|**Total income**||**760,942**|**725,227**|\n|**EXPENSES**||||\n|Purchases of stock-in-trade||3,352|2,113|\n|Changes in inventories of stock-in-<br>trade|24|148|90|\n|Employee benefits expense|25|388,809|383,850|\n|Finance costs|26|10,959|10,018|\n|Depreciation, amortisation and<br>impairment expense||14,182|15,013|\n|Sub-contracting and technical<br>fees||126,442|112,812|\n|Facility expenses||12,542|12,350|\n|Software license expense for<br>internal use||17,331|16,023|\n|Travel||11,447|11,646|\n|Communication||2,333|2,335|\n|Legal and professional charges||6,075|7,189|\n|Marketing and brand building||3,031|3,117|\n|Other expenses|27|5,239|2,546|\n|**Total expenses**||**601,890**|**579,102**|\n|**Profit before tax**||**159,052**|**146,125**|\n|**Tax expense**||||\n|Current tax|21|38,349|39,934|\n|Deferred tax|21|(593)|(2,940)|\n|**Total tax expense**||**37,756**|**36,994**|\n|**Profit for the year**||**121,296**|**109,131**|\n|**Other comprehensive income (OCI)**||||"
+        },
+        {
+          "id": "S4",
+          "cited": false,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 242,
+          "printed_page": "268",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | Standalone | STANDALONE FINANCIAL STATEMENT UNDER IND AS | 28. EARNINGS PER EQUITY SHARE | Amounts in ₹ million",
+          "text": "The calculation is performed in respect of share options to determine the number of equity shares that could have been acquired at fair value (determined as the average market price of the Company’s equity shares during the year). The number of equity shares calculated as above is compared with the number of equity shares that would have been issued assuming the exercise of the share options.\n\n||**Year ended**<br>**March 31, 2026**|Year ended<br>March 31, 2025|\n|---|---|---|\n|Profit attributable to equity holders of the Company|₹121,296|₹109,131|\n|Weighted average number of equity shares outstanding|10,476,247,846|10,456,741,552|\n|Effect of dilutive equivalent share options|27,175,090|32,197,840|\n|Weighted average number of equity shares for diluted earnings per share|10,503,422,936|10,488,939,392|\n|**Diluted earnings per equity share**|₹**11.55**|₹**10.40**|\n\nFor the years ended March 31, 2026 and 2025, 1,586,275 and 1,294,623 options, respectively, were excluded from diluted weighted-average number of equity shares calculation because their effect would have been anti-dilutive."
+        },
+        {
+          "id": "S5",
+          "cited": false,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 261,
+          "printed_page": "287",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | Standalone | Notes to the Standalone Financial Statements | Amounts in ₹ million",
+          "text": "||**Year ended**<br>**March 31, 2026**|Year ended<br>March 31, 2025|\n|---|---|---|\n|**Items of property, plant and equipments sold to subsidiaries/trusts**|||\n|Wipro Technologies Australia Pty Ltd|₹1|₹-|\n|Wipro IT Services UK Societas|-|9|\n|Capco Technologies Private Limited|-|5|\n|Capco Consulting Singapore Pte. Ltd|-|1|\n|**Dividend paid to entities controlled by/with significant influence of Promoters**|||\n|Zash Traders|₹24,224|₹12,487|\n|Prazim Traders|23,763|12,248|"
+        },
+        {
+          "id": "S6",
+          "cited": false,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 265,
+          "printed_page": "291",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | Standalone | Notes to the Standalone Financial Statements | Amounts in ₹ million",
+          "text": "||**Year ended**<br>**March 31, 2026**|Year ended<br>March 31, 2025|\n|---|---|---|\n|Wipro Systems Provident Fund Trust|₹7,058|₹6,517|\n|**Contribution to Gratuity trust**|||\n|Wipro Limited Employees Gratuity Fund|₹5,220|₹-|\n|**Investment in wholly owned subsidiary**|||\n|Wipro, LLC|₹33,548|₹-|\n|Wipro, Inc.|-|51|"
+        }
+      ],
+      "grounding": {
+        "cited_sources": [
+          3
+        ],
+        "invalid_citations": [],
+        "numbers_grounded": [
+          "121,296"
+        ],
+        "numbers_in_uncited_source": [],
+        "numbers_not_in_sources": [],
+        "has_citations": true
+      },
+      "intent": {
+        "company": "Wipro",
+        "basis": "standalone"
+      },
+      "model": "openai/gpt-oss-120b",
+      "timings": {
+        "retrieval_s": 6.08,
+        "llm_s": 0.49,
+        "total_s": 6.58
+      },
+      "usage": {
+        "completion_tokens": 77,
+        "prompt_tokens": 2067,
+        "total_tokens": 2144,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 37,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": null,
+          "cached_tokens": 256,
+          "image_tokens": null,
+          "text_tokens": null
+        },
+        "queue_time": 0.158391804,
+        "prompt_time": 0.085567914,
+        "completion_time": 0.173430777,
+        "total_time": 0.258998691
+      },
+      "id": "w02",
+      "grade": {
+        "answered": true,
+        "correct": true,
+        "supported": true,
+        "right_page": true,
+        "answer_in_context": true,
+        "unverified_numbers": [],
+        "failure": "ok"
+      }
+    },
+    {
+      "question": "What is Wipro's consolidated total equity as at March 31, 2026?",
+      "answer": "Wipro’s consolidated total equity was **₹ 887,877 million** as at 31 March 2026[S6].",
+      "found": true,
+      "sources": [
+        {
+          "id": "S1",
+          "cited": false,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 400,
+          "printed_page": "426",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | Consolidated | CONSOLIDATED FINANCIAL STATEMENTS UNDER IFRS | Amounts in ₹ million",
+          "text": "|**Total**<br>**equity**|**830,447**|**132,655**|**36,039**|**168,694**|**33**|**(115,775)**|**4,465**|**-**|**13**|**(111,264)**|**887,877**|**9,464**||\n|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n||**As at April 1, 2025**|**Comprehensive income for the year**<br>Profit for the year|Other comprehensive income|**Total comprehensive income for the year**|Issue of equity shares on exercise of options|Dividend(4)|Compensation cost related to employee share-based<br>payment|Transferred from Special Economic Zone<br>re-investment reserve|Others|**Other transactions for the year**|**As at March 31, 2026**|**Convenience translation into U.S. Dollar in millions**<br>**(unaudited) Refer to Note 2(iii)**|(1)Includes 11,905,480 treasury shares held as at Marc<br>(2)Refer to Note 20<br>(3)Refer to Note 19<br>(4)Refer to Note 22|"
+        },
+        {
+          "id": "S2",
+          "cited": false,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 400,
+          "printed_page": "426",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | Consolidated | CONSOLIDATED FINANCIAL STATEMENTS UNDER IFRS | Amounts in ₹ million",
+          "text": "|**Total**<br>**equity**|**830,447**|**132,655**|**36,039**|**168,694**|**33**|**(115,775)**|**4,465**|**-**|**13**|**(111,264)**|**887,877**|**9,464**||\n|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n|**Share-**<br>**based**<br>**payment**<br>**reserve**|**6,985**|-|-|**-**|(3,530)|-|4,465|-|-|**935**|**7,920**|**84**||\n|**Retained**<br>**earnings**|**716,477**|131,974|-|**131,974**|-|(115,206)|-|1,812|-|**(113,394)**|**735,057**|**7,834**||\n|**Share**<br>**premium**|**2,628**|-|-|**-**|3,530|-|-|-|-|**3,530**|**6,158**|**66**|t.|\n|**Share**<br>**capital,**<br>**fully**<br>**paid-up**|**20,944**|-|-|**-**|33|-|-|-|-|**33**|**20,977**|**224**|ntrolled trus|\n|**Number of**<br>**Shares(1)**|**10,472,136,049**|-|-|**-**|16,276,409|-|-|-|-|**16,276,409**|**10,488,412,458**||h 31, 2026 by a co|"
+        },
+        {
+          "id": "S3",
+          "cited": false,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 399,
+          "printed_page": "425",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | Consolidated | Amounts in ₹ million",
+          "text": "|Total<br>equity|**751,223**<br>**132,180**|**4,263**|**136,443**|**27**|**-**|**(62,750)**|**-**|**-**|**5,551**|**-**<br>**(47)**|**(57,219)**|**830,447**|\n|---|---|---|---|---|---|---|---|---|---|---|---|---|\n|Non-<br>controlling<br>interests|**1,340**<br>826|22|**848**|-|-|-|-|(3)|-|-<br>(47)|**(50)**|**2,138**|\n|Equity<br>attributable<br>to the equity<br>holders of the<br>Company|**749,883**<br>**131,354**|**4,241**|**135,595**|**27**|**-**|**(62,750)**|**-**|**3**|**5,551**|**-**<br>**-**|**(57,169)**|**828,309**|\n|equity<br>Other<br>reserves(2)|**8,854**<br>-|(2,224)|**(2,224)**|-|(1,661)|-|(5,754)|(8)|-|-<br>-|**(7,423)**|**(793)**|\n|omponents of<br>Cash flow<br>hedging<br>reserve(3)|**578**<br>-|(788)|**(788)**|-|-|-|-|-|-|-<br>-|**-**|**(210)**|\n|Other c<br>Foreign<br>currency<br>translation<br>reserve(2)|**47,261**<br>-|7,253|**7,253**|-|-|-|-|(14)|-|-<br>-|**(14)**|**54,500**|\n|Special<br>Economic<br>Zone re-<br>investment<br>reserve|**42,129**<br>-|-|**-**|-|-|-|-|-|-|(14,351)<br>-|**(14,351)**|**27,778**|\n|Share-<br>based<br>payment<br>reserve|**6,384**<br>-|-|**-**|(4,950)|-|-|-|-|5,551|-<br>-|**601**|**6,985**|"
+        },
+        {
+          "id": "S4",
+          "cited": false,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 282,
+          "printed_page": "308",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | Consolidated | CONSOLIDATED FINANCIAL STATEMENT UNDER IND AS | Amounts in ₹ million",
+          "text": "||Notes|**As at**<br>**March 31, 2026**|As at<br>March 31, 2025|\n|---|---|---|---|\n|**Total current assets**||**826,354**|**777,775**|\n|**TOTAL ASSETS**||**1,414,077**|**1,281,852**|\n|**EQUITY AND LIABILITIES**||||\n|**EQUITY**||||\n|Equity share capital|16|20,977|20,944|\n|Other equity||859,206|802,697|\n|**Equity attributable to the equity**<br>**holders of the Company**||**880,183**|**823,641**|\n|Non-controlling interests||2,509|2,138|\n|**TOTAL EQUITY**||**882,692**|**825,779**|"
+        },
+        {
+          "id": "S5",
+          "cited": false,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 399,
+          "printed_page": "425",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | Consolidated | Amounts in ₹ million",
+          "text": "|Total<br>equity|**751,223**<br>**132,180**|**4,263**|**136,443**|**27**|**-**|**(62,750)**|**-**|**-**|**5,551**|**-**<br>**(47)**|**(57,219)**|**830,447**|\n|---|---|---|---|---|---|---|---|---|---|---|---|---|\n|Retained<br>earnings|**630,936**<br>131,354|-|**131,354**|-|(3,193)|(62,750)|5,754|25|-|14,351<br>-|**(45,813)**|**716,477**|\n|Share<br>premium|**3,291**<br>-|-|**-**|4,950|(5,613)|-|-|-|-|-<br>-|**(663)**|**2,628**<br>st.|\n|Share<br>capital,<br>fully<br>paid-up|**10,450**<br>-|-|**-**|27|10,467|-|-|-|-|-<br>-|**10,494**|**20,944**<br>ntrolled tru|\n|Number of<br>Shares(1)|**5,225,138,246**<br>-|-|**-**|13,628,596|5,233,369,207|-|-|-|sed<br>-|-<br>-|**5,246,997,803**|**10,472,136,049**<br>March 31, 2025 by a co|"
+        },
+        {
+          "id": "S6",
+          "cited": true,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 395,
+          "printed_page": "421",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | Consolidated | ( ₹ in millions, except share and per share data, unless otherwise stated) | Amounts in ₹ million",
+          "text": "## ( ₹ in millions, except share and per share data, unless otherwise stated)\n\n|||||**As at**<br>**March 31, 2026**<br>**Convenience**|\n|---|---|---|---|---|\n||Notes|As at<br>March 31, 2025|**As at**<br>**March 31, 2026**|**translation**<br>**into U.S. Dollar**<br>**in millions**<br>**(unaudited) Refer**<br>**to Note 2(iii)**|\n|**EQUITY**|||||\n|Share capital||20,944|20,977|224|\n|Share premium||2,628|6,158|66|\n|Retained earnings||716,477|735,057|7,834|\n|Share-based payment reserve||6,985|7,920|84|\n|Special Economic Zone Re-investment reserve||27,778|25,966|277|\n|Other components of equity||53,497|89,290|952|\n|**Equity attributable to the equity holders of the Company**||**828,309**|**885,368**|**9,437**|\n|Non-controlling interests||2,138|2,509|27|\n|**TOTAL EQUITY**||**830,447**|**887,877**|**9,464**|\n|**LIABILITIES**|||||\n|Financial liabilities|||||\n|Loans and borrowings|14|63,954|1,962|21|\n|Lease liabilities|5|22,193|26,327|281|\n|Accrued expenses|15|-|4,394|47|\n|Other financial liabilities|16|7,793|6,743|72|\n|Deferred tax liabilities|21|16,443|17,266|184|\n|Non-current tax liabilities||42,024|48,195|514|\n|Other non-current liabilities|17|17,119|23,042|246|\n|Provisions|18|294|224|2|\n|**Total non-current liabilities**||**169,820**|**128,153**|**1,367**|"
+        }
+      ],
+      "grounding": {
+        "cited_sources": [
+          6
+        ],
+        "invalid_citations": [],
+        "numbers_grounded": [
+          "887,877"
+        ],
+        "numbers_in_uncited_source": [],
+        "numbers_not_in_sources": [],
+        "has_citations": true
+      },
+      "intent": {
+        "company": "Wipro",
+        "basis": "consolidated"
+      },
+      "model": "openai/gpt-oss-120b",
+      "timings": {
+        "retrieval_s": 8.07,
+        "llm_s": 46.49,
+        "total_s": 54.56
+      },
+      "usage": {
+        "completion_tokens": 123,
+        "prompt_tokens": 3024,
+        "total_tokens": 3147,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 84,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_tokens_details": null,
+        "queue_time": 0.156499204,
+        "prompt_time": 0.143536547,
+        "completion_time": 0.25521635,
+        "total_time": 0.398752897
+      },
+      "id": "w03",
+      "grade": {
+        "answered": true,
+        "correct": false,
+        "supported": false,
+        "right_page": false,
+        "answer_in_context": true,
+        "unverified_numbers": [],
+        "failure": "generation_error"
+      }
+    },
+    {
+      "question": "What was Wipro's effective tax rate in fiscal 2026?",
+      "answer": "Wipro’s effective income tax rate for fiscal 2026 (year ended 31 March 2026) was **23.51 %**[S1].",
+      "found": true,
+      "sources": [
+        {
+          "id": "S1",
+          "cited": true,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 454,
+          "printed_page": "480",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | Consolidated | CONSOLIDATED FINANCIAL STATEMENTS UNDER IFRS | 21. INCOME TAXES | Amounts in ₹ million",
+          "text": "The reconciliation between the provision of income tax and amounts computed by applying the Indian statutory income tax rate to profit before taxes is as follows:\n\n||Year ended<br>March 31, 2024|Year ended<br>March 31, 2025|**Year ended**<br>**March 31, 2026**|\n|---|---|---|---|\n|Profit before tax|₹147,210|₹174,957|₹173,422|\n|Enacted income tax rate in India|34.94%|34.94%|34.94%|\n|Computed expected tax expense|₹**51,435**|₹**61,130**|₹**60,594**|\n|Effect of:||||\n|Income exempt from tax|₹(14,897)|₹(12,960)|₹(13,755)|\n|Basis differences that will reverse during a tax holiday period|(202)|(332)|66|\n|Income taxed at higher / (lower) rates|(7,497)|(7,736)|(7,393)|\n|Taxes related to prior years|2,567|(2,306)|(4,141)|\n|Changes in unrecognized deferred tax assets|1,092|(17)|123|\n|Expenses disallowed for tax purpose|3,945|4,460|4,803|\n|Others, net|(354)|538|470|\n|**Income tax expense**|₹**36,089**|₹**42,777**|₹**40,767**|\n|Effective income tax rate|24.52%|24.45%|23.51%|"
+        },
+        {
+          "id": "S2",
+          "cited": false,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 26,
+          "printed_page": "49",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | LEADERSHIP INSIGHTS AND OUTLOOK | Financial Performance | Amounts in ₹ million",
+          "text": "**Income Taxes:** Our income taxes decreased by ₹2,010 million from ₹42,777 million for the year ended March 31, 2025, to ₹40,767 million for the year ended March 31, 2026, and our effective tax rate decreased from 24.45% for the year ended March 31, 2025 to 23.51% for the year ended March 31, 2026. Please refer to Note 21 of the Notes to the Consolidated Financial Statements under IFRS for further information.\n\n**Profit Attributable to Non-Controlling Interest:** Our profit attributable to non-controlling interest decreased from ₹826 million for the year ended March 31, 2025, to ₹681 million for the year ended March 31, 2026.\n\n**Profit Attributable to Equity Holders:** As a result of the foregoing factors, our profit attributable to equity holders increased by ₹620 million or 0.47%, from ₹131,354 million for the year ended March 31, 2025, to ₹131,974 million for the year ended March 31, 2026."
+        },
+        {
+          "id": "S3",
+          "cited": false,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 352,
+          "printed_page": "378",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | Consolidated | CONSOLIDATED FINANCIAL STATEMENT UNDER IND AS | 28. INCOME TAX | Amounts in ₹ million",
+          "text": "The reconciliation between the provision of income tax and amounts computed by applying the Indian statutory income tax rate to profit before tax is as follows:\n\n||**Year ended**<br>**March 31, 2026**|Year ended<br>March 31, 2025|\n|---|---|---|\n|Profit before tax|₹173,422|₹174,957|\n|Enacted income tax rate in India|34.94%|34.94%|\n|Computed expected tax expense|₹**60,594**|`K `**61,130**|\n|Effect of:|||\n|Income exempt from tax|(13,755)|(12,960)|\n|Basis differences that will reverse during a tax holiday period|66|(332)|\n|Income taxed at higher/ (lower) rates|(7,393)|(7,736)|\n|Taxes related to prior years|(4,141)|(2,306)|\n|Changes in unrecognised deferred tax assets|123|(17)|\n|Expenses disallowed for tax purpose|4,803|4,460|\n|Others, net|470|538|\n|**Income tax expense**|₹**40,767**|₹**42,777**|\n|Effective tax rate|23.51%|24.45%|"
+        },
+        {
+          "id": "S4",
+          "cited": false,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 232,
+          "printed_page": "258",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | Standalone | STANDALONE FINANCIAL STATEMENT UNDER IND AS | 21. INCOME TAX | Amounts in ₹ million",
+          "text": "The reconciliation between the provision of income tax and amounts computed by applying the Indian statutory income tax rate to profit before taxes is as follows:\n\n||**Year ended**<br>**March 31, 2026**|Year ended<br>March 31, 2025|\n|---|---|---|\n|Profit before tax|₹159,052|₹146,125|\n|Enacted income tax rate in India|34.94%|34.94%|\n|Computed expected tax expense|₹55,573|₹51,056|\n|Effect of:|||\n|Income exempt from tax|₹(17,492)|₹(14,139)|\n|Basis differences that will reverse during a tax holiday period|66|(331)|\n|Income taxed at higher/(lower) rates|(223)|(74)|\n|Taxes related to prior years|(3,949)|(4,156)|\n|Changes in unrecognised deferred tax assets|(543)|441|\n|Expenses disallowed for tax purpose|4,317|4,194|\n|Others, net|7|3|\n|**Income tax expense**|₹**37,756**|₹**36,994**|\n|Effective income tax rate|23.74%|25.32%|"
+        },
+        {
+          "id": "S5",
+          "cited": false,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 385,
+          "printed_page": "411",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | Consolidated | 39. EVENTS AFTER THE REPORTING PERIOD | Amounts in ₹ million",
+          "text": "|olding and exchange rate)<br>Profit<br>after<br>taxation<br>(b)<br>Proposed<br>Dividend<br>(incl.<br>dividend<br>tax) (b)|9<br>-|151<br>-||(32)<br>-|55<br>-|128<br>-<br>|808<br>-|52<br>-|18<br>-|(197)<br>-||482<br>-|749<br>-<br>29<br>-|68<br>-<br>|8<br>-|(43)<br>-|12|-<br>|4,284<br>-|1,304<br>-||516<br>-||1,850<br>-||56<br>-|(107)<br>-|31<br>-|(385)<br>-<br>|8<br>-|(28)<br>-|2<br>-||332<br>-|107<br>-|20<br>-||(365)<br>-|180<br>-<br>(1)<br>-|(412)<br>-<br>(31)<br>-|\n|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n|Sl.<br>No.<br>Name of the Subsidiary|60<br>Wipro CRM Services B.V. (Formerly<br>known as Wipro 4C NEDERLAND B.V.)|61<br>Wipro Doha LLC|62<br>Wiro SA Broad Based Ownershi|p p<br>Scheme SPV (RF) (PTY) LTD|63<br>International TechneGroup Limited|<br>64<br>Wipro CRM Services UK Limited<br><br>|65<br>International TechneGroup Incorporated|66<br>Wipro Technologies Australia Pty Ltd|67<br>Wipro Bahrain Limited Co. W.L.L|<br>68<br>Wi IT Si Bldh Liitd|pro ervces angaes me<br><br>|69<br>Wipro (Dalian) Limited|70<br>Wipro Chengdu Limited<br>71<br>Wipro Shanghai Limited|72<br>PT. WT Indonesia<br><br>i|73<br>ITI Proficiency Ltd|74<br>Wipro Japan KK|<br>75<br>Wi Thli Nii Liid|pro ecnooges gera mte<br><br>|76<br>Wipro Philippines, Inc.|77<br>Wipro Arabia Limited|78<br>Women’s Business Park Technoloies|g<br>|Limited|79<br>Wipro Networks Pte. Limited|<br>80<br>Wiro Technoloies South Africa|p g<br>(Proprietary) Limited|81<br>Wipro Gulf LLC|82<br>Wipro (Thailand) Co. Limited|83<br>The Capital Markets Company Limited<br><br>|84<br>Capco Consultancy (Thailand) Limited|<br>85<br>The Capital Markets Company BV|86<br>C Bli BV|apco egum|87<br>The Capital Markets Company Limited|88<br>The Capital Markets Company Sàrl|<br>89<br>Andrion a|g<br><br>|90<br>The Capital Markets Company S.A.S|91<br>Capco Poland sp. z o.o.<br>92<br>Capafric Consulting Proprietary Limited|93<br>The Capital Markets Company GmbH<br>94<br>Capco Austria GmbH|"
+        },
+        {
+          "id": "S6",
+          "cited": false,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 235,
+          "printed_page": "261",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | Standalone | Notes to the Standalone Financial Statements | Amounts in ₹ million",
+          "text": "## Notes to the Standalone Financial Statements\n\n( ₹ in millions, except share and per share data, unless otherwise stated)\n\nof current tax expense of ₹ 13,092 and ₹ 11,798 for the years ended March 31, 2026 and 2025, respectively, compared to the effective tax amounts that the Company estimates it would have been required to pay if these incentives had not been available. The per equity share effect of these tax incentives for the years ended March 31, 2026 and 2025 is ₹ 1.25 and ₹ 1.13, respectively.\n\nDeferred income tax liabilities are recognised for all taxable temporary differences except in respect of taxable temporary differences associated with U.S. branch profit tax where the timing of the reversal of the temporary difference can be controlled and it is probable that the temporary difference will not reverse in the foreseeable future. Accordingly, deferred income tax liabilities on branch profit tax at 15% of the U.S. branch profits have not been recognised. Further, it is not practicable to estimate the amount of the unrecognised deferred tax liabilities for these undistributed earnings."
+        }
+      ],
+      "grounding": {
+        "cited_sources": [
+          1
+        ],
+        "invalid_citations": [],
+        "numbers_grounded": [
+          "31",
+          "23.51"
+        ],
+        "numbers_in_uncited_source": [],
+        "numbers_not_in_sources": [],
+        "has_citations": true
+      },
+      "intent": {
+        "company": "Wipro",
+        "basis": null
+      },
+      "model": "openai/gpt-oss-120b",
+      "timings": {
+        "retrieval_s": 11.85,
+        "llm_s": 0.79,
+        "total_s": 12.63
+      },
+      "usage": {
+        "completion_tokens": 92,
+        "prompt_tokens": 2860,
+        "total_tokens": 2952,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 47,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_tokens_details": null,
+        "queue_time": 0.376422416,
+        "prompt_time": 0.171779809,
+        "completion_time": 0.192130397,
+        "total_time": 0.363910206
+      },
+      "id": "w04",
+      "grade": {
+        "answered": true,
+        "correct": true,
+        "supported": true,
+        "right_page": false,
+        "answer_in_context": true,
+        "unverified_numbers": [],
+        "failure": "ok"
+      }
+    },
+    {
+      "question": "Which business did Wipro acquire from HARMAN and when did the deal close?",
+      "answer": "Wipro acquired the **Digital Transformation Solutions (DTS) business unit of Harman International Inc. (HARMAN Connected Services Inc.)**, and the acquisition was consummated on **December 1 2025**[S2].",
+      "found": true,
+      "sources": [
+        {
+          "id": "S1",
+          "cited": false,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 126,
+          "printed_page": "152",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | BOARD’S REPORT | We further report that | Amounts in ₹ million",
+          "text": "- b) Wipro Digital Inc. has been incorporated as a wholly-owned subsidiary of Wipro Limited (the “Company”) with effect from August 4, 2025.\n\n- c) On August 21, 2025, the Company entered into a definitive agreement to acquire the Digital Transformation Solutions (DTS) business unit of HARMAN, a Samsung company, a global provider of Engineering, Research & Development (ER&D) services and Information Technology (IT) services for a total consideration including earn outs of USD 375 million. Pursuant to the transaction, Wipro Digital Inc., a wholly owned subsidiary, merged with Wipro Connected Services, Inc. (formerly known as Harman Connected Services, Inc.) with effect from December 1, 2025, following which Wipro Connected Services, Inc. became a wholly owned subsidiary of Wipro Limited.\n\nFor **V. SREEDHARAN & ASSOCIATES** Company Secretaries\n\n**(V. Sreedharan)** Partner FCS: 2347; CP No. 833\n\nPlace: Bengaluru Date: June 2, 2026\n\nUDIN: F002347H000566625 Peer Review Certificate No. 5543/2024\n\nThis report is to be read with our letter of even date which is annexed as **‘Annexure -1’** and forms an integral part of this report."
+        },
+        {
+          "id": "S2",
+          "cited": true,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 431,
+          "printed_page": "457",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | Consolidated | Summary of acquisitions during the year ended March 31, 2026 | Amounts in ₹ million",
+          "text": "## Notes to the Consolidated Financial Statements\n\n( ₹ in millions, except share and per share data, unless otherwise stated)\n\n## Summary of acquisitions during the year ended March 31, 2026\n\nDuring the year ended March 31, 2026, the Company completed a business combination by acquiring 100% equity interest in Digital Transformation Solutions unit of Harman International Inc. which is Harman Connected Services Inc. and its subsidiaries and certain other assets (together, “ **DTS** ”), a global provider of Engineering, Research and Development (“ **ER&D** ”) services and IT services. The acquisition was consummated on December 1, 2025, for total cash consideration of ₹ 34,044."
+        },
+        {
+          "id": "S3",
+          "cited": false,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 317,
+          "printed_page": "343",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | Consolidated | Summary of acquisitions during the year ended March 31, 2026 | Amounts in ₹ million",
+          "text": "## 8. BUSINESS COMBINATIONS\n\n## Summary of acquisitions during the year ended March 31, 2026\n\nDuring the year ended March 31, 2026, the Company completed a business combination by acquiring 100% equity interest in Digital Transformation Solutions unit of Harman International Inc. which is Harman Connected Services Inc. and its subsidiaries and certain other assets (together, “ **DTS** ”), a global provider of Engineering, Research and Development (“ **ER&D** ”) services and IT services. The acquisition was consummated on December 1, 2025, for total cash consideration of ₹ 34,044."
+        },
+        {
+          "id": "S4",
+          "cited": false,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 101,
+          "printed_page": "127",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | 1. Acquisitions | Amounts in ₹ million",
+          "text": "## 1. Acquisitions\n\nIn December 2025, the Company (through its subsidiaries) acquired 100% shareholding of Wipro Connected Services, Inc. (Formerly known as Harman Connected Services, Inc.) (USA) along with its subsidiaries and certain other assets."
+        },
+        {
+          "id": "S5",
+          "cited": false,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 21,
+          "printed_page": "39",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | LEADERSHIP INSIGHTS AND OUTLOOK > CEO’s Letter | Scaling Engineering Capabilities | Amounts in ₹ million",
+          "text": "## Scaling Engineering Capabilities\n\nThe acquisition of HARMAN’s Digital Transformation Solutions business strengthens our engineering portfolio across device engineering, AI, and Software-Defined technologies. It enables end-to-end, AI-powered engineering, supports larger, complex transformation programs, and opens new growth markets."
+        },
+        {
+          "id": "S6",
+          "cited": false,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 367,
+          "printed_page": "393",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | Consolidated | Notes to the Consolidated Financial Statements | Amounts in ₹ million",
+          "text": "(4) The Company, through its subsidiaries, has acquired 100% shareholding in Wipro Connected Services, Inc. (Formerly known as Harman Connected Services, Inc.) and its subsidiaries, effective December 1, 2025.\n\n(5) Wipro Digital Inc., a wholly owned subsidiary, has merged with Wipro Connected Services, Inc. (Formerly known as Harman Connected Services, Inc.), a stepdown subsidiary, effective December 1, 2025.\n\n(6) Cardinal US Holdings, Inc transferred its entire ownership in Capco Consulting Services LLC to The Capital Markets Company, LLC effective March 30, 2026.\n\n(7) Capco RISC Consulting LLC merged with The Capital Markets Company, LLC effective March 30, 2026.\n\n(8) Cardinal US Holdings, Inc. merged with Wipro IT Services, LLC effective March 31, 2026.\n\n(9) Rizing Consulting USA, LLC (Formerly known as Rizing Consulting USA, Inc.) merged with Rizing LLC effective March 31, 2026.\n\n(10) Wipro Business Services LLC has been incorporated as a step down subsidiary of the Company with effect from January 20, 2026, which is 100% held by Wipro, LLC."
+        }
+      ],
+      "grounding": {
+        "cited_sources": [
+          2
+        ],
+        "invalid_citations": [],
+        "numbers_grounded": [
+          "2025"
+        ],
+        "numbers_in_uncited_source": [],
+        "numbers_not_in_sources": [],
+        "has_citations": true
+      },
+      "intent": {
+        "company": "Wipro",
+        "basis": null
+      },
+      "model": "openai/gpt-oss-120b",
+      "timings": {
+        "retrieval_s": 6.94,
+        "llm_s": 41.59,
+        "total_s": 48.53
+      },
+      "usage": {
+        "completion_tokens": 99,
+        "prompt_tokens": 1685,
+        "total_tokens": 1784,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 41,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_tokens_details": null,
+        "queue_time": 0.285841354,
+        "prompt_time": 0.080442295,
+        "completion_time": 0.206362009,
+        "total_time": 0.286804304
+      },
+      "id": "w05",
+      "grade": {
+        "answered": true,
+        "correct": true,
+        "supported": true,
+        "right_page": false,
+        "answer_in_context": true,
+        "unverified_numbers": [],
+        "failure": "ok"
+      }
+    }
+  ],
+  "unanswerable": [
+    {
+      "question": "What was Infosys's revenue for FY2026?",
+      "answer": "I couldn't find this in the provided reports.",
+      "found": false,
+      "sources": [
+        {
+          "id": "S1",
+          "cited": false,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 485,
+          "printed_page": "511",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | Consolidated | Notes to the Consolidated Financial Statements | Amounts in ₹ million",
+          "text": "Information on reportable segments for the year ended March 31, 2026 is as follows:\n\n|||**I**<br>|**T Services**<br>|||**IT**<br>**Pd**|**Reconciling**<br>**I**|**Total**|\n|---|---|---|---|---|---|---|---|---|\n||**Americas 1**|**Americas 2**|**Europe**|**APMEA**|**Total**|**roucts**|**tems**||\n|Revenue|₹305,571|₹269,077|₹244,165|₹102,340|₹921,153|₹6,940|₹-|₹928,093|\n|Segment result|62,896|53,138|31,083|14,955|162,072|559|(7,954)|154,677|\n|Unallocated|||||(3,426)|-|-|(3,426)|\n|**Segment result total**|||||₹**158,646**|₹**559**|₹**(7,954)**|₹**151,251**|\n|Finance expense||||||||(14,577)|\n|Finance and other income||||||||36,491|\n|Share of net profit/(loss) of<br>associate and joint venture<br>accounted for using the<br>equity method||||||||257|\n|**Profit before tax**||||||||₹**173,422**|\n|Income tax expense||||||||(40,767)|\n|**Profit for the year**||||||||₹**132,655**|\n|Depreciation, amortization<br>and impairment||||||||₹29,107|\n\nRevenues from India, being the Company’s country of domicile, were ₹ 23,484, ₹ 20,699 and ₹ 23,446 for years ended March 31, 2024, 2025 and 2026, respectively."
+        },
+        {
+          "id": "S2",
+          "cited": false,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 25,
+          "printed_page": "46",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | LEADERSHIP INSIGHTS AND OUTLOOK | Financial Performance | Amounts in ₹ million",
+          "text": "## Financial Performance\n\n||||(₹ in million)|\n|---|---|---|---|\n|**Particulars**|**FY26**|**FY25**|**YoY Change**|\n|Revenue|928,093|890,916|4.17%|\n|Cost of Revenue<br>i|-656,192|-617,802|6.21%|\n|Gross Profit|271,901|273,114|-0.44%|\n|Selling and Marketing Expenses|-59,216|-64,378|-8.02%|\n|General and Administrative Expenses|-61,434|-57,465|6.91%|\n|Operating Income<br>i|151,251|151,271|-0.01%|\n|Profit Attributable to Equity Holders|131,974|131,354|0.47%|\n|Selling & Marketing (% of Revenue)|6.38%|7.23%|-85bps|\n|G&A (% of Revenue)|6.62%|6.45%|17bps|\n|Gross Margin|29.30%|30.66%|-136bps|\n|Operating Margin|16.30%|16.98%|-68bps|\n|EPS Basic|12.60|12.56|0.32%|\n|EPS Diluted|12.56|12.52|0.32%|\n\nFor segment reporting, we have included the impact of exchange rate fluctuations on revenue. Excluding the impact of exchange rate fluctuations, revenue, as reported in our statement of income, is ₹890,884 million and ₹926,240 million for the years ended March 31, 2025 and 2026, respectively. Please see Note 33 of the Notes to the Consolidated Financial Statements under IFRS for additional details.\n\n**Revenue:** Our revenue increased by 4.17% for fiscal year 2026 compared to fiscal year 2025."
+        },
+        {
+          "id": "S3",
+          "cited": false,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 345,
+          "printed_page": "371",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | Consolidated | D. Disaggregation of revenue | Amounts in ₹ million",
+          "text": "Information on disaggregation of revenues for the year ended March 31, 2026 is as follows:\n\n||||**₹**|**T Services**|||**IT**<br>|**Total**|\n|---|---|---|---|---|---|---|---|---|\n|||**Americas 1**|**Americas 2**|**Europe**|**APMEA**|**Total**|**Products**||\n|**A.**|**Revenue**||||||||\n||Rendering of services|₹305,036|₹268,532|₹243,645|₹102,087|₹919,300|₹-|₹919,300|\n||Sale of products|-|-|-|-|-|6,940|6,940|\n|||₹**305,036**|₹**268,532**|₹**243,645**|₹**102,087**|₹**919,300**|₹**6,940**|₹**926,240**|\n|**B.**|**Revenue by sector**||||||||\n||Banking, Financial Services and<br>Insurance|₹842|₹170,299|₹96,587|₹46,283|₹314,011|||\n||Health|116,104|1,408|12,944|3,392|133,848|||\n||Consumer|107,075|3,772|44,537|13,586|168,970|||\n||Technology and Communications|74,591|22,195|35,329|14,438|146,553|||\n||Energy, Manufacturing and<br>Resources|6,424|70,858|54,248|24,388|155,918|||\n|||₹**305,036**|₹**268,532**|₹**243,645**|₹**102,087**|₹**919,300**|₹**6,940**|₹**926,240**|\n|**C.**|**Revenue by nature of contract**||||||||\n||Fixed price and volume based|₹153,658|₹126,105|₹139,795|₹62,210|₹481,768|₹-|₹481,768|\n||Time and materials|151,378|142,427|103,850|39,877|437,532|-|437,532|\n||Products|-|-|-|-|-|6,940|6,940|\n\n||||**₹**|**T Services**|||**IT**<br>|**Total**|\n|---|---|---|---|---|---|---|---|---|\n|||₹**305,036**|₹**268,532**|₹**243,645**|₹**102,087**|₹**919,300**|₹**6,940**|₹**926,240**|"
+        },
+        {
+          "id": "S4",
+          "cited": false,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 462,
+          "printed_page": "488",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | Consolidated | CONSOLIDATED FINANCIAL STATEMENTS UNDER IFRS | Notes to the Consolidated Financial Statements | Amounts in ₹ million",
+          "text": "Information on disaggregation of revenues for the year ended March 31, 2026 is as follows:\n\n|||||**IT Services**|||**IT Products**|**Total**|\n|---|---|---|---|---|---|---|---|---|\n|||**Americas 1**|**Americas 2**|**Europe**|**APMEA**|**Total**|||\n|A.|Revenue||||||||\n||Rendering of services|₹305,036|₹268,532|₹243,645|₹102,087|₹919,300|₹-|₹919,300|\n||Sale of products|-|-|-|-|-|6,940|6,940|\n|||₹**305,036**|₹**268,532**|₹**243,645**|₹**102,087**|₹**919,300**|₹**6,940**|₹**926,240**|\n|B.|Revenue by sector||||||||\n||Banking, Financial Services<br>and Insurance|₹842|₹170,299|₹96,587|₹46,283|₹314,011|||\n||Health|116,104|1,408|12,944|3,392|133,848|||\n||Consumer|107,075|3,772|44,537|13,586|168,970|||\n||Technology and<br>Communications|74,591|22,195|35,329|14,438|146,553|||\n||Energy, Manufacturing and<br>Resources|6,424|70,858|54,248|24,388|155,918|||\n|||₹**305,036**|₹**268,532**|₹**243,645**|₹**102,087**|₹**919,300**|₹**6,940**|₹**926,240**|\n|C.|Revenue by nature of<br>contract||||||||\n||Fixed price and volume<br>based|₹153,658|₹126,105|₹139,795|₹62,210|₹481,768|₹-|₹481,768|\n||Time and materials|151,378|142,427|103,850|39,877|437,532|-|437,532|\n||Products|-|-|-|-|-|6,940|6,940|\n|||₹**305,036**|₹**268,532**|₹**243,645**|₹**102,087**|₹**919,300**|₹**6,940**|₹**926,240**|"
+        },
+        {
+          "id": "S5",
+          "cited": false,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 346,
+          "printed_page": "372",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | Consolidated | CONSOLIDATED FINANCIAL STATEMENT UNDER IND AS | Notes to the Consolidated Financial Statements | Amounts in ₹ million",
+          "text": "Information on disaggregation of revenues for the year ended March 31, 2025 is as follows:\n\n|||||IT Services|||IT||\n|---|---|---|---|---|---|---|---|---|\n|||||||||Total|\n|||Americas 1|Americas 2|Europe|APMEA|Total|Products||\n|**A.**|**Revenue**||||||||\n||Rendering of services|₹281,806|₹271,965|₹240,187|₹94,234|₹888,192|₹-|₹888,192|\n||Sale of products|-|-|-|-|-|2,692|2,692|\n|||₹**281,806**|₹**271,965**|₹**240,187**|₹**94,234**|₹**888,192**|₹**2,692**|₹**890,884**|\n|**B.**|**Revenue by sector**||||||||\n||Banking, Financial<br>Services and Insurance|₹1,240|₹172,817|₹91,965|₹38,231|₹304,253|||\n||Health|108,305|236|13,982|3,272|125,795|||\n||Consumer|103,875|6,659|43,435|15,344|169,313|||\n||Technology and<br>Communications<sup>(1)</sup>|64,907|24,255|31,804|14,933|135,899|||\n||Energy, Manufacturing<br>and Resources<sup>(1)</sup>|3,479|67,998|59,001|22,454|152,932|||\n|||₹**281,806**|₹**271,965**|₹**240,187**|₹**94,234**|₹**888,192**|₹**2,692**|₹**890,884**|\n|**C.**|**Revenue by nature of**<br>**contract**||||||||\n||Fixed price and volume<br>based|₹144,904|₹137,385|₹142,241|₹56,390|₹480,920|₹-|₹480,920|\n||Time and materials|136,902|134,580|97,946|37,844|407,272|-|407,272|\n||Products|-|-|-|-|-|2,692|2,692|"
+        },
+        {
+          "id": "S6",
+          "cited": false,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 461,
+          "printed_page": "487",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | Consolidated | Notes to the Consolidated Financial Statements | Amounts in ₹ million",
+          "text": "Information on disaggregation of revenues for the year ended March 31, 2025 is as follows:\n\n|||||IT Services|||IT Products|Total|\n|---|---|---|---|---|---|---|---|---|\n|||Americas 1|Americas 2|Europe|APMEA|Total|||\n|A.|Revenue||||||||\n||Renderingof services|₹281,806|₹271,965|₹240,187|₹94,234|₹888,192|₹-|₹888,192|\n||Sale ofproducts|-|-|-|-|-|2,692|2,692|\n|||₹**281,806**|₹**271,965**|₹**240,187**|₹**94,234**|₹**888,192**|₹**2,692**|₹**890,884**|\n|B.|Revenue bysector||||||||\n||Banking, Financial Services and<br>Insurance|₹1,240|₹172,817|₹91,965|₹38,231|₹304,253|||\n||Health|108,305|236|13,982|3,272|125,795|||\n||Consumer|103,875|6,659|43,435|15,344|169,313|||\n||Technologyand Communications<sup>(1)</sup>|64,907|24,255|31,804|14,933|135,899|||\n||Energy, Manufacturing and<br>Resources<sup>(1)</sup>|3,479|67,998|59,001|22,454|152,932|||\n|||₹**281,806**|₹**271,965**|₹**240,187**|₹**94,234**|₹**888,192**|₹**2,692**|₹**890,884**|\n|C.|Revenue bynature of contract||||||||\n||Fixed price and volume based|₹144,904|₹137,385|₹142,241|₹56,390|₹480,920|₹-|₹480,920|\n||Time and materials|136,902|134,580|97,946|37,844|407,272|-|407,272|\n||Products|-|-|-|-|-|2,692|2,692|\n|||₹**281,806**|₹**271,965**|₹**240,187**|₹**94,234**|₹**888,192**|₹**2,692**|₹**890,884**|"
+        }
+      ],
+      "grounding": {
+        "cited_sources": [],
+        "invalid_citations": [],
+        "numbers_grounded": [],
+        "numbers_in_uncited_source": [],
+        "numbers_not_in_sources": [],
+        "has_citations": false
+      },
+      "intent": {
+        "company": null,
+        "basis": null
+      },
+      "model": "openai/gpt-oss-120b",
+      "timings": {
+        "retrieval_s": 9.92,
+        "llm_s": 2.7,
+        "total_s": 12.62
+      },
+      "usage": {
+        "completion_tokens": 32,
+        "prompt_tokens": 3757,
+        "total_tokens": 3789,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 14,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_tokens_details": null,
+        "queue_time": 0.368448755,
+        "prompt_time": 0.166396838,
+        "completion_time": 0.066083859,
+        "total_time": 0.232480697
+      },
+      "id": "u01"
+    },
+    {
+      "question": "How many employees does HCLTech have?",
+      "answer": "I couldn't find this in the provided reports.",
+      "found": false,
+      "sources": [
+        {
+          "id": "S1",
+          "cited": false,
+          "company": "Capgemini",
+          "document_name": "Capgemini-URD-2025.pdf",
+          "page_number": 230,
+          "printed_page": "228",
+          "context": "Capgemini | FY2025 (year ended 2025-12-31) | 4.7.2.2 Presentation of our workforce (S1-6 & S1-7) | Amounts in € million",
+          "text": "## 4.7.2.2 Presentation of our workforce (S1-6 & S1-7)\n\nThe Group broke the 300,000 employees barrier in September 2021, following the acquisition of Altran in 2020, while dynamic post-Covid organic growth in 2021 and 2022 increased the number of employees to nearly 360,000 at the end of 2022. Following lower demand due to changes in the international geopolitical and\n\neconomic environment over the last three years, the number of employees stabilized around 340,000 employees in 2023 and 2024, before a return to organic growth in 2025, closing the year at 355,000 employees. However, the recent acquisitions of WNS and Cloud4C in the last quarter of 2025, added more than 68,000 employees, and is closing above 423,000 employees post these two acquisitions. As our key asset is our workforce, understanding its structure and development is a key component of the Group business model."
+        },
+        {
+          "id": "S2",
+          "cited": false,
+          "company": "Capgemini",
+          "document_name": "Capgemini-URD-2025.pdf",
+          "page_number": 232,
+          "printed_page": "230",
+          "context": "Capgemini | FY2025 (year ended 2025-12-31) | Headcount by age | Amounts in € million",
+          "text": "As shown in the table below, 98.9 % of employees have permanent employment contracts.\n\nDiversity is also reflected in our working conditions with flexible working being offered to our employees as well as the ability to work abroad. The people choosing to work on a part-time basis represent less than 1.9 % of the total headcount with significant differences as this is mostly a European and Anglo-Saxon practice. If we exclude India where it is not a local practice, the percentage exceeds 3.9%. Benelux and Germany remain the countries with the highest percentage of people working part-time. Within the population working part-time 59.5 % are female and 40.5 % are male.\n\nNumber of employees by contract type and gender (headcount)"
+        },
+        {
+          "id": "S3",
+          "cited": false,
+          "company": "Capgemini",
+          "document_name": "Capgemini-URD-2025.pdf",
+          "page_number": 232,
+          "printed_page": "230",
+          "context": "Capgemini | FY2025 (year ended 2025-12-31) | Headcount by age | Amounts in € million",
+          "text": "|Contract type and gender|2024|2025|\n|---|---|---|\n|Number of employees (headcount*)|||\n|Men|205,259|211,168|\n|Women|135,237|143,922|\n|Number of permanent employees (headcount)|||\n|Men|201,717|208,777|\n|Women|133,344|142,251|\n|GROUP TOTAL|335,061|351,028|\n|Number of temporary employees (headcount)|||\n|Men|1,777|2,367|\n|Women|2,794|1,658|\n|GROUP TOTAL|4,571|4,025|\n|Number of non-guaranteed hours employees (headcount)|||\n|Men|0|0|\n|Women|0|0|\n|GROUP TOTAL|–|–|\n|Distribution of part-time employees by headcount (%)|||\n|Men|41.1%|40.5%|\n|Women|58.9%|59.5%|\n|GROUP TOTAL|2.0%|1.9%|\n|Distribution of full-time employees by headcount (%)|||\n|Men|60.6%|59.8%|\n|Women|39.4%|40.2%|\n|GROUP TOTAL|98.0%|98.2%|\n\n* The coverage for this table is above 99.9% for gender, permanent vs. temporary, and part-time distribution.\n\nDiversity is also reflected in the number of nationalities operating in a truly multicultural Group, with people originating from close to 160 nationalities."
+        },
+        {
+          "id": "S4",
+          "cited": false,
+          "company": "Capgemini",
+          "document_name": "Capgemini-URD-2025.pdf",
+          "page_number": 235,
+          "printed_page": "233",
+          "context": "Capgemini | FY2025 (year ended 2025-12-31) | Our reach in learning | Amounts in € million",
+          "text": "## Our reach in learning\n\n<!-- Start of picture text -->\nWe are helping our people We attract our employees to grow and learn every day<br>future-proof their capabilities;<br>offering awareness building,<br>certifications preparations,<br>mentoring opportunities,<br>peer-to-peer learning, 530K<br>and connecting a like-minded<br>community of learners. 347K 209K 220K 40K 60.9K 34.4M<br>And we are delivering with of our people 209K employees hold new certifications people have have used GARI training hours,<br>pace and scale to create value learn in NEXT, our 530K certifications awarded in 2025 attended global for peer-to-peer including learning in<br>for our people, our business, digital ecosystem learning events learning the flow of work<br>and our clients<br>We develop our employees in areas where it matters most<br>310K 83K 116K 170K 107K<br>learners in Gen AI learners in Data upskilled in the learners in upskilled in<br>Campus and AI Campus Cloud Campus Industry Campus leadership Campus<br><!-- End of picture text -->"
+        },
+        {
+          "id": "S5",
+          "cited": false,
+          "company": "Capgemini",
+          "document_name": "Capgemini-URD-2025.pdf",
+          "page_number": 338,
+          "printed_page": "336",
+          "context": "Capgemini | FY2025 (year ended 2025-12-31) | Consolidated | FINANCIAL INFORMATION > Analysis of Capgemini group | Headcount | Amounts in € million",
+          "text": "## Headcount\n\nAt December 31, 2025, the Group’s total headcount stood at 423,405, up 82,287 or +24% year-on-year, primarily reflecting the integration of WNS team members.\n\nThe onshore workforce was stable year-on-year at 144,218 employees. The offshore workforce increased by 82,299 year-on-year, or +42%, to 279,187 employees, i.e., 66% of the total headcount.\n\nThe average headcount increased from 337,813 in 2024 to 364,028 in 2025, mostly due to the integration of WNS. The total number of entries into the Group in 2025 was 155,241. The voluntary attrition rate decreased to 14.9% in 2025 (before integration of WNS data which will be taken into account from 2026 onwards) compared to 15.7% in 2024."
+        },
+        {
+          "id": "S6",
+          "cited": false,
+          "company": "Capgemini",
+          "document_name": "Capgemini-URD-2025.pdf",
+          "page_number": 231,
+          "printed_page": "229",
+          "context": "Capgemini | FY2025 (year ended 2025-12-31) | 1. A diverse and evolving population | Amounts in € million",
+          "text": "Average number of employees in countries with 50 or more employees and representing at least 10% of total number of employees\n\n||2024|2025|\n|---|---|---|\n|Europe Middle East & Africa|127,547|125,118|\n|_Including France_|_37,724_|_35,952_|\n|Asia-Pacific|180,860|192,895|\n|_Including India_|_170,126_|_182,036_|\n|Americas|29,406|30,750|\n|GROUP TOTAL|337,813|348,763|\n\nThis table covers 100% of the total headcount.\n\nPost-Covid, following two exceptional years of hyper growth in 2021 and 2022 with strong recruiting and attrition, both metrics over the last two years gradually returned to pre-Covid levels within a range of 60 to 80,000 hires per year, along with a decrease in attrition closer to the usual range for our industry."
+        }
+      ],
+      "grounding": {
+        "cited_sources": [],
+        "invalid_citations": [],
+        "numbers_grounded": [],
+        "numbers_in_uncited_source": [],
+        "numbers_not_in_sources": [],
+        "has_citations": false
+      },
+      "intent": {
+        "company": null,
+        "basis": null
+      },
+      "model": "openai/gpt-oss-120b",
+      "timings": {
+        "retrieval_s": 5.01,
+        "llm_s": 43.46,
+        "total_s": 48.47
+      },
+      "usage": {
+        "completion_tokens": 35,
+        "prompt_tokens": 2050,
+        "total_tokens": 2085,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 17,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_tokens_details": null,
+        "queue_time": 0.370657527,
+        "prompt_time": 0.109403139,
+        "completion_time": 0.072984744,
+        "total_time": 0.182387883
+      },
+      "id": "u02"
+    },
+    {
+      "question": "What is TCS's share price today?",
+      "answer": "I couldn't find this in the provided reports.",
+      "found": false,
+      "sources": [
+        {
+          "id": "S1",
+          "cited": false,
+          "company": "Tata Consultancy Services",
+          "document_name": "TCS-annual-report-2025-2026.pdf",
+          "page_number": 24,
+          "printed_page": "44",
+          "context": "Tata Consultancy Services | FY2025-26 (year ended 2026-03-31) | Earnings per share (Amount in ₹ ) | Amounts in ₹ crore",
+          "text": "## Earnings per share (Amount in ₹ )\n\n<!-- Start of picture text -->\n1 45. 9 9<br> 1 34. 1 9<br> 1 2 7. 74<br> 1 1 5. 1 9<br> 1 0 3. 62<br><!-- End of picture text -->\n\n**10. 3%** C AG R\n\n<!-- Start of picture text -->\nFY 2022<br><!-- End of picture text -->\n\n<!-- Start of picture text -->\nFY 2023<br><!-- End of picture text -->\n\n<!-- Start of picture text -->\nFY 2024<br><!-- End of picture text -->\n\n<!-- Start of picture text -->\nFY 2025<br><!-- End of picture text -->\n\n**FY 2026**\n\nOver the past five fiscal years, TCS has steadily increased its Earnings Per Share (EPS), recording a compound annual growth rate of 10.3% . This consistent upward trend demonstrates not only the company’s strengthening profits but also its dedication to providing sustained value for shareholders."
+        },
+        {
+          "id": "S2",
+          "cited": false,
+          "company": "Tata Consultancy Services",
+          "document_name": "TCS-annual-report-2025-2026.pdf",
+          "page_number": 18,
+          "printed_page": "32",
+          "context": "Tata Consultancy Services | FY2025-26 (year ended 2026-03-31) | 43. 9 3 crores | Amounts in ₹ crore",
+          "text": "## 43. 9 3 crores\n\n**V ayo V andana (for 7 0+ years Indian citiz ens)**\n\nTCS has modernized key PM-JAY 2.0 systems, including hospital empanelment, transaction management, and claims processing, creating a scalable, interoperable platform that enables integration with multiple government health schemes.\n\nEligible beneficiaries\n\nToday, TCS-enabled PMJAY 2.0 and NHCX platforms are operating at scale across India, serving millions of beneficiaries and thousands of healthcare providers. These systems are accelerating claim settlements, improving transparency, reducing fraud, and enhancing the citizen experience— advancing India toward a digitally integrated, AI-ready, and citizencentric health insurance ecosystem.\n\n6 crores\n\nEnrolled\n\n1 . 2 3 crores\n\nWith the rollout of NHCX , TCS-supported systems are shifting health claims processing from siloed workflows to an interoperable, standards-based\n\n**Beneficiaries treated so far**\n\n1 0 . 67 crores"
+        },
+        {
+          "id": "S3",
+          "cited": false,
+          "company": "Tata Consultancy Services",
+          "document_name": "TCS-annual-report-2025-2026.pdf",
+          "page_number": 359,
+          "printed_page": null,
+          "context": "Tata Consultancy Services | FY2025-26 (year ended 2026-03-31) | US$ 279 million | Amounts in ₹ crore",
+          "text": "## US$ 2.25 billion\n\nUplift in Brand Consideration 40%\n\nFunds Raised for Charities at TCS Sponsored Marathons\n\n## US$ 279 million\n\n**TCS London Marathon**\n\nGuinness World Record for the largest number of finishers in Marathon"
+        },
+        {
+          "id": "S4",
+          "cited": false,
+          "company": "Tata Consultancy Services",
+          "document_name": "TCS-annual-report-2025-2026.pdf",
+          "page_number": 27,
+          "printed_page": "50",
+          "context": "Tata Consultancy Services | FY2025-26 (year ended 2026-03-31) | Investors | Amounts in ₹ crore",
+          "text": "## Investors\n\nTCS continues to excel in investor outreach by fostering transparent engagement and providing comprehensive disclosures, effectively communicating strategy, risks, and opportunities to investors, ensuring fair stock valuation.\n\nDuring the year, TCS hosted an **‘ Analyst Day’** to engage with equity analysts, outlining its AI-led aspiration supported by five pillar transformation to lead in the AI era. The event featured leadership presentations, AI rapid build immersion sessions and showcased customer case studies across the Infrastructure to Intelligence stack, reinforcing TCS as a full stack AI services partner for enterprises.\n\neeti ng s H ours 750 30 0 +"
+        },
+        {
+          "id": "S5",
+          "cited": false,
+          "company": "Tata Consultancy Services",
+          "document_name": "TCS-annual-report-2025-2026.pdf",
+          "page_number": 54,
+          "printed_page": "84",
+          "context": "Tata Consultancy Services | FY2025-26 (year ended 2026-03-31) | O v erv i ew | Amounts in ₹ crore",
+          "text": "## TCS’ Business\n\n## O v erv i ew\n\nTCS is an IT services, consulting and business solutions organisation partnering with many of the world’s largest businesses in their transformational journeys for the last 58 years. With a global presence and deep domain expertise across multiple industry verticals, TCS offers a comprehensive portfolio of services and offerings spanning application development and management, digital transformation, AI, data and cloud services, engineering services, cognitive business operations, cyber security, and products & platforms – targeting every C-suite stakeholder.\n\nThe Company leverages all these capabilities and deep contextual knowledge of its customers’ businesses to create bespoke, high quality, and impactful solutions designed to achieve differentiated business outcomes. These solutions are delivered through its AIenabled operating model which integrates global talent, platforms and intelligent automation to support distributed delivery at scale.\n\nTCS has an extensive geographic footprint spanning North America, Latin America, the U nited Kingdom, Continental Europe, Asia Pacific, India and Middle East Africa."
+        },
+        {
+          "id": "S6",
+          "cited": false,
+          "company": "Tata Consultancy Services",
+          "document_name": "TCS-annual-report-2025-2026.pdf",
+          "page_number": 5,
+          "printed_page": "06",
+          "context": "Tata Consultancy Services | FY2025-26 (year ended 2026-03-31) | About TCS | Amounts in ₹ crore",
+          "text": "## About TCS\n\nT ata C onsul tancy S erv i ces ( T C S ) i s th e tech nol og y partner of ch oi ce f or i nd ustry l ead i ng org ani sati ons w orl d w i d e. S i nce i ts i ncepti on i n 1 9 68, T C S h as uph el d th e h i g h est stand ard s of i nnov ati on, eng i neeri ng ex cel l ence and custom er centri ci ty\n\nRooted in the heritage of the Tata Group, TCS is focused on creating long term value for its clients, its investors, its employees, and the community at large. With a highly skilled workforce of over 580,000 consultants spread across 56 countries and 194 service delivery centers across the world, the company has been recognised as a top employer in six continents. With the ability to rapidly apply and scale new technologies, the Company has built long term partnerships with its clients. Many of these relationships have endured into decades and navigated every technology cycle, from mainframes in the 1970s to Artificial Intelligence today."
+        }
+      ],
+      "grounding": {
+        "cited_sources": [],
+        "invalid_citations": [],
+        "numbers_grounded": [],
+        "numbers_in_uncited_source": [],
+        "numbers_not_in_sources": [],
+        "has_citations": false
+      },
+      "intent": {
+        "company": "Tata Consultancy Services",
+        "basis": null
+      },
+      "model": "openai/gpt-oss-120b",
+      "timings": {
+        "retrieval_s": 5.08,
+        "llm_s": 7.34,
+        "total_s": 12.42
+      },
+      "usage": {
+        "completion_tokens": 31,
+        "prompt_tokens": 1739,
+        "total_tokens": 1770,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 13,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_tokens_details": null,
+        "queue_time": 0.162358854,
+        "prompt_time": 0.086305074,
+        "completion_time": 0.065269138,
+        "total_time": 0.151574212
+      },
+      "id": "u03"
+    },
+    {
+      "question": "What revenue does Capgemini expect for 2028?",
+      "answer": "I couldn't find this in the provided reports.",
+      "found": false,
+      "sources": [
+        {
+          "id": "S1",
+          "cited": false,
+          "company": "Capgemini",
+          "document_name": "Capgemini-URD-2025.pdf",
+          "page_number": 486,
+          "printed_page": "484",
+          "context": "Capgemini | FY2025 (year ended 2025-12-31) | REPORT OF THE BOARD OF DIRECTORS AND DRAFT RESOLUTIONS TO BE PRESENTED AT THE COMBINED SHAREHOLDERS’ MEETING OF MAY 20, 2026 > Resolutions presented at the extraordinary Shareholders’ Meeting | Proposed performance conditions for performance share grants | Amounts in € million",
+          "text": "- **iii.** A financial performance condition, determinin <mark>g 20% of grants to all beneficiaries, based on average annual revenue growth over a three-year period, calculated at constant exchange rates and in accordance with current IFRS as applied by Capgemini. For all beneficiaries, no shares would vest in respect of this financial performance condition if average annual revenue growth over a three-year period is less than 8%, while 100% of the shares would vest if this performance is at least 15% and a maximum of 110% would vest if this performance is equal to 18%;</mark>\n\n- **iv.** A performance condition, determining <mark>20% of grants to all beneficiaries and tied to the Group’s 2028 diversity and sustainable development objectives, with each objective equally weighted. The diversity objective is based on the increase in the percentage of women in Executive leadership positions to 33% at the end of 2028 and</mark> the sustainable development objective would aim to reduce in absolute value the greenhouse gas emissions of our own activities, excluding employee commuting, in 2028 compared to the situation in 2024, in accordance with the Group’s ambition.\n\n_More information on the methodology used to measure the greenhouse gas emissions reduction objective can be found in the 2025 Universal Registration Document, Section 4.2 “E1 – Climate change”._"
+        },
+        {
+          "id": "S2",
+          "cited": false,
+          "company": "Capgemini",
+          "document_name": "Capgemini-URD-2025.pdf",
+          "page_number": 487,
+          "printed_page": "485",
+          "context": "Capgemini | FY2025 (year ended 2025-12-31) | REPORT OF THE BOARD OF DIRECTORS AND DRAFT RESOLUTIONS TO BE PRESENTED AT THE COMBINED SHAREHOLDERS’ MEETING OF MAY 20, 2026 > Resolutions presented at the extraordinary Shareholders’ Meeting | Summary of recommended performance conditions | Amounts in € million",
+          "text": "|Performance conditions|Weighting applied|Percentage of the grant determined by each performance condition <sup>(1)</sup>|\n|---|---|---|\n|Financial condition:<br>Average revenue growth<br>over a three-year period|20%|—<br>0 % if average revenue growth over the reference period < 8%<br>—<br>50% if equal to 8%<br>—<br>100% if equal to 15%<br>—<br>110% if at least equal to 18%|\n|CSR condition comprising<br>two objectives:|||\n|Diversity: increase<br>in the number of women<br>in Executive leadership<br>positions at the end of 2028|10%|—<br>0% if the percentage of women in Executive leader positions at the end of the<br>three-year period < 31.5%<br>—<br>50% if equal to 31.5%<br>—<br>100% if equal to 33%<br>—<br>110% if at least equal to 34.5%|\n|Reduction in absolute value in<br>GHG emissions (excluding<br>employee commuting) in 2028<br>compared with 2024|10%|—<br>0% if GHG emissions are > 2024<br>—<br>50% if GHG emissions are equal to 2024<br>—<br>100% if GHG emissions are < 8% compared with 2024<br>—<br>110% if GHG emissions are < 10% compared with 2024|"
+        },
+        {
+          "id": "S3",
+          "cited": false,
+          "company": "Capgemini",
+          "document_name": "Capgemini-URD-2025.pdf",
+          "page_number": 191,
+          "printed_page": "189",
+          "context": "Capgemini | FY2025 (year ended 2025-12-31) | goods & services, business travel and commuting) | Amounts in € million",
+          "text": "As with the entire climate challenge, we will only achieve our ambitions through collaboration and partnership, with our customers, our partners, our suppliers, our sector peers, and the governments and citizens in the countries where we operate. We must all play our part and Capgemini remains committed to accelerate our transition to a sustainable, net zero future.\n\n<!-- Start of picture text -->\n2019 Historic Emission Initiatives 2028<br>Baseline growth reduction planned Expected<br>impact date emissions<br><!-- End of picture text -->"
+        },
+        {
+          "id": "S4",
+          "cited": false,
+          "company": "Capgemini",
+          "document_name": "Capgemini-URD-2025.pdf",
+          "page_number": 112,
+          "printed_page": "110",
+          "context": "Capgemini | FY2025 (year ended 2025-12-31) | CORPORATE GOVERNANCE | Active plans | Amounts in € million",
+          "text": "|Plan number|2021 Plan|2022 Plan|2022 Plan|2023 Plan|2024 Plan|2024 Plan|2025 Plan|\n|---|---|---|---|---|---|---|---|\n|Vestingdate – outside France|10/08/2025|10/10/2026|10/10/2025|11/12/2026|11/10/2027|02/28/2025|11/12/2029|\n|End of holding period – France|10/08/2025|10/10/2026|10/10/2025|11/16/2027|11/11/2028|n/a|11/12/2028|\n|End of holding period – outside<br>France|10/08/2025|10/10/2026|10/10/2025|11/13/2026|11/11/2027|02/28/2028|11/12/2028|\n|Shareprice atgrant date_(in euros)_|175.65|163.15|163.15|168.75|176.05|185.05|<br>128.15|\n\n* Complete historical information on active performance share plans in 2025 is provided in Note 12 to the Consolidated Financial Statements."
+        },
+        {
+          "id": "S5",
+          "cited": false,
+          "company": "Capgemini",
+          "document_name": "Capgemini-URD-2025.pdf",
+          "page_number": 174,
+          "printed_page": "172",
+          "context": "Capgemini | FY2025 (year ended 2025-12-31) | Use of estimates | Amounts in € million",
+          "text": "In addition, expected investments in relation to action plans for each sustainability matter have been assessed for the period 2026 to 2028 using, where relevant, the impairment test process implemented for the consolidated financial statements to ensure connectivity of information. Given the nature of our business, investments have been assessed as below the materiality threshold for disclosure. Expected investments in relation to our climate transition plan are disclosed in Section 4.2.2.3 “Our Road to Net Zero”."
+        },
+        {
+          "id": "S6",
+          "cited": false,
+          "company": "Capgemini",
+          "document_name": "Capgemini-URD-2025.pdf",
+          "page_number": 399,
+          "printed_page": "397",
+          "context": "Capgemini | FY2025 (year ended 2025-12-31) | Consolidated | FINANCIAL INFORMATION > Consolidated accounts | Risks identified | Amounts in € million",
+          "text": "**Revenue recognition on a percentage** - **of** - **completion basis for long-term contracts on deliverable-based, services-based or multi-deliverable contracts**\n\n## Risks identified\n\nCapgemini is present in the consulting, digital transformation, Technology and Engineering Services market and notably provides long-term services.\n\nAs described in Note 6 to the consolidated financial statements, the method used to recognize revenue related to long-term contracts depends on the nature of the services rendered, as follows:\n\n- Revenue from deliverable-based contracts is usually recognized over time by using the “cost-to-cost” method to measure progress to completion. The percentage of completion is based on costs incurred to date relative to the total estimate of cost at completion of the contract;\n\n- Revenue on services-based contracts is usually recognized as rights to bill arise;\n\n- Revenue on multi-deliverable contracts is usually recognized depending on the performance obligations identified.\n\nThe amount of revenue to be recognized for the period depends upon the Group's ability to:"
+        }
+      ],
+      "grounding": {
+        "cited_sources": [],
+        "invalid_citations": [],
+        "numbers_grounded": [],
+        "numbers_in_uncited_source": [],
+        "numbers_not_in_sources": [],
+        "has_citations": false
+      },
+      "intent": {
+        "company": "Capgemini",
+        "basis": null
+      },
+      "model": "openai/gpt-oss-120b",
+      "timings": {
+        "retrieval_s": 5.29,
+        "llm_s": 0.55,
+        "total_s": 5.84
+      },
+      "usage": {
+        "completion_tokens": 38,
+        "prompt_tokens": 2107,
+        "total_tokens": 2145,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 20,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_tokens_details": null,
+        "queue_time": 0.317807795,
+        "prompt_time": 0.102101992,
+        "completion_time": 0.078646747,
+        "total_time": 0.180748739
+      },
+      "id": "u04"
+    },
+    {
+      "question": "What was Wipro's revenue from its Antarctica operations in FY26?",
+      "answer": "I couldn't find this in the provided reports.",
+      "found": false,
+      "sources": [
+        {
+          "id": "S1",
+          "cited": false,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 25,
+          "printed_page": "46",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | LEADERSHIP INSIGHTS AND OUTLOOK | Financial Performance | Amounts in ₹ million",
+          "text": "## Financial Performance\n\n||||(₹ in million)|\n|---|---|---|---|\n|**Particulars**|**FY26**|**FY25**|**YoY Change**|\n|Revenue|928,093|890,916|4.17%|\n|Cost of Revenue<br>i|-656,192|-617,802|6.21%|\n|Gross Profit|271,901|273,114|-0.44%|\n|Selling and Marketing Expenses|-59,216|-64,378|-8.02%|\n|General and Administrative Expenses|-61,434|-57,465|6.91%|\n|Operating Income<br>i|151,251|151,271|-0.01%|\n|Profit Attributable to Equity Holders|131,974|131,354|0.47%|\n|Selling & Marketing (% of Revenue)|6.38%|7.23%|-85bps|\n|G&A (% of Revenue)|6.62%|6.45%|17bps|\n|Gross Margin|29.30%|30.66%|-136bps|\n|Operating Margin|16.30%|16.98%|-68bps|\n|EPS Basic|12.60|12.56|0.32%|\n|EPS Diluted|12.56|12.52|0.32%|\n\nFor segment reporting, we have included the impact of exchange rate fluctuations on revenue. Excluding the impact of exchange rate fluctuations, revenue, as reported in our statement of income, is ₹890,884 million and ₹926,240 million for the years ended March 31, 2025 and 2026, respectively. Please see Note 33 of the Notes to the Consolidated Financial Statements under IFRS for additional details.\n\n**Revenue:** Our revenue increased by 4.17% for fiscal year 2026 compared to fiscal year 2025."
+        },
+        {
+          "id": "S2",
+          "cited": false,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 385,
+          "printed_page": "411",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | Consolidated | 39. EVENTS AFTER THE REPORTING PERIOD | Amounts in ₹ million",
+          "text": "|olding and exchange rate)<br>Profit<br>after<br>taxation<br>(b)<br>Proposed<br>Dividend<br>(incl.<br>dividend<br>tax) (b)|9<br>-|151<br>-||(32)<br>-|55<br>-|128<br>-<br>|808<br>-|52<br>-|18<br>-|(197)<br>-||482<br>-|749<br>-<br>29<br>-|68<br>-<br>|8<br>-|(43)<br>-|12|-<br>|4,284<br>-|1,304<br>-||516<br>-||1,850<br>-||56<br>-|(107)<br>-|31<br>-|(385)<br>-<br>|8<br>-|(28)<br>-|2<br>-||332<br>-|107<br>-|20<br>-||(365)<br>-|180<br>-<br>(1)<br>-|(412)<br>-<br>(31)<br>-|\n|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n|Sl.<br>No.<br>Name of the Subsidiary|60<br>Wipro CRM Services B.V. (Formerly<br>known as Wipro 4C NEDERLAND B.V.)|61<br>Wipro Doha LLC|62<br>Wiro SA Broad Based Ownershi|p p<br>Scheme SPV (RF) (PTY) LTD|63<br>International TechneGroup Limited|<br>64<br>Wipro CRM Services UK Limited<br><br>|65<br>International TechneGroup Incorporated|66<br>Wipro Technologies Australia Pty Ltd|67<br>Wipro Bahrain Limited Co. W.L.L|<br>68<br>Wi IT Si Bldh Liitd|pro ervces angaes me<br><br>|69<br>Wipro (Dalian) Limited|70<br>Wipro Chengdu Limited<br>71<br>Wipro Shanghai Limited|72<br>PT. WT Indonesia<br><br>i|73<br>ITI Proficiency Ltd|74<br>Wipro Japan KK|<br>75<br>Wi Thli Nii Liid|pro ecnooges gera mte<br><br>|76<br>Wipro Philippines, Inc.|77<br>Wipro Arabia Limited|78<br>Women’s Business Park Technoloies|g<br>|Limited|79<br>Wipro Networks Pte. Limited|<br>80<br>Wiro Technoloies South Africa|p g<br>(Proprietary) Limited|81<br>Wipro Gulf LLC|82<br>Wipro (Thailand) Co. Limited|83<br>The Capital Markets Company Limited<br><br>|84<br>Capco Consultancy (Thailand) Limited|<br>85<br>The Capital Markets Company BV|86<br>C Bli BV|apco egum|87<br>The Capital Markets Company Limited|88<br>The Capital Markets Company Sàrl|<br>89<br>Andrion a|g<br><br>|90<br>The Capital Markets Company S.A.S|91<br>Capco Poland sp. z o.o.<br>92<br>Capafric Consulting Proprietary Limited|93<br>The Capital Markets Company GmbH<br>94<br>Capco Austria GmbH|"
+        },
+        {
+          "id": "S3",
+          "cited": false,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 31,
+          "printed_page": "57",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | Our NCV for FY26 | Amounts in ₹ million",
+          "text": "## Our NCV for FY26\n\nThe overall impacts can be broken down into two components–operational impacts and upstream impacts. In FY26, total environmental costs of Wipro’s\n\noperations and upstream were quantified at $510 million ($270 million in FY25), of which operational and upstream impacts contribute 1% ($3.6 million) and 99% ($506.4 million) respectively.\n\nOur operational impacts saw a significant decline primarily due to an increase in the renewable share of electricity and a decrease in Scope 1 and Scope 2 emissions, hence reducing the proportion of operational impact to the total impact. This year, we also saw an increase in upstream valuation, particularly from our Purchased Goods & Services. This has resulted primarily from (i) increased procurement spend this year; and (ii) the upstream impacts of this spend on Tier II and Tier III suppliers, particularly those attributable to air pollution.\n\nFor greater clarity, we have presented below the natural capital valuation from our Operations and Upstream separately. A negative value indicates a positive impact on the environment.\n\n**Valuation Intensity by EBIT for Operational Impacts** Intensity ($ per million $ EBIT)"
+        },
+        {
+          "id": "S4",
+          "cited": false,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 40,
+          "printed_page": "66",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | Customer Centricity | Amounts in ₹ million",
+          "text": "## Customer Centricity\n\nMaterial Topics Progress in FY26\n\n- Customer satisfaction and engagement • Maintained strong client relationships with 97.3% revenue from existing customers (IT services)\n\n- Wipro NPS continues to be in the top quartile of the industry"
+        },
+        {
+          "id": "S5",
+          "cited": false,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 518,
+          "printed_page": "544",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | BUSINESS RESPONSIBILITY AND SUSTAINABILITY REPORT | 3. Provide details of the following disclosures related to water, in the following format | Amounts in ₹ million",
+          "text": "## 3. Provide details of the following disclosures related to water, in the following format\n\n|Parameter|Units|**FY 2025-26**|FY 2024-25|\n|---|---|---|---|\n|**Water withdrawal by source (in kilolitres)**||||\n|(i)<br>Surface water|kilolitres|0|0|\n|(ii)<br>Groundwater|kilolitres|13,519|16,342|\n|(iii) Third party water|kilolitres|1,221,903|1,292,138|\n|(iv) Seawater / desalinated water|kilolitres|0|0|\n|(v)<br>Others|kilolitres|25,801|0|\n|Total volume of water withdrawal (in kilolitres) (i + ii + iii + iv + v)|kilolitres|1,261,223|1,308,480|\n|Total volume of water consumption (in kilolitres)|kilolitres|1,223,771|1,307,531|\n|Water intensity per rupee of turnover (Total water consumption /<br>Revenue from operations)|kilolitres /₹|0.0000013|0.0000015|\n|Water intensity per rupee of turnover adjusted for Purchasing<br>Power Parity (PPP)(Total water consumption / Revenue from<br>operations adjusted for PPP)|kilolitres /₹|0.000026874|0.000030322|\n|Water intensity in terms of physical output|-|-|-|\n|Water intensity (optional) - the relevant metric may be selected<br>by the entity|lit/person/day|61.85|75.53|\n\nNotes:"
+        },
+        {
+          "id": "S6",
+          "cited": false,
+          "company": "Wipro",
+          "document_name": "Wipro-annual-report-2025-2026.pdf",
+          "page_number": 26,
+          "printed_page": "49",
+          "context": "Wipro | FY2025-26 (year ended 2026-03-31) | LEADERSHIP INSIGHTS AND OUTLOOK | Analysis of Revenue and Results by Segment | Amounts in ₹ million",
+          "text": "## Analysis of Revenue and Results by Segment\n\nOperating Results of the IT Services Segment are as Follows:\n\n||||(₹ in million)|\n|---|---|---|---|\n|**Particulars**|**FY26**|**FY25**|**YoY Change**|\n|Revenue|921,153|888,224|3.71%|\n|Cost of Revenue|(646,024)|(614,754)|5.09%|\n|Gross Profit|275,129|273,470|0.61%|\n|Selling and Marketing Expenses|(57,988)|(64,305)|-9.82%|\n|General and Administrative Expenses|(58,495)|(57,526)|1.68%|\n|Segment Results|158,646|151,639|4.62%|\n|As a Percentage of Revenue:||||\n|Selling and Marketing Expenses|6.30%|7.24%|-94 bps|\n|General and Administrative Expenses|6.35%|6.48%|-13 bps|\n|Gross Margins|29.87%|30.79%|-92 bps|\n|Segment Results|17.22%|17.07%|15 bps|\n||**FY26**|**FY26**|**FY25**|**FY25**|\n|---|---|---|---|---|\n|**Strategic Market Units**|**Percentage**<br>**of $ Revenue**|**Percentage of**<br>**Segment Results**|**Percentage of**<br>**$ Revenue**|**Percentage of**<br>**Segment Results**|\n|Americas 1|33.2%|38.4%|31.7%|39.7%|\n|Americas 2|29.2%|40.4%|30.6%|33.5%|\n|Europe|26.5%|19.4%|27.1%|19.6%|\n|APMEA|11.1%|8.5%|10.6%|9.4%|\n|Unallocated|NA|-6.7%|NA|-2.2%|"
+        }
+      ],
+      "grounding": {
+        "cited_sources": [],
+        "invalid_citations": [],
+        "numbers_grounded": [],
+        "numbers_in_uncited_source": [],
+        "numbers_not_in_sources": [],
+        "has_citations": false
+      },
+      "intent": {
+        "company": "Wipro",
+        "basis": null
+      },
+      "model": "openai/gpt-oss-120b",
+      "timings": {
+        "retrieval_s": 11.77,
+        "llm_s": 30.88,
+        "total_s": 42.65
+      },
+      "usage": {
+        "completion_tokens": 30,
+        "prompt_tokens": 3006,
+        "total_tokens": 3036,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 12,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_tokens_details": null,
+        "queue_time": 0.159646454,
+        "prompt_time": 0.139723974,
+        "completion_time": 0.062949622,
+        "total_time": 0.202673596
+      },
+      "id": "u05"
+    }
+  ]
+}

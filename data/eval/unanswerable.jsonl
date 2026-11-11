@@ -1,0 +1,6 @@
+{"id": "u01", "question": "What was Infosys's revenue for FY2026?", "why_unanswerable": "Company not in the corpus"}
+{"id": "u02", "question": "How many employees does HCLTech have?", "why_unanswerable": "Company not in the corpus"}
+{"id": "u03", "question": "What is TCS's share price today?", "why_unanswerable": "Live market data, not in an annual report"}
+{"id": "u04", "question": "What revenue does Capgemini expect for 2028?", "why_unanswerable": "Future figure not reported"}
+{"id": "u05", "question": "What was Wipro's revenue from its Antarctica operations in FY26?", "why_unanswerable": "Plausible-sounding but non-existent segment"}
+{"id": "u06", "question": "What was Accenture's operating margin in fiscal 2025?", "why_unanswerable": "Competitor not in the corpus"}

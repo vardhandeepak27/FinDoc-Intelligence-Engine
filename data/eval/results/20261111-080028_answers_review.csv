@@ -1,0 +1,6 @@
+﻿id,question,expected,answer,string_correct,failure,judge,judge_faithful,judge_reason,your_verdict
+w01,What was Wipro's consolidated revenue from operations for FY2025-26?,"926,240","Wipro’s consolidated revenue from operations for FY 2025‑26 (year ended 31 March 2026) was **₹ 926,240 million**[S1].",True,ok,,,,
+w02,"What was Wipro's standalone profit for the year ended March 31, 2026?","121,296","Wipro’s standalone profit for the year ended 31 March 2026 was **₹ 121,296 million**[S3].",True,ok,,,,
+w03,"What is Wipro's consolidated total equity as at March 31, 2026?","882,692","Wipro’s consolidated total equity was **₹ 887,877 million** as at 31 March 2026[S6].",False,generation_error,,,,
+w04,What was Wipro's effective tax rate in fiscal 2026?,23.51%,Wipro’s effective income tax rate for fiscal 2026 (year ended 31 March 2026) was **23.51 %**[S1].,True,ok,,,,
+w05,Which business did Wipro acquire from HARMAN and when did the deal close?,harman,"Wipro acquired the **Digital Transformation Solutions (DTS) business unit of Harman International Inc. (HARMAN Connected Services Inc.)**, and the acquisition was consummated on **December 1 2025**[S2].",True,ok,,,,

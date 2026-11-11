@@ -64,7 +64,7 @@ class Settings(BaseSettings):
     # facts. Off until we have a smarter rule; "consolidated" turns it on.
     default_basis: Literal["consolidated", "standalone", "none"] = "none"
 
-      # --- LLM ---
+    # --- LLM ---
     llm_provider: Literal["groq", "gemini", "ollama"] = "groq"
     llm_model: str | None = None            # None = the provider's default
     groq_api_key: SecretStr | None = None
@@ -75,9 +75,15 @@ class Settings(BaseSettings):
     llm_reasoning_effort: Literal["low", "medium", "high"] = "low"
     llm_timeout_seconds: float = Field(default=60, gt=0)
     llm_max_retries: int = Field(default=5, ge=0)
-
+    # Stay under the provider's tokens-per-minute limit (Groq free tier for
+    # gpt-oss-120b: 8,000). None = no client-side limiting.
+    llm_tokens_per_minute: int | None = Field(default=7000, gt=0)
+    # Judge model for answer evaluation: a DIFFERENT model family from the
+    # answering model, to reduce self-preference bias.
+    judge_model: str = "qwen/qwen3.8-27b"
+    
     # --- Answer generation
-    answer_context_chunks: int = Field(default=6, gt=0)    # chunks sent to the LLM
+    answer_context_chunks: int = Field(default=6, gt=0)   # chunks sent to the LLM
     answer_context_tokens: int = Field(default=4000, gt=0)  # budget for those chunks
 
     # --- Logging ---

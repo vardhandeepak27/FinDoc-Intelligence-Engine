@@ -61,13 +61,22 @@ def normalize_citations(text: str) -> str:
     )
     return text
 
+
 def normalize_number(raw: str) -> str:
     """'(41,527)' -> '41527', '2,67,021' -> '267021', '23.51%' -> '23.51'."""
     return re.sub(r"[(),%\s]", "", raw).lstrip("-")
 
 
 def numbers_in(text: str) -> set[str]:
+    # Broken PDF text layers split numbers: "13. 7 %" -> "13.7%"
+    text = re.sub(r"(?<=\d)\s*\.\s+(?=\d)", ".", text)
     return {normalize_number(m.group()) for m in NUMBER.finditer(text)} - {""}
+
+
+def source_text(source: dict) -> str:
+    """What the model saw for a source: its context line AND its text.
+    Dates like 'year ended 2026-03-31' live in the context line."""
+    return f"{source.get('context', '')}\n{source['text']}"
 
 
 def check_answer(answer: str, question: str, sources: list[dict]) -> dict:
@@ -76,9 +85,9 @@ def check_answer(answer: str, question: str, sources: list[dict]) -> dict:
     invalid_ids = [i for i in cited_ids if i not in valid_ids]
 
     answer_without_markers = CITATION.sub("", answer)
-    cited_numbers = set().union(*(numbers_in(sources[i - 1]["text"]) for i in valid_ids)) \
+    cited_numbers = set().union(*(numbers_in(source_text(sources[i - 1])) for i in valid_ids)) \
         if valid_ids else set()
-    all_numbers = set().union(*(numbers_in(s["text"]) for s in sources)) if sources else set()
+    all_numbers = set().union(*(numbers_in(source_text(s)) for s in sources)) if sources else set()
     question_numbers = numbers_in(question)
 
     grounded, uncited, ungrounded = [], [], []

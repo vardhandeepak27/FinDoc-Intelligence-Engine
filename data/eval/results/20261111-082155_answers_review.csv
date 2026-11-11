@@ -1,0 +1,77 @@
+﻿id,question,expected,answer,string_correct,failure,judge,judge_faithful,judge_reason,your_verdict
+w01,What was Wipro's consolidated revenue from operations for FY2025-26?,"926,240","Wipro’s consolidated revenue from operations for FY 2025‑26 (year ended 31 March 2026) was **₹ 926,240 million**[S1].",True,ok,error,,Error code: 404 - The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.,
+w02,"What was Wipro's standalone profit for the year ended March 31, 2026?","121,296","Wipro’s standalone profit for the year ended 31 March 2026 was **₹ 121,296 million**[S3].",True,ok,error,,Error code: 404 - The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.,
+w03,"What is Wipro's consolidated total equity as at March 31, 2026?","882,692; 887,877","Wipro’s consolidated total equity was **₹ 887,877 million** as at 31 March 2026[S6].",True,ok,error,,Error code: 404 - The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.,
+w04,What was Wipro's effective tax rate in fiscal 2026?,23.51%,Wipro’s effective income tax rate for fiscal 2026 (year ended 31 March 2026) was **23.51 %**[S1].,True,ok,error,,Error code: 404 - The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.,
+w05,Which business did Wipro acquire from HARMAN and when did the deal close?,harman,"Wipro acquired the **Digital Transformation Solutions (DTS) business unit of Harman International Inc. (HARMAN Connected Services Inc.)**, and the acquisition was consummated on **December 1 2025**[S2].",True,ok,error,,Error code: 404 - The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.,
+w06,What was Wipro's consolidated diluted earnings per share for FY26?,12.56,Wipro’s consolidated diluted earnings per share for FY 2026 (year ended 31 March 2026) was **₹ 12.56**[S1].,True,ok,error,,Error code: 404 - The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.,
+w07,How much did Wipro spend on employee benefits in FY26 on a consolidated basis?,"555,855","Wipro’s consolidated employee‑benefits expense for FY 2026 (year ended 31 March 2026) was **₹ 555,855 million**[S5].",True,ok,error,,Error code: 404 - The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.,
+w08,"What dividends per share did Wipro declare for the year ended March 31, 2026?",₹11 per share; 11 per share,"Wipro declared an aggregate interim dividend of **₹ 11 per equity share** (₹ 5 declared in July 2025 and ₹ 6 declared in January 2026), which the Board recommended as the final dividend for the financial year ended 31 March 2026[S1][S6].",False,generation_error,error,,Error code: 404 - The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.,
+w09,What was Wipro's revenue from the Americas 1 region in FY26?,"305,036","Wipro’s revenue from the **Americas 1** region in FY 2026 was **₹ 305,571 million** (consolidated)[S1].",False,generation_error,error,,Error code: 404 - The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.,
+w10,What were Wipro's contract liabilities at the end of FY26?,"25,434","Wipro’s contract liabilities at the end of FY 2026 (as at 31 March 2026) were **₹ 25,434 million** in the consolidated statements[S4]. (The same figure appears in the consolidated balance‑sheet summary[S3].)",True,ok,error,,Error code: 404 - The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.,
+w11,What were Wipro's standalone cash and cash equivalents at the end of the year?,"26,778","Wipro’s standalone cash and cash equivalents at the end of the year (as at 31 March 2026) were **₹ 26,778 million**[S2][S3].",True,ok,error,,Error code: 404 - The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.,
+t01,What was TCS's consolidated revenue from operations in FY 2026?,"2,67,021; 267,021","TCS’s consolidated revenue from operations for FY 2026 was **₹ 267,021 crore**[S4].",True,ok,error,,Error code: 404 - The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.,
+t02,What was TCS's standalone revenue for FY 2026?,"2,20,938; 220,938","TCS’s standalone revenue for FY 2026 was **₹ 2,20,938 crore**[S3].",True,ok,error,,Error code: 404 - The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.,
+t03,What operating margin did TCS report for FY 2026?,25.0%,TCS reported an operating margin of **25.0 %** for FY 2026[S1][S2].,True,ok,error,,Error code: 404 - The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.,
+t04,What final dividend per share did the TCS board recommend for FY 2026?,final dividend of ₹31; final dividend of 31,The Board of Directors recommended a final dividend of **₹ 31 per equity share** for FY 2026[S1][S2].,True,ok,error,,Error code: 404 - The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.,
+t05,What was TCS's voluntary attrition rate in IT services?,13.7%,TCS’s voluntary attrition rate in IT services was **13.7 % for FY 2026**[S1].,True,ok,error,,Error code: 404 - The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.,
+t06,How many employees does TCS have in total?,"6,17,437","TCS has **6,17,437 total employees** as at the end of FY 2025‑26 (year ended 31 Mar 2026)[S1].",True,ok,error,,Error code: 404 - The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.,
+t07,How much net cash did TCS use in financing activities on a standalone basis?,"41,527","TCS used **₹ 41,527 crore** of net cash in financing activities on a standalone basis for the year ended 31 March 2026[S1].",True,ok,error,,Error code: 404 - The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.,
+t08,Who are TCS's statutory auditors?,BSR,"TCS’s statutory auditors are **B S R & Co. LLP, Chartered Accountants** (ICAI Firm Registration No. 101248W/W‑100022) [S5].  
+
+The Board has also recommended the appointment of **Walker Chandiok & Co LLP, Chartered Accountants** (ICAI Firm Registration No. 001076N/N500013) as the next statutory auditor, pending member approval at the thirty‑second AGM in 2027 [S5].",True,ok,error,,Error code: 404 - The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.,
+t09,What did the TCS Chairman say about AI in his letter to shareholders?,,"The Chairman said that “AI is now becoming the infrastructure of intelligence. It will influence how enterprises invest, organise supply chains, manage risk, and serve stakeholders. GenAI and agentic AI are entering a new phase of growth. AI will not just be a layer but will be the operating foundation.”[S1]",,unknown (no answer string; see judge),error,,Error code: 404 - The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.,
+t10,What was TCS's consolidated profit attributable to shareholders for FY 2026?,"49,210","TCS’s consolidated profit attributable to shareholders for FY 2026 (year ended 31 March 2026) was **₹ 49,210 crore**[S2].",True,ok,error,,Error code: 404 - The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.,
+c01,What were Capgemini's consolidated revenues in 2025?,"22,465","Capgemini’s consolidated revenues for 2025 were **€22,465 million**[S1].",True,ok,error,,Error code: 404 - The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.,
+c02,What was Capgemini's profit for the year 2025?,"1,607; 1,601","Capgemini’s profit for the year 2025 was **€1,601 million (consolidated)**[S5][S6].  
+
+(For reference, the standalone profit for 2025 was €586,548 thousand, i.e., €586.548 million[S3].)",True,ok,error,,Error code: 404 - The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.,
+c03,What was Capgemini's organic free cash flow in 2025?,"1,949","Capgemini’s organic free cash flow for 2025 was **€1,949 million** (consolidated)[S1][S2]",True,ok,error,,Error code: 404 - The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.,
+c04,What dividend per share is Capgemini proposing for 2025?,3.40,Capgemini is proposing a dividend of **€ 3.40 per share** for fiscal year 2025[S2].,True,ok,error,,Error code: 404 - The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.,
+c05,"What was Capgemini's net debt at December 31, 2025?","5,306","Capgemini’s consolidated net debt was **€5,306 million** at December 31 2025[S1].",True,ok,error,,Error code: 404 - The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.,
+c06,When did Capgemini complete the WNS acquisition and what price per share was paid?,76.50,"Capgemini completed the acquisition of WNS on **17 October 2025**[S3], and the cash consideration was **US $76.50 per WNS share**[S1][S2].",True,ok,error,,Error code: 404 - The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.,
+c07,How many team members does Capgemini have?,"420,000","Capgemini’s total headcount was 423,405 team members at 31 December 2025[S5].",False,generation_error,error,,Error code: 404 - The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.,
+c08,What was Capgemini's operating margin in 2025?,13.3%,Capgemini’s operating margin in 2025 was **13.3 % of revenues**[S1][S4].,True,ok,error,,Error code: 404 - The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.,
+c09,What was Capgemini's total equity at the end of 2025?,"11,672","Capgemini’s total equity at 31 December 2025 was €11.672 billion (total equity, including non‑controlling interests)[S5].",False,generation_error,error,,Error code: 404 - The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.,
+c10,Show Capgemini's consolidated statement of cash flows for 2025.,,"**Capgemini – Consolidated Statement of Cash Flows (year ended 31 December 2025)**  
+*Amounts in € million; consolidated figures*
+
+| Item | 2025 |
+|------|------|
+| Profit for the year | 1,607 [S1] |
+| Depreciation, amortisation and impairment of fixed assets and lease right‑of‑use assets | 698 [S1] |
+| Change in provisions | (16) [S1] |
+| Losses/(gains) on disposals of assets and other | 23 [S1] |
+| Expenses relating to share‑based compensation | 223 [S1] |
+| Expenses relating to employee ownership plan | 43 [S1] |
+| Net finance costs | 7 [S1] |
+| Income tax expense/(income) | 534 [S1] |
+| Unrealised (gains) losses on changes in fair value and other financial items | 79 [S1] |
+| **Cash flows from operations before net finance costs and income tax (A)** | 3,198 [S1] |
+| Income tax paid (B) | (474) [S1] |
+| Change in trade receivables, contract assets net of liabilities and contract costs | 66 [S1] |
+| Change in accounts and notes payable | (92) [S1] |
+| Change in other receivables/payables | (216) [S1] |
+| Change in operating working capital (C) | (242) [S1] |
+| **Net cash from (used in) operating activities (D = A + B + C)** | 2,482 [S1] |
+| Acquisitions of property, plant and equipment and intangible assets, net of disposals | (222) [S2] |
+| Cash (outflows) inflows on business combinations net of cash and cash equivalents acquired | (3,775) [S2] |
+| Cash (outflows) inflows in respect of cash‑management assets | 123 [S2] |
+| Other cash (outflows) inflows, net | (148) [S2] |
+| Cash outflows from other investing activities | (3,800) [S2] |
+| **Net cash from (used in) investing activities (E)** | (4,022) [S2] |
+| Proceeds from issues of share capital | 297 [S2] |
+| Dividends paid | (581) [S2] |
+| Net cash (outflows) inflows relating to transactions in Capgemini SE shares | (543) [S2] |
+| Proceeds from borrowings | 7,284 [S2] |
+| Repayments of borrowings | (4,337) [S2] |
+| Repayments of lease liabilities | (296) [S2] |
+| Interest paid | (168) [S2] |
+| Interest received | 153 [S2] |
+| **Net cash from (used in) financing activities (F)** | 1,809 [S2] |
+| **Net increase (decrease) in cash and cash equivalents (G = D + E + F)** | 269 [S2] |
+| Effect of exchange‑rate movements on cash and cash equivalents (H) | (242) [S2] |
+| **Cash and cash equivalents at beginning of period (I)** | 2,787 [S2] |
+| **Cash and cash equivalents at end of period (G + H + I)** | 2,814 [S3] |
+
+This table reproduces the consolidated cash‑flow statement for 2025 as presented in Capgemini’s FY 2025 report.",,unknown (no answer string; see judge),error,,Error code: 404 - The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.,
