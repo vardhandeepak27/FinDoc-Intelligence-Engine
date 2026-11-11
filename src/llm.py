@@ -120,7 +120,9 @@ _limiters: dict[str, TokenRateLimiter] = {}
 def _limiter(model: str) -> TokenRateLimiter:
     # Groq's limits are per model, so each model gets its own window
     if model not in _limiters:
-        _limiters[model] = TokenRateLimiter(settings.llm_tokens_per_minute)
+        _limiters[model] = TokenRateLimiter(
+            settings.model_tokens_per_minute.get(model, settings.llm_tokens_per_minute)
+        )
     return _limiters[model]
 
 

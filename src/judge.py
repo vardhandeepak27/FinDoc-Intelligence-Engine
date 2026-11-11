@@ -72,7 +72,9 @@ def judge_answer(question: str, reference: str, answer: str, cited_sources: list
     try:
         response = chat(
             [{"role": "user", "content": prompt}],
-            max_tokens=1200, model=settings.judge_model, json_mode=False,
+            # No server-side JSON mode: it rejects replies cut off by hidden
+            # reasoning (400 errors). We extract the JSON ourselves instead.
+            max_tokens=2000, model=settings.judge_model, json_mode=False,
         )
         verdict = _parse_json(response.text)
     except NotFoundError as error:

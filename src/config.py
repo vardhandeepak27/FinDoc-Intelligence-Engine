@@ -78,11 +78,18 @@ class Settings(BaseSettings):
     # Stay under the provider's tokens-per-minute limit (Groq free tier for
     # gpt-oss-120b: 8,000). None = no client-side limiting.
     llm_tokens_per_minute: int | None = Field(default=7000, gt=0)
+    # Per-model overrides (Groq's limits differ by model). As JSON in .env:
+    # FINDOC_MODEL_TOKENS_PER_MINUTE={"qwen/qwen3.8-27b": 5000}
+    model_tokens_per_minute: dict[str, int] = {"qwen/qwen3.8-27b": 5000}
     # Judge model for answer evaluation: a DIFFERENT model family from the
     # answering model, to reduce self-preference bias.
+    # (Preview model on Groq: fine for offline evaluation, not for serving.)
     judge_model: str = "qwen/qwen3.8-27b"
-    
+
     # --- Answer generation
+    # Prompt versions are kept side by side so experiments are comparable:
+    # v1 = baseline, v2 = exact units + report all valid figures.
+    prompt_version: Literal["v1", "v2"] = "v2"
     answer_context_chunks: int = Field(default=6, gt=0)   # chunks sent to the LLM
     answer_context_tokens: int = Field(default=4000, gt=0)  # budget for those chunks
 

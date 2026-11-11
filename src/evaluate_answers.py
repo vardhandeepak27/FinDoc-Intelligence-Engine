@@ -106,6 +106,7 @@ def rate(values) -> str:
 
 def report(rows: list[dict], negatives: list[dict], judged: bool) -> dict:
     g = [r["grade"] for r in rows]
+    print(f"\nPrompt version: {settings.prompt_version}")
     print(f"\n{'=' * 70}\nANSWERABLE QUESTIONS (n={len(rows)})\n{'=' * 70}")
     print(f"Answered (not refused)        {rate(x['answered'] for x in g)}")
     print(f"Correct (answer string)       {rate(x['correct'] for x in g)}")
@@ -209,6 +210,7 @@ def main(limit: int | None, use_judge: bool, rescore: str | None) -> None:
         "llm_model": rows[0]["model"] if rows else None,
         "judge_model": settings.judge_model if use_judge else None,
         "reranker": settings.reranker_model,
+        "prompt_version": settings.prompt_version,
         "summary": summary,
         "answerable": rows,
         "unanswerable": negatives,

@@ -53,6 +53,8 @@ def normalize_citations(text: str) -> str:
     [S1, S3]. We normalise rather than fight it in the prompt: code that
     reads LLM output should accept reasonable variations.
     """
+    text = re.sub("[\u200b\u200c\u200d\ufeff]", "", text)
+    text = text.replace("\u202f", " ").replace("\u00a0", " ")
     text = re.sub(r"【\s*S(\d+)[^】]*】", r"[S\1]", text)          # 【S1】, 【S1†L4】
     text = re.sub(
         r"\[\s*(S\d+(?:\s*[,;]\s*S\d+)+)\s*\]",                   # [S1, S3]
